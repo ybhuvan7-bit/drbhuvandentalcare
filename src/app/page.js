@@ -113,7 +113,7 @@ className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-
 <p className="text-white">Happy Patients</p>
 </div>
 
-<div cclassName="bg-white/15 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
+<div className="bg-white/15 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">1000+</h2>
 <p className="text-white">Dental Implants</p>
 </div>
