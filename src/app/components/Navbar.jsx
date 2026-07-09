@@ -24,7 +24,7 @@ export default function Navbar() {
   }`}
 >
 
-      <div className="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+      <div className="max-w-5xl mx-auto px-5 py-4 flex justify-between items-center">
 
         <div>
           <h1 className={`text-2xl font-bold transition ${
@@ -75,7 +75,6 @@ export default function Navbar() {
 </button>
 
         <div className="hidden lg:flex gap-4">
-
   <a
     href="#appointment"
     className="bg-orange-600 hover:bg-orange-700 text-white px-6 py-3 rounded-full font-semibold shadow-lg transition"
@@ -93,7 +92,7 @@ export default function Navbar() {
   </a>
 
 </div>
-{menuOpen && (
+
   <div className="lg:hidden bg-white shadow-xl rounded-2xl mt-4 p-6 space-y-4">
 
     <a href="#" className="block text-gray-700 font-medium">Home</a>
@@ -125,7 +124,7 @@ export default function Navbar() {
     </a>
 
   </div>
-)}
+
       </div>
     </nav>
   );
