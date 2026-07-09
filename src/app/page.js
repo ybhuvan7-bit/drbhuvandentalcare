@@ -52,7 +52,7 @@ export default function Home() {
           className="absolute inset-0 w-full h-full object-cover"
         />
 
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
 
@@ -62,7 +62,7 @@ export default function Home() {
               ⭐ 4.9 Google Rating • 118+ Reviews
             </span>
 
-            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight text-white">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
   Best Dental Clinic
   <br />
 
@@ -75,7 +75,7 @@ export default function Home() {
   Hyderabad
 </h1>
 
-            <p className="mt-8 text-xl text-gray-200 leading-9 max-w-xl">
+            <p className="mt-8 text-xl text-gray-200 leading-9 max-w-lg">
 Experience world-class dental care with advanced Dental Implants,
 Laser Dentistry, Cosmetic Dentistry, Root Canal Treatment and Gum Care
 by Dr. Bhuvanesh Yanamala (MDS Periodontics).
@@ -176,7 +176,7 @@ className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-
 
             <div className="grid grid-cols-2 gap-6 mt-10">
 
-              <div className="bg-orange-50 rounded-2xl p-6">
+              <div className="rounded-2xl p-6 bg-white shadow-xl border border-orange-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
 
                 <h3 className="text-3xl font-bold text-orange-600">
                   5000+
@@ -188,7 +188,7 @@ className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-
 
               </div>
 
-              <div className="bg-orange-50 rounded-2xl p-6">
+              <div className="rounded-2xl p-6 bg-white shadow-xl border border-orange-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
 
                 <h3 className="text-3xl font-bold text-orange-600">
                   1000+
@@ -200,7 +200,7 @@ className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-
 
               </div>
 
-              <div className="bg-orange-50 rounded-2xl p-6">
+              <div className="rounded-2xl p-6 bg-white shadow-xl border border-orange-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
 
                 <h3 className="text-3xl font-bold text-orange-600">
                   4.9★
@@ -212,7 +212,7 @@ className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-
 
               </div>
 
-              <div className="bg-orange-50 rounded-2xl p-6">
+              <div className="rounded-2xl p-6 bg-white shadow-xl border border-orange-100 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
 
                 <h3 className="text-3xl font-bold text-orange-600">
                   Modern
