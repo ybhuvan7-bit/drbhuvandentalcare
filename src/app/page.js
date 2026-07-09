@@ -45,8 +45,7 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section className="relative min-h-screen overflow-hidden pt-24">
-
+      <section className="relative min-h-screen overflow-hidden pt-28">
         <img
           src="/doctor.jpg.png"
           alt="Dr Bhuvan"
@@ -55,26 +54,28 @@ export default function Home() {
 
         <div className="absolute inset-0 bg-black/60" />
 
-        <div className="relative z-10 max-w-7xl mx-auto px-6 h-full flex items-center">
+        <div className="relative z-10 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
 
-          <div className="max-w-3xl">
+          <div className="max-w-2xl">
 
             <span className="bg-orange-600 text-white px-5 py-2 rounded-full font-semibold">
               ⭐ 4.9 Google Rating • 118+ Reviews
             </span>
 
-            <h1 className="text-5xl md:text-7xl font-extrabold mt-8 text-white leading-tight">
+            <h1 className="text-5xl md:text-7xl font-extrabold leading-tight text-white">
   Best Dental Clinic
-  <br />
-  in
-  <span className="text-orange-400"> Ameerpet, Hyderabad</span>
+
+<span className="text-orange-500">
+in Ameerpet,
+</span>
+
+Hyderabad
 </h1>
 
-            <p className="mt-8 text-xl text-gray-100 leading-9 max-w-2xl">
-Experience world-class dental care with advanced
-Dental Implants, Laser Dentistry, Cosmetic Dentistry,
-Root Canal Treatment and Gum Care by
-<strong> Dr. Bhuvanesh Yanamala (MDS Periodontics).</strong>
+            <p className="mt-8 text-xl text-gray-200 leading-9 max-w-xl">
+Experience world-class dental care with advanced Dental Implants,
+Laser Dentistry, Cosmetic Dentistry, Root Canal Treatment and Gum Care
+by Dr. Bhuvanesh Yanamala (MDS Periodontics).
 </p>
             <div className="mt-10 flex flex-wrap gap-4">
 
