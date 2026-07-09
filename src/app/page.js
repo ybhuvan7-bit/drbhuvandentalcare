@@ -64,12 +64,15 @@ export default function Home() {
 
             <h1 className="text-5xl md:text-7xl font-extrabold leading-tight text-white">
   Best Dental Clinic
+  <br />
 
-<span className="text-orange-500">
-in Ameerpet,
-</span>
+  <span className="text-orange-500">
+    in Ameerpet,
+  </span>
 
-Hyderabad
+  <br />
+
+  Hyderabad
 </h1>
 
             <p className="mt-8 text-xl text-gray-200 leading-9 max-w-xl">
