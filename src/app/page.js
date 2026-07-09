@@ -60,71 +60,71 @@ export default function Home() {
           <div className="max-w-3xl">
 
             <span className="bg-orange-600 text-white px-5 py-2 rounded-full font-semibold">
-              Hyderabad's Trusted Dental Clinic
+              ⭐ 4.9 Google Rating • 118+ Reviews
             </span>
 
-            <h1 className="text-6xl md:text-7xl font-black mt-8 text-white leading-tight">
-              Creating
-              <span className="text-orange-400"> Healthy </span>
-              &
-              <span className="text-orange-400"> Beautiful Smiles</span>
-            </h1>
+            <h1 className="text-5xl md:text-7xl font-extrabold mt-8 text-white leading-tight">
+  Best Dental Clinic
+  <br />
+  in
+  <span className="text-orange-400"> Ameerpet, Hyderabad</span>
+</h1>
 
-            <p className="mt-8 text-xl text-gray-200 leading-9">
-              Dental Implants • Laser Dentistry • Cosmetic Dentistry •
-              Root Canal Treatment • Teeth Cleaning
-            </p>
+            <p className="mt-8 text-xl text-gray-100 leading-9 max-w-2xl">
+Experience world-class dental care with advanced
+Dental Implants, Laser Dentistry, Cosmetic Dentistry,
+Root Canal Treatment and Gum Care by
+<strong> Dr. Bhuvanesh Yanamala (MDS Periodontics).</strong>
+</p>
+            <div className="mt-10 flex flex-wrap gap-4">
 
-            <div className="mt-10 flex flex-wrap gap-5">
+<a
+href="#appointment"
+className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl"
+>
+📅 Book Appointment
+</a>
 
-              <a
-                href="#appointment"
-                className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold"
-              >
-                Book Appointment
-              </a>
+<a
+href="tel:+918074528763"
+className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl"
+>
+📞 Call Now
+</a>
 
-              <a
-                href="https://wa.me/918074528763"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-xl font-bold"
-              >
-                WhatsApp
-              </a>
+<a
+href="https://wa.me/918074528763"
+target="_blank"
+className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl"
+>
+💬 WhatsApp
+</a>
 
-            </div>
+</div>
 
-            <div className="grid grid-cols-3 gap-8 mt-14">
+           <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
 
-              <div>
-                <h2 className="text-4xl font-bold text-white">
-                  5000+
-                </h2>
-                <p className="text-gray-300">
-                  Happy Patients
-                </p>
-              </div>
+<div className="bg-white/10 backdrop-blur-lg rounded-2xl p-5 text-center">
+<h2 className="text-3xl font-bold text-orange-400">5000+</h2>
+<p className="text-white">Happy Patients</p>
+</div>
 
-              <div>
-                <h2 className="text-4xl font-bold text-white">
-                  4.9★
-                </h2>
-                <p className="text-gray-300">
-                  Google Rating
-                </p>
-              </div>
+<div className="bg-white/10 backdrop-blur-lg rounded-2xl p-5 text-center">
+<h2 className="text-3xl font-bold text-orange-400">1000+</h2>
+<p className="text-white">Dental Implants</p>
+</div>
 
-              <div>
-                <h2 className="text-4xl font-bold text-white">
-                  Modern
-                </h2>
-                <p className="text-gray-300">
-                  Laser Technology
-                </p>
-              </div>
+<div className="bg-white/10 backdrop-blur-lg rounded-2xl p-5 text-center">
+<h2 className="text-3xl font-bold text-orange-400">4.9★</h2>
+<p className="text-white">Google Rating</p>
+</div>
 
-            </div>
+<div className="bg-white/10 backdrop-blur-lg rounded-2xl p-5 text-center">
+<h2 className="text-3xl font-bold text-orange-400">Laser</h2>
+<p className="text-white">Modern Dentistry</p>
+</div>
+
+</div>
 
           </div>
 
