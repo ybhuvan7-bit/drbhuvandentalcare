@@ -45,7 +45,7 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section className="relative h-screen overflow-hidden">
+      <section className="relative min-h-screen overflow-hidden pt-24">
 
         <img
           src="/doctor.jpg.png"
