@@ -615,7 +615,7 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
       <a
         href="tel:+918074528763"
-        className="hidden md:flex fixed bottom-24 md:bottom-28 right-4 md:right-6 bg-orange-600 hover:bg-orange-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50"
+        className="fixed bottom-24 md:bottom-28 right-4 md:right-6 bg-orange-600 hover:bg-orange-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50"
       >
         📞
       </a>
