@@ -108,22 +108,22 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
 
-<div className="bg-white/15 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
+<div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">5000+</h2>
 <p className="text-white">Happy Patients</p>
 </div>
 
-<div className="bg-white/15 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
+<div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">1000+</h2>
 <p className="text-white">Dental Implants</p>
 </div>
 
-<div className="bg-white/15 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
+<div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">4.9★</h2>
 <p className="text-white">Google Rating</p>
 </div>
 
-<div className="bg-white/15 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
+<div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">Laser</h2>
 <p className="text-white">Modern Dentistry</p>
 </div>
@@ -608,14 +608,14 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
         href="https://wa.me/918074528763"
         target="_blank"
         rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl"
+        className="fixed bottom-6 md:bottom-6 right-4 md:right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50"
       >
         💬
       </a>
 
       <a
         href="tel:+918074528763"
-        className="fixed bottom-28 right-6 bg-orange-600 hover:bg-orange-700 text-white w-16 h-16 rounded-full flex items-center justify-center text-3xl shadow-2xl"
+        className="hidden md:flex fixed bottom-24 md:bottom-28 right-4 md:right-6 bg-orange-600 hover:bg-orange-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50"
       >
         📞
       </a>
