@@ -12,9 +12,53 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Dr. Bhuvan's Dental Laser & Implant Centre",
+  title: {
+    default: "Dr. Bhuvan's Dental Laser & Implant Centre",
+    template: "%s | Dr. Bhuvan's Dental",
+  },
+
   description:
-    "Best Dental Clinic in Ameerpet, Hyderabad. Dental Implants, Laser Dentistry, Root Canal Treatment, Cosmetic Dentistry, Teeth Cleaning and Smile Makeover.",
+    "Best Dental Clinic in Ameerpet, Hyderabad. Advanced Dental Implants, Laser Dentistry, Root Canal Treatment, Cosmetic Dentistry, Teeth Cleaning and Gum Care by Dr. Bhuvanesh Yanamala (MDS Periodontics).",
+
+  keywords: [
+    "Dentist in Ameerpet",
+    "Best Dentist in Hyderabad",
+    "Dental Implants Hyderabad",
+    "Laser Dentistry",
+    "Root Canal Treatment",
+    "Cosmetic Dentistry",
+    "Teeth Cleaning",
+    "Dental Clinic Ameerpet",
+    "Periodontist Hyderabad",
+    "Dr Bhuvan Dental",
+  ],
+
+  authors: [{ name: "Dr. Bhuvanesh Yanamala" }],
+
+  creator: "Dr. Bhuvanesh Yanamala",
+
+  metadataBase: new URL("https://www.drbhuvandentalcare.com"),
+
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/favicon.ico",
+  },
+
+  openGraph: {
+    title: "Dr. Bhuvan's Dental Laser & Implant Centre",
+    description:
+      "Advanced Dental Implants, Laser Dentistry, Root Canal & Cosmetic Dentistry in Ameerpet, Hyderabad.",
+    url: "https://www.drbhuvandentalcare.com",
+    siteName: "Dr. Bhuvan's Dental",
+    locale: "en_IN",
+    type: "website",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 
   verification: {
     google: "Ko0cMgfj1sO9bXk8DVzOzeeQv3M3ytRZOJfi6OENsec",
