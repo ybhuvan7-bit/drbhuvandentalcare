@@ -56,13 +56,13 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
 
-          <div className="max-w-2xl">
+          <div className="max-w-2xl space-y-6">
 
-            <span className="bg-orange-600 text-white px-5 py-2 rounded-full font-semibold">
+            <span className="inline-flex items-center bg-orange-600 text-white px-5 py-3 rounded-full font-semibold text-sm md:text-base whitespace-nowrap">
               ⭐ 4.9 Google Rating • 118+ Reviews
             </span>
 
-            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight text-white">
+            <h1 className="text-[54px] sm:text-5xl lg:text-7xl font-extrabold leading-[1.05] text-white mt-6">
   Best Dental Clinic
   <br />
 
