@@ -32,7 +32,33 @@ export const metadata = {
     "Periodontist Hyderabad",
     "Dr Bhuvan Dental",
   ],
+metadataBase: new URL("https://drbhuvandentalcare.com"),
 
+openGraph: {
+  title: "Dr. Bhuvan's Dental Laser & Implant Centre",
+  description:
+    "Best Dental Clinic in Ameerpet, Hyderabad. Dental Implants, Laser Dentistry & Cosmetic Dentistry.",
+  url: "https://drbhuvandentalcare.com",
+  siteName: "Dr. Bhuvan's Dental Laser & Implant Centre",
+  images: [
+    {
+      url: "/og-image.jpg",
+      width: 1200,
+      height: 630,
+      alt: "Dr. Bhuvan's Dental Laser & Implant Centre",
+    },
+  ],
+  locale: "en_IN",
+  type: "website",
+},
+
+twitter: {
+  card: "summary_large_image",
+  title: "Dr. Bhuvan's Dental Laser & Implant Centre",
+  description:
+    "Best Dental Clinic in Ameerpet, Hyderabad.",
+  images: ["/og-image.jpg"],
+},
   authors: [{ name: "Dr. Bhuvanesh Yanamala" }],
 
   creator: "Dr. Bhuvanesh Yanamala",
@@ -233,23 +259,7 @@ areaServed: [
     }),
   }}
 />
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://drbhuvandentalcare.com"
-        }
-      ]
-    }),
-  }}
-/>
+
         {children}
       </body>
     </html>
