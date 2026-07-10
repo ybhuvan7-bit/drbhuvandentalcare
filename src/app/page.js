@@ -108,22 +108,22 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-16">
 
-<div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
+<div className="bg-black/45 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">5000+</h2>
 <p className="text-white">Happy Patients</p>
 </div>
 
-<div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
+<div className="bg-black/45 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">1000+</h2>
 <p className="text-white">Dental Implants</p>
 </div>
 
-<div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
+<div className="bg-black/45 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">4.9★</h2>
 <p className="text-white">Google Rating</p>
 </div>
 
-<div className="bg-black/35 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
+<div className="bg-black/45 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">Laser</h2>
 <p className="text-white">Modern Dentistry</p>
 </div>
