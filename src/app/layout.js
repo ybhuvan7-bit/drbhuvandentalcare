@@ -215,6 +215,24 @@ areaServed: [
     }),
   }}
 />
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "MedicalBusiness",
+      "name": "Dr. Bhuvan's Dental Laser & Implant Centre",
+      "url": "https://drbhuvandentalcare.com",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "reviewCount": "118",
+        "bestRating": "5",
+        "worstRating": "1"
+      }
+    }),
+  }}
+/>
         {children}
       </body>
     </html>
