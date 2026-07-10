@@ -62,7 +62,7 @@ export default function Home() {
               ⭐ 4.9 Google Rating • 118+ Reviews
             </span>
 
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight text-white">
+            <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-tight text-white">
   Best Dental Clinic
   <br />
 
@@ -80,18 +80,18 @@ Experience world-class dental care with advanced Dental Implants,
 Laser Dentistry, Cosmetic Dentistry, Root Canal Treatment and Gum Care
 by Dr. Bhuvanesh Yanamala (MDS Periodontics).
 </p>
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-10 flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
 
 <a
 href="#appointment"
-className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl"
+className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold text-center"
 >
 📅 Book Appointment
 </a>
 
 <a
 href="tel:+918074528763"
-className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl"
+className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold text-center"
 >
 📞 Call Now
 </a>
@@ -99,7 +99,7 @@ className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bo
 <a
 href="https://wa.me/918074528763"
 target="_blank"
-className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold shadow-xl"
+className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold text-center"
 >
 💬 WhatsApp
 </a>
