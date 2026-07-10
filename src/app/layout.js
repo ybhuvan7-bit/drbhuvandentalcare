@@ -172,6 +172,49 @@ areaServed: [
     }),
   }}
 />
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much do dental implants cost in Hyderabad?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The cost of dental implants depends on the implant system used and the patient's clinical condition. Visit Dr. Bhuvan's Dental Laser & Implant Centre for a personalized consultation and treatment plan."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is laser dentistry painful?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Laser dentistry is minimally invasive and generally causes less pain, less bleeding and faster healing compared to conventional dental procedures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How often should I get my teeth cleaned?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most patients benefit from professional teeth cleaning every six months. Patients with gum disease may require more frequent cleanings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you provide emergency dental treatment?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. We provide emergency dental treatment for severe tooth pain, swelling, dental trauma, broken teeth and other urgent dental problems."
+          }
+        }
+      ]
+    }),
+  }}
+/>
         {children}
       </body>
     </html>

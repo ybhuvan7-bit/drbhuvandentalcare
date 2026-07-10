@@ -619,7 +619,53 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
       >
         📞
       </a>
+<section className="max-w-7xl mx-auto px-6 py-20">
 
+<h2 className="text-4xl font-bold text-center mb-12">
+Frequently Asked Questions
+</h2>
+
+<div className="space-y-6">
+
+<div className="border rounded-xl p-6">
+<h3 className="text-xl font-bold">
+How much do dental implants cost in Hyderabad?
+</h3>
+<p className="mt-3 text-gray-600">
+The cost depends on the implant system and individual case. Visit Dr. Bhuvan's Dental Laser & Implant Centre for a personalized consultation.
+</p>
+</div>
+
+<div className="border rounded-xl p-6">
+<h3 className="text-xl font-bold">
+Is laser dentistry painful?
+</h3>
+<p className="mt-3 text-gray-600">
+Laser dentistry is minimally invasive and usually causes less pain, less bleeding and faster healing than conventional procedures.
+</p>
+</div>
+
+<div className="border rounded-xl p-6">
+<h3 className="text-xl font-bold">
+How often should I get my teeth cleaned?
+</h3>
+<p className="mt-3 text-gray-600">
+Most patients should undergo professional teeth cleaning every 6 months. Some patients with gum disease may require more frequent visits.
+</p>
+</div>
+
+<div className="border rounded-xl p-6">
+<h3 className="text-xl font-bold">
+Do you provide emergency dental treatment?
+</h3>
+<p className="mt-3 text-gray-600">
+Yes. We provide emergency dental care for tooth pain, swelling, trauma and other urgent dental problems.
+</p>
+</div>
+
+</div>
+
+</section>
       {/* FOOTER */}
 
       <footer className="bg-gray-900 text-white py-16">
