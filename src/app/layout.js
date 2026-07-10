@@ -78,6 +78,39 @@ export default function RootLayout({ children }) {
     __html: JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Dentist",
+      priceRange: "₹₹",
+
+currenciesAccepted: "INR",
+
+paymentAccepted: [
+  "Cash",
+  "Credit Card",
+  "Debit Card",
+  "UPI",
+  "Google Pay",
+  "PhonePe"
+],
+
+founder: "Dr. Bhuvanesh Yanamala",
+
+hasMap: "https://maps.app.goo.gl/MUrP8JPS9NwZpG2z9",
+
+areaServed: [
+  "Ameerpet",
+  "Yousufguda",
+  "SR Nagar",
+  "Punjagutta",
+  "Begumpet",
+  "Jubilee Hills",
+  "Banjara Hills",
+  "Madhapur",
+  "Somajiguda",
+  "Kukatpally",
+  "Hitech City",
+  "Kondapur",
+  "Gachibowli",
+  "Hyderabad"
+],
       "@id": "https://drbhuvandentalcare.com/#dentist",
       name: "Dr. Bhuvan's Dental Laser & Implant Centre",
       url: "https://drbhuvandentalcare.com",
