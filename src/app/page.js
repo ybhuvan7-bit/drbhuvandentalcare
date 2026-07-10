@@ -62,7 +62,7 @@ export default function Home() {
               ⭐ 4.9 Google Rating • 118+ Reviews
             </span>
 
-            <h1 className="text-[54px] sm:text-5xl lg:text-7xl font-extrabold leading-[1.05] text-white mt-5">
+            <h1 className="text-[54px] sm:text-5xl lg:text-7xl font-extrabold leading-[1.05] text-white mt-3">
   Best Dental Clinic
   <br />
 
