@@ -147,11 +147,14 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
           <div>
 
-            <img
-              src="/doctor.jpg.png"
-              alt="Dr Bhuvanesh"
-              className="rounded-3xl shadow-2xl w-full"
-            />
+            <Image
+  src="/doctor.webp"
+  alt="Dr. Bhuvanesh Yanamala"
+  width={700}
+  height={850}
+  quality={85}
+  className="rounded-3xl shadow-2xl w-full h-auto"
+/>
 
           </div>
 
