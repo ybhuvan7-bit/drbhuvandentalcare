@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Navbar from "./components/Navbar";
 
 const SCRIPT_URL =
@@ -46,11 +47,14 @@ export default function Home() {
       {/* HERO */}
 
       <section className="relative min-h-screen overflow-hidden pt-28">
-        <img
-          src="/doctor.jpg.png"
-          alt="Dr Bhuvan"
-          className="absolute inset-0 w-full h-full object-cover"
-        />
+        <Image
+  src="/doctor.webp"
+  alt="Dr. Bhuvanesh Yanamala"
+  fill
+  priority
+  quality={85}
+  className="absolute inset-0 object-cover"
+/>
 
         <div className="absolute inset-0 bg-gradient-to-r from-black/75 via-black/45 to-black/20" />
 
