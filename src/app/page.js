@@ -499,6 +499,61 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
         </div>
 
+{/* OUR CLINIC GALLERY */}
+
+<section className="py-20 bg-white">
+
+<div className="max-w-7xl mx-auto px-6">
+
+<div className="text-center mb-14">
+
+<p className="text-orange-500 uppercase tracking-[4px] font-semibold">
+Our Clinic
+</p>
+
+<h2 className="text-4xl font-bold mt-2">
+Clinic Gallery
+</h2>
+
+<p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+Take a virtual tour of Dr. Bhuvan's Dental Laser & Implant Centre in
+Ameerpet, Hyderabad. Our modern dental clinic is designed for comfort,
+safety and advanced dental care.
+</p>
+
+</div>
+
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+{[
+"/clinic/clinic1.webp",
+"/clinic/clinic2.webp",
+"/clinic/clinic3.webp",
+"/clinic/clinic4.webp",
+"/clinic/clinic5.webp",
+"/clinic/clinic6.webp",
+"/clinic/clinic7.webp",
+"/clinic/clinic8.webp",
+].map((image, index) => (
+  <div
+    key={index}
+    className="overflow-hidden rounded-2xl shadow-lg group"
+  >
+    <Image
+      src={image}
+      alt={`Dr. Bhuvan's Dental Clinic - ${index + 1}`}
+      width={600}
+      height={600}
+      className="w-full h-72 object-cover transition duration-500 group-hover:scale-110"
+    />
+  </div>
+))}
+
+</div>
+
+</div>
+
+</section>
       </section>
 
       {/* APPOINTMENT */}
