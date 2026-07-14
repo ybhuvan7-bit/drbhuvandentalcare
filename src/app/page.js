@@ -469,6 +469,130 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
       </section>
 
+      {/* Expert Dental Blogs */}
+
+<section className="py-24 bg-gray-50">
+
+  <div className="bg-gradient-to-r from-orange-600 to-orange-500 rounded-3xl p-10 text-white shadow-2xl mb-12">
+
+<p className="uppercase tracking-[4px] font-semibold">
+Featured Article
+</p>
+
+<h2 className="text-4xl font-bold mt-4">
+Root Canal Treatment (RCT): Pain, Procedure & Cost
+</h2>
+
+<p className="mt-5 text-lg text-orange-100 max-w-3xl">
+Everything you need to know about Root Canal Treatment, including
+pain, procedure, recovery, benefits and cost explained by
+Dr. Bhuvanesh Yanamala.
+</p>
+
+<a
+href="https://drbhuvandental.blogspot.com/2026/07/root-canal-treatment-rct-pain-procedure.html"
+target="_blank"
+rel="noopener noreferrer"
+className="inline-block mt-8 bg-white text-orange-600 px-8 py-4 rounded-xl font-bold hover:bg-orange-100 transition"
+>
+Read Featured Article →
+</a>
+
+</div>
+<div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+{[
+{
+  title: "Root Canal Treatment (RCT)",
+  image: "/blogs/rct.webp",
+  description: "Learn about RCT procedure, pain, recovery and treatment benefits.",
+  link: "https://drbhuvandental.blogspot.com/2026/07/root-canal-treatment-rct-pain-procedure.html",
+},
+{
+  title: "Tooth Pain: Causes & Treatment",
+  image: "/blogs/toothpain.webp",
+  description: "Understand common causes of tooth pain and available treatment options.",
+  link: "https://drbhuvandental.blogspot.com/2026/07/tooth-pain-causes-symptoms-treatment.html",
+},
+{
+  title: "Dental Implants in Hyderabad",
+  image: "/blogs/implant.webp",
+  description: "Discover permanent tooth replacement with advanced dental implants.",
+  link: "https://drbhuvandental.blogspot.com/2026/07/dental-implant-hyderabad-missing-tooth-replacement.html",
+},
+{
+  title: "Is Teeth Cleaning Painful?",
+  image: "/blogs/cleaning.webp",
+  description: "Know what happens during professional teeth cleaning and whether it hurts.",
+  link: "https://drbhuvandental.blogspot.com/2026/06/is-teeth-cleaning-painful-truth-behind.html",
+},
+{
+  title: "5 Early Signs of Gum Disease",
+  image: "/blogs/gum.webp",
+  description: "Identify gum disease early to protect your teeth and gums.",
+  link: "https://drbhuvandental.blogspot.com/2026/05/5-early-signs-of-gum-disease-you-should.html",
+},
+{
+  title: "Benefits of Laser Dentistry",
+  image: "/blogs/laser.webp",
+  description: "Explore painless and advanced laser dental treatments.",
+  link: "https://drbhuvandental.blogspot.com/2026/05/benefits-of-laser-dentistry-in-modern.html",
+},
+].map((blog,index)=>(
+
+<div
+  key={index}
+  className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all duration-300"
+>
+
+  <Image
+    src={blog.image}
+    alt={blog.title}
+    width={600}
+    height={350}
+    className="w-full h-56 object-cover"
+  />
+
+  <div className="p-6">
+
+    <h3 className="text-2xl font-bold">
+      {blog.title}
+    </h3>
+
+    <p className="text-gray-600 mt-3">
+      {blog.description}
+    </p>
+
+    <a
+      href={blog.link}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="inline-block mt-6 text-orange-600 font-bold hover:text-orange-700"
+    >
+      Read Article →
+    </a>
+
+  </div>
+
+</div>
+
+))}
+</div>
+<div className="text-center mt-14">
+
+<a
+href="https://drbhuvandental.blogspot.com"
+target="_blank"
+rel="noopener noreferrer"
+className="inline-block bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold transition"
+>
+📚 View All Articles
+</a>
+
+</div>
+
+</section>
+
       {/* GALLERY */}
 
       <section
