@@ -472,6 +472,23 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
       {/* Expert Dental Blogs */}
 
 <section className="py-24 bg-gray-50">
+  <div className="text-center mb-14">
+
+  <p className="text-orange-500 uppercase tracking-[4px] font-semibold">
+    Expert Dental Blogs
+  </p>
+
+  <h2 className="text-5xl font-bold mt-2">
+    Latest Dental Articles
+  </h2>
+
+  <p className="text-gray-600 mt-4 max-w-3xl mx-auto">
+    Read expert articles by Dr. Bhuvanesh Yanamala on dental implants,
+    root canal treatment, laser dentistry, gum disease, teeth cleaning
+    and other oral health topics.
+  </p>
+
+</div>
 
   <div className="bg-gradient-to-r from-orange-600 to-orange-500 rounded-3xl p-10 text-white shadow-2xl mb-12">
 
