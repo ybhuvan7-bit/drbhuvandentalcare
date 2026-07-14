@@ -46,7 +46,10 @@ export default function Home() {
 
       {/* HERO */}
 
-      <section className="relative min-h-screen overflow-hidden pt-28">
+      <section
+  id="home"
+  className="relative min-h-screen overflow-hidden pt-28"
+>
         <Image
   src="/doctor.webp"
   alt="Dr. Bhuvanesh Yanamala"
@@ -141,7 +144,10 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
       </section>
             {/* DOCTOR */}
 
-      <section className="py-24 bg-white">
+      <section
+  id="about"
+  className="py-24 bg-white"
+>
 
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
 
@@ -241,7 +247,10 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
       {/* SERVICES */}
 
-      <section className="py-24 bg-gray-100">
+      <section
+  id="services"
+  className="py-24 bg-gray-100"
+>
 
         <div className="max-w-7xl mx-auto px-6">
 
@@ -378,7 +387,10 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
       </section>
             {/* REVIEWS */}
 
-      <section className="py-24 bg-orange-50">
+      <section
+  id="reviews"
+  className="py-24 bg-orange-50"
+>
 
         <div className="max-w-7xl mx-auto px-6">
 
@@ -459,7 +471,10 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
       {/* GALLERY */}
 
-      <section className="py-24 bg-white">
+      <section
+  id="gallery"
+  className="py-24 bg-white"
+>
 
         <div className="max-w-7xl mx-auto px-6">
 
@@ -498,10 +513,14 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
           </div>
 
         </div>
+        </section>
 
 {/* OUR CLINIC GALLERY */}
 
-<section className="py-20 bg-white">
+<section
+  id="clinic-gallery"
+  className="py-20 bg-white"
+>
 
 <div className="max-w-7xl mx-auto px-6">
 
@@ -554,7 +573,7 @@ safety and advanced dental care.
 </div>
 
 </section>
-      </section>
+      
 
       {/* APPOINTMENT */}
 
@@ -630,7 +649,10 @@ safety and advanced dental care.
       </section>
             {/* GOOGLE MAP */}
 
-      <section className="py-24 bg-white">
+      <section
+  id="contact"
+  className="py-24 bg-white"
+>
 
         <div className="max-w-7xl mx-auto px-6">
 

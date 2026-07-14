@@ -66,7 +66,7 @@ export default function Navbar() {
                 scrolled ? "text-gray-700" : "text-white"
               }`}
             >
-              <li><a href="#">Home</a></li>
+              <li><a href="#home">Home</a></li>
               <li><a href="#about">About</a></li>
               <li><a href="#services">Services</a></li>
               <li><a href="#gallery">Gallery</a></li>
@@ -130,7 +130,7 @@ export default function Navbar() {
 
             <div className="space-y-5">
 
-              <a href="#" onClick={closeMenu} className="block text-gray-700 font-medium">Home</a>
+              <a href="#home" onClick={closeMenu} className="block text-gray-700 font-medium">Home</a>
 
               <a href="#about" onClick={closeMenu} className="block text-gray-700 font-medium">About</a>
 
