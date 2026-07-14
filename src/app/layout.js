@@ -153,10 +153,10 @@ export default function RootLayout({ children }) {
               },
 
               geo: {
-                "@type": "GeoCoordinates",
-                latitude: "17.437",
-                longitude: "78.448",
-              },
+  "@type": "GeoCoordinates",
+  latitude: "17.434462985123986",
+  longitude: "78.433557202177"
+},
 
               areaServed: [
                 "Ameerpet",
