@@ -303,6 +303,29 @@ export default function RootLayout({ children }) {
         />
 
         {children}
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      name: "Dr. Bhuvan's Dental Clinic Gallery",
+      description:
+        "Modern dental clinic interiors and facilities at Dr. Bhuvan's Dental Laser & Implant Centre, Ameerpet, Hyderabad.",
+      url: "https://drbhuvandentalcare.com/#clinic-gallery",
+      image: [
+        "https://drbhuvandentalcare.com/clinic/clinic1.webp",
+        "https://drbhuvandentalcare.com/clinic/clinic2.webp",
+        "https://drbhuvandentalcare.com/clinic/clinic3.webp",
+        "https://drbhuvandentalcare.com/clinic/clinic4.webp",
+        "https://drbhuvandentalcare.com/clinic/clinic5.webp",
+        "https://drbhuvandentalcare.com/clinic/clinic6.webp",
+        "https://drbhuvandentalcare.com/clinic/clinic7.webp",
+        "https://drbhuvandentalcare.com/clinic/clinic8.webp"
+      ]
+    }),
+  }}
+/>
       </body>
     </html>
   );
