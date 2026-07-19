@@ -6,6 +6,14 @@ export const metadata = {
 
 const blogs = [
   {
+    title: "Dental Implant vs Dental Bridge in Hyderabad",
+    description:
+      "Compare dental implants and dental bridges to find the best tooth replacement option. Learn about cost, benefits, lifespan, procedure, and expert recommendations from Dr. Bhuvanesh Yanamala.",
+    image: "/blogs/Dental Implant vs Dental Bridge.webp",
+    link: "https://drbhuvandental.blogspot.com/2026/07/dental-implant-vs-dental-bridge-in.html",
+  },
+  
+  {
     title: "Root Canal Treatment (RCT): Pain, Procedure & Cost",
     description:
       "Everything you need to know about Root Canal Treatment including pain, procedure, recovery and benefits.",
