@@ -1,5 +1,6 @@
 "use client";
 
+import GoogleReviews from "./components/GoogleReviews";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 

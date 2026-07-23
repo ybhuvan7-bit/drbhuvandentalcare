@@ -1,5 +1,7 @@
 "use client";
 
+import { Navigation } from "lucide-react";
+import GoogleReviews from "./components/GoogleReviews";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
 
@@ -466,7 +468,7 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
           </div>
 
         </div>
-
+<GoogleReviews />
       </section>
 
       {/* Expert Dental Blogs */}
@@ -844,6 +846,16 @@ safety and advanced dental care.
       >
         📞
       </a>
+
+     <a
+  href="https://maps.app.goo.gl/4LSXY9Cd5TcRjFMP6"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-44 md:bottom-50 right-4 md:right-6 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 z-50"
+  aria-label="Get Directions"
+>
+  <Navigation size={26} strokeWidth={2.5} />
+</a>
 <section className="max-w-7xl mx-auto px-6 py-20">
 
 <h2 className="text-4xl font-bold text-center mb-12">
