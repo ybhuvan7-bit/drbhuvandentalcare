@@ -111,9 +111,9 @@ export default function GoogleReviews() {
             href="https://g.page/r/Cb9Tvhf5l8RPEBM/review"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 mt-8 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-semibold transition duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center gap-2 mt-8 bg-orange-500 hover:bg-orange-600 text-white px-8 py-4 rounded-xl font-semibold transition duration-300 shadow-lg hover:shadow-xl"
           >
-            ⭐ Read Google Reviews
+            ⭐ View Google Reviews
           </a>
 
         </div>
