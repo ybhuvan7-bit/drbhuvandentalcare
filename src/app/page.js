@@ -68,7 +68,7 @@ export default function Home() {
           <div className="max-w-2xl space-y-6">
 
             <span className="inline-flex items-center bg-orange-600 text-white px-4 py-2 rounded-full font-semibold text-sm md:text-base whitespace-nowrap">
-              ⭐ 4.9 Google Rating • 118+ Reviews
+              ⭐ 4.9 Google Rating • 121+ Reviews
             </span>
 
             <h1 className="text-[54px] sm:text-5xl lg:text-7xl font-extrabold leading-[1.05] text-white mt-1">

@@ -67,7 +67,7 @@ export default function Home() {
           <div className="max-w-2xl space-y-6">
 
             <span className="inline-flex items-center bg-orange-600 text-white px-4 py-2 rounded-full font-semibold text-sm md:text-base whitespace-nowrap">
-              ⭐ 4.9 Google Rating • 118+ Reviews
+              ⭐ 4.9 Google Rating • 121+ Reviews
             </span>
 
             <h1 className="text-[54px] sm:text-5xl lg:text-7xl font-extrabold leading-[1.05] text-white mt-1">
@@ -455,14 +455,7 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
           <div className="text-center mt-14">
 
-            <a
-              href="https://g.page/r/Cb9Tvhf5l8RPEBM/review"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold inline-block"
-            >
-              ⭐ Read Google Reviews
-            </a>
+            
 
           </div>
 
