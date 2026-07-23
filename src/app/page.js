@@ -456,15 +456,7 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
           <div className="text-center mt-14">
 
-            <a
-              href="https://g.page/r/Cb9Tvhf5l8RPEBM/review"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold inline-block"
-            >
-              ⭐ Read Google Reviews
-            </a>
-
+           
           </div>
 
         </div>
