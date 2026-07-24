@@ -419,7 +419,7 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
               </p>
 
               <h3 className="mt-6 font-bold">
-                Rahul Kumar
+                Mahender Reddy
               </h3>
 
             </div>
@@ -433,7 +433,7 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
               </p>
 
               <h3 className="mt-6 font-bold">
-                Sneha Reddy
+                NarasimhaRao Gorla
               </h3>
 
             </div>
@@ -447,7 +447,7 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
               </p>
 
               <h3 className="mt-6 font-bold">
-                Anjali Sharma
+                Sasikala Kagitha
               </h3>
 
             </div>

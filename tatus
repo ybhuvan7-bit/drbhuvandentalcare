@@ -1,0 +1,19 @@
+[33mcommit fcddcab7cd51f5c991bad9b642372828179cb4f8[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Dr Bhuvanesh <ybhuvan7@gmail.com>
+Date:   Thu Jul 23 13:40:50 2026 +0530
+
+    Update hero Google rating badge
+
+[1mdiff --git a/src/app/page.js b/src/app/page.js[m
+[1mindex f55a892..ab17968 100644[m
+[1m--- a/src/app/page.js[m
+[1m+++ b/src/app/page.js[m
+[36m@@ -68,7 +68,7 @@[m [mexport default function Home() {[m
+           <div className="max-w-2xl space-y-6">[m
+ [m
+             <span className="inline-flex items-center bg-orange-600 text-white px-4 py-2 rounded-full font-semibold text-sm md:text-base whitespace-nowrap">[m
+[31m-              ⭐ 4.9 Google Rating • 118+ Reviews[m
+[32m+[m[32m              ⭐ 4.9 Google Rating • 121+ Reviews[m
+             </span>[m
+ [m
+             <h1 className="text-[54px] sm:text-5xl lg:text-7xl font-extrabold leading-[1.05] text-white mt-1">[m
