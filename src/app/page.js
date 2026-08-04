@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 import { Navigation } from "lucide-react";
 import GoogleReviews from "./components/GoogleReviews";
 import Image from "next/image";
@@ -251,134 +253,199 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
       <section
   id="services"
-  className="py-24 bg-gray-100"
+  className="py-24 bg-gradient-to-b from-white via-orange-50/40 to-white"
 >
 
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center mb-16">
 
-            <h2 className="text-5xl font-bold">
+           <div className="text-center mb-16">
 
-              Our Dental Services
+  <span className="inline-block rounded-full bg-orange-100 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-orange-600">
 
-            </h2>
+    Our Expertise
 
-            <p className="text-xl text-gray-600 mt-5">
+  </span>
 
-              Complete dental care under one roof.
+  <h2 className="mt-5 text-4xl font-black text-gray-900 md:text-5xl">
 
-            </p>
+    Comprehensive Dental Services
+
+  </h2>
+
+  <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-600">
+
+    From preventive dentistry to advanced dental implants and laser dentistry,
+    we provide personalized treatment using modern technology for every smile.
+
+  </p>
+
+</div>
 
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
 
               <div className="text-5xl mb-5">
                 🦷
               </div>
 
-              <h3 className="text-2xl font-bold">
+              <h3 className="mt-6 text-2xl font-bold text-gray-900">
                 Dental Implants
               </h3>
 
-              <p className="mt-4 text-gray-600 leading-8">
+             <p className="mt-4 leading-7 text-gray-600">
 
-                Permanent replacement for missing teeth with premium implant systems.
+Replace missing teeth with advanced dental implants that look, feel, and function like natural teeth. We provide single, multiple, and full-mouth implant solutions for long-lasting, confident smiles.
 
-              </p>
+</p>
+              <div className="mt-8">
+
+  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
+
+    Learn More →
+
+  </span>
+
+</div>
 
             </div>
 
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
 
               <div className="text-5xl mb-5">
                 ⚡
               </div>
 
-              <h3 className="text-2xl font-bold">
+              <h3 className="mt-6 text-2xl font-bold text-gray-900">
                 Laser Dentistry
               </h3>
 
-              <p className="mt-4 text-gray-600 leading-8">
+              <p className="mt-4 leading-7 text-gray-600">
 
-                Comfortable laser procedures with faster healing.
+Experience minimally invasive laser dentistry for gum treatments, frenectomy, crown lengthening, and soft tissue procedures with less discomfort, minimal bleeding, and faster healing.
 
-              </p>
+</p>
+              <div className="mt-8">
+
+  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
+
+    Learn More →
+
+  </span>
+
+</div>
 
             </div>
 
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
 
               <div className="text-5xl mb-5">
                 😁
               </div>
 
-              <h3 className="text-2xl font-bold">
-                Smile Makeover
+              <h3 className="mt-6 text-2xl font-bold text-gray-900">
+                 Gum Disease Treatment
               </h3>
 
-              <p className="mt-4 text-gray-600 leading-8">
+              <p className="mt-4 leading-7 text-gray-600">
 
-                Cosmetic dentistry to improve smile confidence.
+Restore healthy gums with advanced periodontal care for bleeding gums, gum recession, loose teeth, bad breath, and gum infections using evidence-based treatment and modern technology.
 
-              </p>
+</p>
+              <div className="mt-8">
+
+  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
+
+    Learn More →
+
+  </span>
+
+</div>
 
             </div>
 
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
 
               <div className="text-5xl mb-5">
                 🪥
               </div>
 
-              <h3 className="text-2xl font-bold">
+              <h3 className="mt-6 text-2xl font-bold text-gray-900">
                 Teeth Cleaning
               </h3>
 
-              <p className="mt-4 text-gray-600 leading-8">
+              <p className="mt-4 leading-7 text-gray-600">
 
-                Professional scaling and polishing for healthy gums.
+Maintain a healthy smile with professional teeth cleaning, scaling, polishing, and preventive dental care to remove plaque, tartar, stains, and reduce the risk of cavities and gum disease.
 
-              </p>
+</p>
+              <div className="mt-8">
+
+  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
+
+    Learn More →
+
+  </span>
+
+</div>
 
             </div>
 
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
 
               <div className="text-5xl mb-5">
                 🛡️
               </div>
 
-              <h3 className="text-2xl font-bold">
+              <h3 className="mt-6 text-2xl font-bold text-gray-900">
                 Root Canal Treatment
               </h3>
 
-              <p className="mt-4 text-gray-600 leading-8">
+             <p className="mt-4 leading-7 text-gray-600">
 
-                Save infected teeth with modern painless techniques.
+Save infected or damaged teeth with painless root canal treatment using modern techniques that relieve pain, eliminate infection, and preserve your natural tooth whenever possible.
 
-              </p>
+</p>
+              <div className="mt-8">
+
+  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
+
+    Learn More →
+
+  </span>
+
+</div>
 
             </div>
 
-            <div className="bg-white rounded-3xl shadow-xl p-8">
+            <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
 
               <div className="text-5xl mb-5">
                 ✨
               </div>
 
-              <h3 className="text-2xl font-bold">
+              <h3 className="mt-6 text-2xl font-bold text-gray-900">
                 Cosmetic Dentistry
               </h3>
 
-              <p className="mt-4 text-gray-600 leading-8">
+              <p className="mt-4 leading-7 text-gray-600">
 
-                Veneers, whitening and aesthetic smile enhancement.
+Transform your smile with personalized cosmetic dentistry, including teeth whitening, veneers, tooth-colored restorations, and smile design for natural-looking, confident results.
 
-              </p>
+</p>
+              <div className="mt-8">
+
+  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
+
+    Learn More →
+
+  </span>
+
+</div>
 
             </div>
 

@@ -250,24 +250,35 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
       <section
   id="services"
-  className="py-24 bg-gray-100"
+  className="py-24 bg-gradient-to-b from-white via-orange-50/40 to-white"
 >
 
         <div className="max-w-7xl mx-auto px-6">
 
           <div className="text-center mb-16">
 
-            <h2 className="text-5xl font-bold">
+           <div className="text-center mb-16">
 
-              Our Dental Services
+  <span className="inline-block rounded-full bg-orange-100 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-orange-600">
 
-            </h2>
+    Our Expertise
 
-            <p className="text-xl text-gray-600 mt-5">
+  </span>
 
-              Complete dental care under one roof.
+  <h2 className="mt-5 text-4xl font-black text-gray-900 md:text-5xl">
 
-            </p>
+    Comprehensive Dental Services
+
+  </h2>
+
+  <p className="mx-auto mt-5 max-w-2xl text-lg leading-8 text-gray-600">
+
+    From preventive dentistry to advanced dental implants and laser dentistry,
+    we provide personalized treatment using modern technology for every smile.
+
+  </p>
+
+</div>
 
           </div>
 
