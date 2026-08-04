@@ -302,15 +302,14 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 Replace missing teeth with advanced dental implants that look, feel, and function like natural teeth. We provide single, multiple, and full-mouth implant solutions for long-lasting, confident smiles.
 
 </p>
-              <div className="mt-8">
-
-  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
-
-    Learn More →
-
-  </span>
-
-</div>
+<Link
+  href="/dental-implants-ameerpet"
+  className="mt-6 inline-flex items-center gap-2 font-semibold text-orange-600 hover:text-orange-700 transition"
+>
+  Learn More
+  <ArrowRight className="h-4 w-4" />
+</Link>
+             
 
             </div>
 
@@ -356,16 +355,14 @@ Experience minimally invasive laser dentistry for gum treatments, frenectomy, cr
 Restore healthy gums with advanced periodontal care for bleeding gums, gum recession, loose teeth, bad breath, and gum infections using evidence-based treatment and modern technology.
 
 </p>
-              <div className="mt-8">
-
-  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
-
-    Learn More →
-
-  </span>
-
-</div>
-
+<Link
+  href="/gum-disease-treatment-ameerpet"
+  className="mt-6 inline-flex items-center gap-2 font-semibold text-orange-600 hover:text-orange-700 transition"
+>
+  Learn More
+  <ArrowRight className="h-4 w-4" />
+</Link>
+             
             </div>
 
             <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
@@ -410,15 +407,14 @@ Maintain a healthy smile with professional teeth cleaning, scaling, polishing, a
 Save infected or damaged teeth with painless root canal treatment using modern techniques that relieve pain, eliminate infection, and preserve your natural tooth whenever possible.
 
 </p>
-              <div className="mt-8">
-
-  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
-
-    Learn More →
-
-  </span>
-
-</div>
+<Link
+  href="/root-canal-treatment-ameerpet"
+  className="mt-6 inline-flex items-center gap-2 font-semibold text-orange-600 hover:text-orange-700 transition"
+>
+  Learn More
+  <ArrowRight className="h-4 w-4" />
+</Link>
+              
 
             </div>
 
