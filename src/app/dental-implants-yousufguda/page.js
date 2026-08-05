@@ -1065,6 +1065,105 @@ Modern laser procedures with faster healing and improved comfort.
 </div>
 
 </section>
+{/* =======================================
+NEARBY AREAS WE SERVE
+======================================= */}
+
+<section className="bg-orange-50 py-20">
+
+  <div className="mx-auto max-w-6xl px-6">
+
+    <div className="text-center">
+
+      <span className="rounded-full bg-orange-100 px-5 py-2 text-sm font-bold uppercase tracking-widest text-orange-600">
+        Nearby Locations
+      </span>
+
+      <h2 className="mt-6 text-4xl font-black text-gray-900">
+        Dental Implant Services Near Yousufguda
+      </h2>
+
+      <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-gray-600">
+        Our clinic is conveniently located for patients from <strong>Yousufguda, Hyderabad</strong> and nearby areas including Ameerpet, SR Nagar, Madhura Nagar and Punjagutta.
+      </p>
+
+    </div>
+
+    <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      <Link
+        href="/dental-implants-ameerpet"
+        className="group rounded-3xl border border-orange-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-orange-300 hover:shadow-2xl"
+      >
+        <h3 className="font-bold text-orange-600">
+          Dental Implants in Ameerpet
+        </h3>
+
+        <p className="mt-2 text-sm text-gray-600">
+          Premium dental implant treatment near Ameerpet.
+        </p>
+
+        <span className="mt-4 inline-block font-semibold text-orange-600 transition group-hover:translate-x-1">
+          Learn More →
+        </span>
+      </Link>
+
+      <Link
+        href="/dental-implants-sr-nagar"
+        className="group rounded-3xl border border-orange-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-orange-300 hover:shadow-2xl"
+      >
+        <h3 className="font-bold text-orange-600">
+          Dental Implants in SR Nagar
+        </h3>
+
+        <p className="mt-2 text-sm text-gray-600">
+          Advanced implant dentistry for SR Nagar patients.
+        </p>
+
+        <span className="mt-4 inline-block font-semibold text-orange-600 transition group-hover:translate-x-1">
+          Learn More →
+        </span>
+      </Link>
+
+      <Link
+        href="/dental-implants-madhura-nagar"
+        className="group rounded-3xl border border-orange-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-orange-300 hover:shadow-2xl"
+      >
+        <h3 className="font-bold text-orange-600">
+          Dental Implants in Madhura Nagar
+        </h3>
+
+        <p className="mt-2 text-sm text-gray-600">
+          Personalized implant care near Madhura Nagar.
+        </p>
+
+        <span className="mt-4 inline-block font-semibold text-orange-600 transition group-hover:translate-x-1">
+          Learn More →
+        </span>
+      </Link>
+
+      <Link
+        href="/dental-implants-punjagutta"
+        className="group rounded-3xl border border-orange-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-orange-300 hover:shadow-2xl"
+      >
+        <h3 className="font-bold text-orange-600">
+          Dental Implants in Punjagutta
+        </h3>
+
+        <p className="mt-2 text-sm text-gray-600">
+          Modern dental implant solutions for Punjagutta.
+        </p>
+
+        <span className="mt-4 inline-block font-semibold text-orange-600 transition group-hover:translate-x-1">
+          Learn More →
+        </span>
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
     </main>
   );
 }

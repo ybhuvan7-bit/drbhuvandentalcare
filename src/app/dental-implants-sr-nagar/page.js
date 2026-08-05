@@ -4,9 +4,9 @@ import { ArrowRight, CalendarDays, CheckCircle, Phone, Star } from "lucide-react
 
 export const metadata = {
   title:
-    "Dental Implants in Ameerpet, Hyderabad | Best Implant Dentist | Dr. Bhuvan",
+    "Dental Implants in SR Nagar, Hyderabad | Best Implant Dentist | Dr. Bhuvan",
   description:
-    "Looking for the best dental implants in Ameerpet, Hyderabad? Get advanced implant treatment by Dr. Bhuvanesh Yanamala, MDS Periodontist & Implantologist. Book your consultation today.",
+    "Looking for the best dental implants in SR Nagar, Hyderabad? Get advanced implant treatment by Dr. Bhuvanesh Yanamala, MDS Periodontist & Implantologist. Book your consultation today.",
 };
 
 export default function DentalImplantsPage() {
@@ -39,7 +39,7 @@ export default function DentalImplantsPage() {
 
               Dental Implants in
               <span className="block text-orange-300">
-                Ameerpet, Hyderabad
+                SR Nagar, Hyderabad
               </span>
 
             </h1>
@@ -115,7 +115,7 @@ export default function DentalImplantsPage() {
 
             <Image
               src="/implant.webp"
-              alt="Dental Implants in Ameerpet Hyderabad"
+              alt="Dental Implants in SR Nagar Hyderabad"
               width={700}
               height={700}
               priority
@@ -1004,7 +1004,7 @@ Explore more dental treatments available at our clinic.
 <div className="mt-16 grid gap-8 md:grid-cols-3">
 
 <Link
-href="/gum-disease-treatment-ameerpet"
+href="/gum-disease-treatment-SR Nagar"
 className="rounded-3xl border bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl"
 >
 
@@ -1023,7 +1023,7 @@ Healthy gums are the foundation for successful implant treatment.
 </Link>
 
 <Link
-href="/root-canal-treatment-ameerpet"
+href="/root-canal-treatment-SR Nagar"
 className="rounded-3xl border bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl"
 >
 
@@ -1042,7 +1042,7 @@ Save infected teeth using advanced painless techniques.
 </Link>
 
 <Link
-href="/laser-dentistry-ameerpet"
+href="/laser-dentistry-SR Nagar"
 className="rounded-3xl border bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl"
 >
 
@@ -1080,16 +1080,33 @@ NEARBY AREAS WE SERVE
       </span>
 
       <h2 className="mt-6 text-4xl font-black text-gray-900">
-        Dental Implant Services Near Ameerpet
+        Dental Implant Services Near SR Nagar
       </h2>
 
       <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-gray-600">
-        Our clinic in <strong>Ameerpet, Hyderabad</strong> is conveniently located and welcomes patients from nearby areas including Yousufguda, SR Nagar, Madhura Nagar and Punjagutta.
+        Our clinic is conveniently located for patients from <strong>SR Nagar, Hyderabad</strong> and nearby areas including Ameerpet, Yousufguda, Madhura Nagar and Punjagutta.
       </p>
 
     </div>
 
     <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      <Link
+        href="/dental-implants-ameerpet"
+        className="group rounded-3xl border border-orange-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-orange-300 hover:shadow-2xl"
+      >
+        <h3 className="font-bold text-orange-600">
+          Dental Implants in Ameerpet
+        </h3>
+
+        <p className="mt-2 text-sm text-gray-600">
+          Premium dental implant treatment near Ameerpet.
+        </p>
+
+        <span className="mt-4 inline-block font-semibold text-orange-600 transition group-hover:translate-x-1">
+          Learn More →
+        </span>
+      </Link>
 
       <Link
         href="/dental-implants-yousufguda"
@@ -1100,27 +1117,10 @@ NEARBY AREAS WE SERVE
         </h3>
 
         <p className="mt-2 text-sm text-gray-600">
-          Modern implant solutions for patients in Yousufguda.
+          Advanced implant dentistry for Yousufguda patients.
         </p>
 
-        <span className="mt-4 inline-block font-semibold text-orange-600 group-hover:translate-x-1 transition">
-          Learn More →
-        </span>
-      </Link>
-
-      <Link
-        href="/dental-implants-sr-nagar"
-        className="group rounded-3xl border border-orange-100 bg-white p-6 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:border-orange-300 hover:shadow-2xl"
-      >
-        <h3 className="font-bold text-orange-600">
-          Dental Implants in SR Nagar
-        </h3>
-
-        <p className="mt-2 text-sm text-gray-600">
-          Advanced implant treatment near SR Nagar.
-        </p>
-
-        <span className="mt-4 inline-block font-semibold text-orange-600 group-hover:translate-x-1 transition">
+        <span className="mt-4 inline-block font-semibold text-orange-600 transition group-hover:translate-x-1">
           Learn More →
         </span>
       </Link>
@@ -1134,10 +1134,10 @@ NEARBY AREAS WE SERVE
         </h3>
 
         <p className="mt-2 text-sm text-gray-600">
-          Personalized dental implant care near Madhura Nagar.
+          Personalized implant care near Madhura Nagar.
         </p>
 
-        <span className="mt-4 inline-block font-semibold text-orange-600 group-hover:translate-x-1 transition">
+        <span className="mt-4 inline-block font-semibold text-orange-600 transition group-hover:translate-x-1">
           Learn More →
         </span>
       </Link>
@@ -1151,10 +1151,10 @@ NEARBY AREAS WE SERVE
         </h3>
 
         <p className="mt-2 text-sm text-gray-600">
-          Implant dentistry for patients from Punjagutta.
+          Modern dental implant solutions for Punjagutta.
         </p>
 
-        <span className="mt-4 inline-block font-semibold text-orange-600 group-hover:translate-x-1 transition">
+        <span className="mt-4 inline-block font-semibold text-orange-600 transition group-hover:translate-x-1">
           Learn More →
         </span>
       </Link>
