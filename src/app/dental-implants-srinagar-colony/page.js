@@ -1084,7 +1084,7 @@ NEARBY AREAS WE SERVE
       </h2>
 
       <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-gray-600">
-        Our clinic is conveniently located for patients from <strong>Srinagar Colony, Hyderabad</strong> and nearby areas including Ameerpet, Yousufguda, SR Nagar, Madhura Nagar and Punjagutta. We provide advanced dental implant treatment using modern technology and personalized care for patients across these central Hyderabad neighbourhoods. Srinagar Colony is a well-connected residential and commercial area with easy access to Ameerpet and nearby metro stations. :contentReference[oaicite:0]{index=0}
+        Our clinic is conveniently located for patients from <strong>Srinagar Colony, Hyderabad</strong> and nearby areas including Ameerpet, Yousufguda, SR Nagar, Madhura Nagar and Punjagutta. We provide advanced dental implant treatment using modern technology and personalized care for patients across these central Hyderabad neighbourhoods. Srinagar Colony is a well-connected residential and commercial area with easy access to Ameerpet and nearby metro stations.
       </p>
 
     </div>
