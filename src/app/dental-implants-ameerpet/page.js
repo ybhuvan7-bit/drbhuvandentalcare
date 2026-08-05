@@ -1065,6 +1065,69 @@ Modern laser procedures with faster healing and improved comfort.
 </div>
 
 </section>
+{/* =======================================
+NEARBY AREAS WE SERVE
+======================================= */}
+
+<section className="bg-orange-50 py-20">
+
+  <div className="mx-auto max-w-6xl px-6">
+
+    <div className="text-center">
+
+      <h2 className="text-4xl font-black text-gray-900">
+        Nearby Areas We Serve
+      </h2>
+
+      <p className="mt-4 text-lg text-gray-600">
+        Our clinic in Ameerpet is conveniently located and serves patients from nearby areas across Hyderabad.
+      </p>
+
+    </div>
+
+    <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
+
+      <Link
+        href="/dental-implants-yousufguda"
+        className="rounded-2xl bg-white p-6 shadow-lg transition hover:-translate-y-2 hover:shadow-xl"
+      >
+        <h3 className="font-bold text-orange-600">
+          Dental Implants in Yousufguda →
+        </h3>
+      </Link>
+
+      <Link
+        href="/dental-implants-sr-nagar"
+        className="rounded-2xl bg-white p-6 shadow-lg transition hover:-translate-y-2 hover:shadow-xl"
+      >
+        <h3 className="font-bold text-orange-600">
+          Dental Implants in SR Nagar →
+        </h3>
+      </Link>
+
+      <Link
+        href="/dental-implants-madhura-nagar"
+        className="rounded-2xl bg-white p-6 shadow-lg transition hover:-translate-y-2 hover:shadow-xl"
+      >
+        <h3 className="font-bold text-orange-600">
+          Dental Implants in Madhura Nagar →
+        </h3>
+      </Link>
+
+      <Link
+        href="/dental-implants-punjagutta"
+        className="rounded-2xl bg-white p-6 shadow-lg transition hover:-translate-y-2 hover:shadow-xl"
+      >
+        <h3 className="font-bold text-orange-600">
+          Dental Implants in Punjagutta →
+        </h3>
+      </Link>
+
+    </div>
+
+  </div>
+
+</section>
     </main>
   );
 }
