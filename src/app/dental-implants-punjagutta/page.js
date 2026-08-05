@@ -1084,7 +1084,7 @@ NEARBY AREAS WE SERVE
       </h2>
 
       <p className="mx-auto mt-4 max-w-3xl text-lg leading-8 text-gray-600">
-        Our clinic is conveniently located for patients from <strong>Punjagutta, Hyderabad</strong> and nearby areas including Ameerpet, Yousufguda, SR Nagar and Madhura Nagar. Punjagutta is centrally connected to these neighbourhoods, making it easy for patients to visit our clinic for advanced dental implant treatment. :contentReference[oaicite:0]{index=0}
+        Our clinic is conveniently located for patients from <strong>Punjagutta, Hyderabad</strong> and nearby areas including Ameerpet, Yousufguda, SR Nagar and Madhura Nagar. Punjagutta is centrally connected to these neighbourhoods, making it easy for patients to visit our clinic for advanced dental implant treatment.
       </p>
 
     </div>
