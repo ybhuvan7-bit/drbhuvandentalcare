@@ -450,6 +450,87 @@ Transform your smile with personalized cosmetic dentistry, including teeth white
         </div>
 
       </section>
+      {/* ================= AREAS WE SERVE ================= */}
+
+<section className="bg-white py-20">
+  <div className="mx-auto max-w-7xl px-6">
+
+    <div className="text-center">
+      <span className="font-semibold uppercase tracking-[4px] text-orange-600">
+        AREAS WE SERVE
+      </span>
+
+      <h2 className="mt-4 text-5xl font-black text-gray-900">
+        Trusted Dental Care Across Hyderabad
+      </h2>
+
+      <p className="mx-auto mt-6 max-w-3xl text-xl leading-9 text-gray-600">
+        We proudly provide advanced dental care to patients from Ameerpet
+        and surrounding areas with modern technology and personalized
+        treatment.
+      </p>
+    </div>
+
+    <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+
+      <Link
+        href="/dentist-in-ameerpet"
+        className="group rounded-3xl border border-orange-100 bg-orange-50 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-orange-500 hover:shadow-xl"
+      >
+        <h3 className="text-2xl font-bold text-gray-900">
+          Best Dentist in Ameerpet
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          Comprehensive dental care, laser dentistry, implants,
+          cosmetic dentistry and gum treatment.
+        </p>
+
+        <span className="mt-6 inline-block font-bold text-orange-600 group-hover:translate-x-1 transition">
+          Learn More →
+        </span>
+      </Link>
+
+      <Link
+        href="/dental-implants-ameerpet"
+        className="group rounded-3xl border border-orange-100 bg-orange-50 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-orange-500 hover:shadow-xl"
+      >
+        <h3 className="text-2xl font-bold text-gray-900">
+          Dental Implants in Ameerpet
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          Permanent replacement for missing teeth using advanced implant
+          technology.
+        </p>
+
+        <span className="mt-6 inline-block font-bold text-orange-600 group-hover:translate-x-1 transition">
+          Learn More →
+        </span>
+      </Link>
+
+      <Link
+        href="/dental-implants-yousufguda"
+        className="group rounded-3xl border border-orange-100 bg-orange-50 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-orange-500 hover:shadow-xl"
+      >
+        <h3 className="text-2xl font-bold text-gray-900">
+          Dental Implants in Yousufguda
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          Advanced implant treatment for patients from Yousufguda and
+          nearby areas.
+        </p>
+
+        <span className="mt-6 inline-block font-bold text-orange-600 group-hover:translate-x-1 transition">
+          Learn More →
+        </span>
+      </Link>
+
+    </div>
+
+  </div>
+</section>
             {/* REVIEWS */}
 
       <section
