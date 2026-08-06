@@ -1,18 +1,23 @@
-export default function sitemap() {
-  const baseUrl = "https://www.drbhuvandentalcare.com";
+const BASE_URL = "https://www.drbhuvandentalcare.com";
 
-  return [
-    {
-      url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "daily",
-      priority: 1.0,
-    },
-    {
-      url: `${baseUrl}/articles`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.9,
-    },
+export default function sitemap() {
+  const pages = [
+    "",
+    "/articles",
+
+    // Dental Implant Pages
+    "/dental-implants-ameerpet",
+    "/dental-implants-yousufguda",
+    "/dental-implants-sr-nagar",
+    "/dental-implants-madhura-nagar",
+    "/dental-implants-punjagutta",
+    "/dental-implants-srinagar-colony",
   ];
+
+  return pages.map((page) => ({
+    url: `${BASE_URL}${page}`,
+    lastModified: new Date(),
+    changeFrequency: page === "" ? "daily" : "weekly",
+    priority: page === "" ? 1 : 0.9,
+  }));
 }
