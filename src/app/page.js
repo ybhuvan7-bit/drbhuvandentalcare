@@ -1078,8 +1078,7 @@ Yes. We provide emergency dental care for tooth pain, swelling, trauma and other
             </p>
 
             <p className="text-gray-300 mt-3">
-              📍 Ameerpet,
-              Hyderabad
+              📍Ganapathi Complex, Navodaya Colony Rd, Sri Krishna Nagar, Ameerpet, Yousufguda, Hyderabad, Telangana 500073nmp
             </p>
 
           </div>
@@ -1095,7 +1094,8 @@ Yes. We provide emergency dental care for tooth pain, swelling, trauma and other
             </p>
 
             <p className="text-gray-300 mt-3">
-              10:00 AM – 9:00 PM
+              10:00 AM – 2:00 PM;
+               4:00 PM – 9:00 PM
             </p>
 
             <a
