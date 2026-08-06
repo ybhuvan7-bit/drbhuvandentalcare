@@ -3,7 +3,12 @@ const BASE_URL = "https://www.drbhuvandentalcare.com";
 export default function sitemap() {
   const pages = [
     "",
+
+    // Articles
     "/articles",
+
+    // Dentist Pages
+    "/dentist-in-ameerpet",
 
     // Dental Implant Pages
     "/dental-implants-ameerpet",
@@ -18,6 +23,6 @@ export default function sitemap() {
     url: `${BASE_URL}${page}`,
     lastModified: new Date(),
     changeFrequency: page === "" ? "daily" : "weekly",
-    priority: page === "" ? 1 : 0.9,
+    priority: page === "" ? 1.0 : 0.9,
   }));
 }
