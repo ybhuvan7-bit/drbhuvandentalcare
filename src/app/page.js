@@ -450,35 +450,58 @@ Transform your smile with personalized cosmetic dentistry, including teeth white
         </div>
 
       </section>
-      {/* ================= AREAS WE SERVE ================= */}
+     {/* ================= AREAS WE SERVE ================= */}
 
 <section className="bg-white py-20">
   <div className="mx-auto max-w-7xl px-6">
 
-    <div className="text-center">
+    {/* Heading */}
+    <div className="mb-14 text-center">
       <span className="font-semibold uppercase tracking-[4px] text-orange-600">
         AREAS WE SERVE
       </span>
 
       <h2 className="mt-4 text-5xl font-black text-gray-900">
-        Trusted Dental Care Across Hyderabad
+        Explore Our Dental Services by Location
       </h2>
 
       <p className="mx-auto mt-6 max-w-3xl text-xl leading-9 text-gray-600">
-        We proudly provide advanced dental care to patients from Ameerpet
-        and surrounding areas with modern technology and personalized
-        treatment.
+        Find expert dental care, dental implants and laser dentistry at
+        Dr. Bhuvan's Dental Laser & Implant Centre serving Ameerpet,
+        Navodaya Colony and nearby areas.
       </p>
     </div>
 
-    <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    {/* Cards */}
+    <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
+      {/* Card 1 */}
+      <Link
+        href="/dentist-in-navodaya-colony"
+        className="group rounded-3xl border border-orange-100 bg-orange-50 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-orange-500 hover:shadow-xl"
+      >
+        <h3 className="text-2xl font-bold text-gray-900">
+          Trusted Dentist in Navodaya Colony
+        </h3>
+
+        <p className="mt-3 text-gray-600">
+          Advanced dental care, laser dentistry, dental implants,
+          root canal treatment and complete family dentistry near
+          Navodaya Colony.
+        </p>
+
+        <span className="mt-6 inline-block font-bold text-orange-600">
+          Learn More →
+        </span>
+      </Link>
+
+      {/* Card 2 */}
       <Link
         href="/dentist-in-ameerpet"
         className="group rounded-3xl border border-orange-100 bg-orange-50 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-orange-500 hover:shadow-xl"
       >
         <h3 className="text-2xl font-bold text-gray-900">
-          Best Dentist in Ameerpet
+         Trusted Dentist in Ameerpet
         </h3>
 
         <p className="mt-3 text-gray-600">
@@ -486,25 +509,7 @@ Transform your smile with personalized cosmetic dentistry, including teeth white
           cosmetic dentistry and gum treatment.
         </p>
 
-        <span className="mt-6 inline-block font-bold text-orange-600 group-hover:translate-x-1 transition">
-          Learn More →
-        </span>
-      </Link>
-
-      <Link
-        href="/dental-implants-ameerpet"
-        className="group rounded-3xl border border-orange-100 bg-orange-50 p-7 transition-all duration-300 hover:-translate-y-2 hover:border-orange-500 hover:shadow-xl"
-      >
-        <h3 className="text-2xl font-bold text-gray-900">
-          Dental Implants in Ameerpet
-        </h3>
-
-        <p className="mt-3 text-gray-600">
-          Permanent replacement for missing teeth using advanced implant
-          technology.
-        </p>
-
-        <span className="mt-6 inline-block font-bold text-orange-600 group-hover:translate-x-1 transition">
+        <span className="mt-6 inline-block font-bold text-orange-600">
           Learn More →
         </span>
       </Link>

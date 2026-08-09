@@ -17,6 +17,7 @@ export default function sitemap() {
     "/dental-implants-madhura-nagar",
     "/dental-implants-punjagutta",
     "/dental-implants-srinagar-colony",
+    "/dentist-in-navodaya-colony",
   ];
 
   return pages.map((page) => ({
