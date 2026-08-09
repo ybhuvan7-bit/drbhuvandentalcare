@@ -9,6 +9,7 @@ export default function sitemap() {
 
     // Dentist Pages
     "/dentist-in-ameerpet",
+    "/dentist-in-navodaya-colony",
 
     // Dental Implant Pages
     "/dental-implants-ameerpet",
@@ -16,8 +17,7 @@ export default function sitemap() {
     "/dental-implants-sr-nagar",
     "/dental-implants-madhura-nagar",
     "/dental-implants-punjagutta",
-    "/dental-implants-srinagar-colony",
-    "/dentist-in-navodaya-colony",
+    "/dental-implants-srinagar-colony", 
   ];
 
   return pages.map((page) => ({
