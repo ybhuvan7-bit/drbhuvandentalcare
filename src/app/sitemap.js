@@ -10,6 +10,7 @@ export default function sitemap() {
     // Dentist Pages
     "/dentist-in-ameerpet",
     "/dentist-in-navodaya-colony",
+    "/dentist-in-sri-krishna-nagar",
 
     // Dental Implant Pages
     "/dental-implants-ameerpet",
