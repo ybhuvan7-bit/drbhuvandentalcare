@@ -45,6 +45,7 @@ export const dentistSchema = {
     "https://maps.app.goo.gl/Fiow6zV9W17xnxR47",
 
   areaServed: [
+    "Sri Krishna Nagar",
     "Navodaya Colony",
     "Ameerpet",
     "Yousufguda",
@@ -79,6 +80,7 @@ export const dentistSchema = {
       opens: "10:00",
       closes: "14:00",
     },
+
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: [
@@ -92,6 +94,7 @@ export const dentistSchema = {
       opens: "16:00",
       closes: "21:00",
     },
+
     {
       "@type": "OpeningHoursSpecification",
       dayOfWeek: "Sunday",
@@ -142,9 +145,9 @@ export const breadcrumbSchema = {
     {
       "@type": "ListItem",
       position: 2,
-      name: "Dentist in Navodaya Colony",
+      name: "Dentist in Sri Krishna Nagar",
       item:
-        "https://www.drbhuvandentalcare.com/dentist-in-navodaya-colony",
+        "https://www.drbhuvandentalcare.com/dentist-in-sri-krishna-nagar",
     },
   ],
 };
@@ -160,6 +163,7 @@ export const servicesSchema = {
   itemListElement: [
     {
       "@type": "Offer",
+
       itemOffered: {
         "@type": "Service",
         name: "Dental Implants",
@@ -169,6 +173,7 @@ export const servicesSchema = {
 
     {
       "@type": "Offer",
+
       itemOffered: {
         "@type": "Service",
         name: "Laser Dentistry",
@@ -178,6 +183,7 @@ export const servicesSchema = {
 
     {
       "@type": "Offer",
+
       itemOffered: {
         "@type": "Service",
         name: "Root Canal Treatment",
@@ -187,6 +193,7 @@ export const servicesSchema = {
 
     {
       "@type": "Offer",
+
       itemOffered: {
         "@type": "Service",
         name: "Teeth Cleaning",
@@ -196,6 +203,7 @@ export const servicesSchema = {
 
     {
       "@type": "Offer",
+
       itemOffered: {
         "@type": "Service",
         name: "Gum Disease Treatment",
@@ -205,6 +213,7 @@ export const servicesSchema = {
 
     {
       "@type": "Offer",
+
       itemOffered: {
         "@type": "Service",
         name: "Smile Makeover",
@@ -260,7 +269,7 @@ export const faqSchema = {
     {
       "@type": "Question",
 
-      name: "Who is the best dentist in Navodaya Colony?",
+      name: "Who is the best dentist in Sri Krishna Nagar?",
 
       acceptedAnswer: {
         "@type": "Answer",
@@ -318,7 +327,7 @@ export const faqSchema = {
         "@type": "Answer",
 
         text:
-          "Dr. Bhuvan's Dental Laser & Implant Centre is conveniently located on Navodaya Colony Road, Hyderabad and welcomes patients from Navodaya Colony, Ameerpet, Yousufguda, SR Nagar, Punjagutta, Madhura Nagar and nearby areas.",
+          "Dr. Bhuvan's Dental Laser & Implant Centre is located at Ganapathi Complex, Navodaya Colony Road, Sri Krishna Nagar, Ameerpet, Hyderabad and welcomes patients from Sri Krishna Nagar, Navodaya Colony, Ameerpet and nearby areas.",
       },
     },
   ],

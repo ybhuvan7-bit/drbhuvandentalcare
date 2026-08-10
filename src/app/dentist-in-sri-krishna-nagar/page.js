@@ -17,38 +17,39 @@ import {
 
 export const metadata = {
   title:
-"Best Dentist in Navodaya Colony, Hyderabad | Dr. Bhuvan's Dental Laser & Implant Centre",
+  "Best Dentist in Sri Krishna Nagar | Dr. Bhuvan's Dental Laser & Implant Centre",
 
   description:
-"Looking for the trusted dentist in Navodaya Colony, Hyderabad? Dr. Bhuvan's Dental Laser & Implant Centre offers dental implants, laser dentistry, root canal treatment, teeth cleaning, cosmetic dentistry and complete family dental care near Navodaya Colony.",
+  "Looking for the best dentist in Sri Krishna Nagar, Hyderabad? Dr. Bhuvan's Dental Laser & Implant Centre offers dental implants, laser dentistry, root canal treatment, teeth cleaning, gum care, cosmetic dentistry and complete family dental care.",
 
  keywords: [
-  "Best Dentist in Navodaya Colony",
-  "Dentist in Navodaya Colony",
-  "Dental Clinic in Navodaya Colony",
-  "Dentist near Navodaya Colony",
-  "Dental Implants Navodaya Colony",
-  "Laser Dentistry Hyderabad",
-  "Root Canal Treatment Navodaya Colony",
-  "Teeth Cleaning Navodaya Colony",
+  "Best Dentist in Sri Krishna Nagar",
+  "Dentist in Sri Krishna Nagar",
+  "Dental Clinic in Sri Krishna Nagar",
+  "Dentist near Sri Krishna Nagar",
+  "Dental Implants Sri Krishna Nagar",
+  "Laser Dentistry Sri Krishna Nagar",
+  "Root Canal Treatment Sri Krishna Nagar",
+  "Teeth Cleaning Sri Krishna Nagar",
+  "Gum Disease Treatment Sri Krishna Nagar",
   "Cosmetic Dentist Hyderabad",
   "Dr Bhuvan Dentist",
 ],
 
   alternates: {
     canonical:
-"https://www.drbhuvandentalcare.com/dentist-in-navodaya-colony",
+  "https://www.drbhuvandentalcare.com/dentist-in-sri-krishna-nagar",
   },
 
   openGraph: {
     title:
-      "Best Dentist in Navodaya colony | Dr. Bhuvan's Dental Laser & Implant Centre",
+      "Best Dentist in sri krishna nagar | Dr. Bhuvan's Dental Laser & Implant Centre",
 
     description:
-      "Advanced dental implants, laser dentistry, root canal treatment and complete dental care in Navodaya Colony, Hyderabad.",
+  "Advanced dental implants, laser dentistry, root canal treatment and complete dental care in Sri Krishna Nagar, Hyderabad.",
 
    url:
-"https://www.drbhuvandentalcare.com/dentist-in-navodaya-colony",
+  "https://www.drbhuvandentalcare.com/dentist-in-sri-krishna-nagar",
 
     siteName:
       "Dr. Bhuvan's Dental Laser & Implant Centre",
@@ -70,7 +71,7 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title:
-      "Best Dentist in Navodaya Colony | Dr. Bhuvan",
+      "Best Dentist in Sri Krishna Nagar | Dr. Bhuvan",
 
     description:
       "Dental Implants • Laser Dentistry • Root Canal • Teeth Cleaning",
@@ -79,7 +80,7 @@ export const metadata = {
   },
 };
 
-export default function DentistNavodayaColonyPage() {
+export default function DentistSriKrishnaNagarPage() {
   return (
   <>
   <SeoSchema data={dentistSchema} />
@@ -116,17 +117,13 @@ export default function DentistNavodayaColonyPage() {
             </span>
 
             <h1 className="mt-8 text-5xl font-black leading-tight text-white lg:text-7xl">
-
-            Best Dentist
-<br />
-in Navodaya Colony,
-<br />
-Hyderabad
+Best Dentist in Sri Krishna Nagar,
+<span className="block">Hyderabad</span>
 
             </h1>
 
            <p className="mt-8 max-w-2xl text-lg leading-9 text-orange-50 lg:text-xl">
- Looking for the best dentist in Navodaya Colony? Dr. Bhuvan's Dental Laser & Implant Centre provides advanced dental implants, laser dentistry, root canal treatment, teeth cleaning, gum disease treatment, smile makeovers and complete family dental care near Navodaya Colony using modern technology and personalized care.
+ Looking for a trusted dentist in Sri Krishna Nagar? Dr. Bhuvan's Dental Laser & Implant Centre provides advanced dental implants, laser dentistry, root canal treatment, gum care, teeth cleaning and complete family dental care near Sri Krishna Nagar.
 </p>
 
             {/* FEATURES */}
@@ -242,7 +239,7 @@ Hyderabad
 
     <Image
       src="/doctor.webp"
-      alt="Dr. Bhuvanesh Yanamala - Best Dentist in Navodaya Colony"
+      alt="Dr. Bhuvanesh Yanamala - Best Dentist in Sri Krishna Nagar"
       width={700}
       height={700}
       priority
@@ -299,7 +296,7 @@ Hyderabad
 
           <p className="mx-auto mt-6 max-w-3xl text-xl leading-8 text-gray-600">
 
-           Dr. Bhuvan's Dental Laser & Implant Centre is one of the trusted dental clinics near Navodaya Colony, providing comprehensive dental treatments under one roof. Whether you need preventive care, cosmetic dentistry, dental implants or laser gum treatment, our focus is on delivering comfortable, personalized and high-quality dental care.
+           Dr. Bhuvan's Dental Laser & Implant Centre provides comprehensive dental care for patients in Sri Krishna Nagar, Ameerpet and surrounding areas. Our clinic offers dental implants, laser dentistry, gum treatment, root canal treatment, cosmetic dentistry and preventive dental care using modern technology and personalized treatment planning.
 
           </p>
 
@@ -952,7 +949,7 @@ Hyderabad
       <details className="group rounded-3xl border border-orange-100 bg-orange-50 p-8">
 
         <summary className="cursor-pointer text-xl font-bold text-gray-900">
-          Why should I choose Dr. Bhuvan's Dental Laser & Implant Centre in Navodaya Colony?
+         Why should I choose Dr. Bhuvan's Dental Laser & Implant Centre in Sri Krishna Nagar?
         </summary>
 
         <p className="mt-5 leading-8 text-gray-600">
@@ -1009,7 +1006,7 @@ Hyderabad
         <p className="mt-5 leading-8 text-gray-600">
           You can schedule an appointment by calling our clinic, using the
           appointment form on our website or visiting our clinic directly in
-          Ganapathi complex, Navodaya Colony, Hyderabad.
+          Ganapathi complex, Sri Krishna Nagar, Navodaya Colony, Hyderabad.
         </p>
 
       </details>
@@ -1106,11 +1103,11 @@ Hyderabad
       </span>
 
       <h2 className="mt-4 text-5xl font-black text-gray-900">
-        Serving Navodaya Colony & Nearby Areas
+       Serving Sri Krishna Nagar, Navodaya Colony & Nearby Areas
       </h2>
 
       <p className="mx-auto mt-6 max-w-3xl text-xl leading-9 text-gray-600">
-        Our clinic is conveniently located on Navodaya Colony Road and proudly serves patients from Navodaya Colony and surrounding areas.
+        Our clinic is conveniently located on Navodaya Colony Road in Sri Krishna Nagar and proudly serves patients from Sri Krishna Nagar, Navodaya Colony, Ameerpet and surrounding areas.
       </p>
 
     </div>
