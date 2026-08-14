@@ -108,11 +108,19 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 </a>
 
 <a
-href="https://wa.me/918074528763"
-target="_blank"
-className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold text-center"
+  href="https://wa.me/918074528763"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => {
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-18310496002/-Q1PCKz71OEcEIL-j5tE",
+      });
+    }
+  }}
+  className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 rounded-xl font-bold text-center"
 >
-💬 WhatsApp
+  💬 WhatsApp
 </a>
 
 </div>
@@ -970,16 +978,23 @@ safety and advanced dental care.
 
       </section>
 
-      {/* FLOATING BUTTONS */}
+    {/* FLOATING BUTTONS */}
 
-      <a
-        href="https://wa.me/918074528763"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 md:bottom-6 right-4 md:right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50"
-      >
-        💬
-      </a>
+<a
+  href="https://wa.me/918074528763"
+  target="_blank"
+  rel="noopener noreferrer"
+  onClick={() => {
+    if (typeof window !== "undefined" && typeof window.gtag === "function") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-18310496002/-Q1PCKz71OEcEIL-j5tE",
+      });
+    }
+  }}
+  className="fixed bottom-6 md:bottom-6 right-4 md:right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50"
+>
+  💬
+</a>
 
       <a
         href="tel:+918074528763"
