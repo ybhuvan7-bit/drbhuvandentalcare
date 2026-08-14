@@ -112,9 +112,9 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
   target="_blank"
   rel="noopener noreferrer"
   onClick={() => {
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "conversion", {
-        send_to: "AW-18310496002/-Q1PCKz71OEcEIL-j5tE",
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-18310496002/-QlPCKz71OEcEIL-j5tE'
       });
     }
   }}
@@ -985,9 +985,9 @@ safety and advanced dental care.
   target="_blank"
   rel="noopener noreferrer"
   onClick={() => {
-    if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", "conversion", {
-        send_to: "AW-18310496002/-Q1PCKz71OEcEIL-j5tE",
+    if (typeof window !== "undefined" && window.gtag) {
+      window.gtag('event', 'conversion', {
+        send_to: 'AW-18310496002/-QlPCKz71OEcEIL-j5tE'
       });
     }
   }}
