@@ -19,6 +19,9 @@ export default function sitemap() {
     "/dental-implants-madhura-nagar",
     "/dental-implants-punjagutta",
     "/dental-implants-srinagar-colony", 
+
+    // Teeth Cleaning Pages
+    "/teeth-cleaning-ameerpet",
   ];
 
   return pages.map((page) => ({
