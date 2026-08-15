@@ -1025,23 +1025,39 @@ export default function TeethCleaningAmeerpetPage() {
 
     <div className="mt-16 grid gap-6 md:grid-cols-3">
 
-      {/* LOCATION */}
+     {/* LOCATION */}
 
-      <div className="rounded-3xl border border-white/20 bg-white/10 p-7 text-center backdrop-blur">
+<div className="rounded-3xl border border-white/20 bg-white/10 p-7 text-center backdrop-blur">
 
-        <div className="text-4xl">📍</div>
+  <div className="text-4xl">📍</div>
 
-        <h3 className="mt-4 text-xl font-bold">
-          Our Location
-        </h3>
+  <h3 className="mt-4 text-xl font-bold">
+    Our Location
+  </h3>
 
-        <p className="mt-3 text-sm leading-7 text-orange-50">
-          Ganapathi Complex, Navodaya Colony Road,
-          Sri Krishna Nagar, Ameerpet,
-          Hyderabad – 500073
-        </p>
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=Dr+Bhuvan%27s+Dental+Laser+%26+Implant+Centre+Hyderabad"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-3 block text-sm leading-7 text-orange-50 hover:underline"
+  >
+    Ganapathi Complex, Navodaya Colony Road,
+    <br />
+    Sri Krishna Nagar, Ameerpet,
+    <br />
+    Hyderabad – 500073
+  </a>
 
-      </div>
+  <a
+    href="https://www.google.com/maps/search/?api=1&query=Dr+Bhuvan%27s+Dental+Laser+%26+Implant+Centre+Hyderabad"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="mt-5 inline-block rounded-full bg-white px-5 py-2.5 font-bold text-orange-600 transition hover:bg-orange-50"
+  >
+    📍 Get Directions
+  </a>
+
+</div>
 
       {/* TIMINGS */}
 
@@ -1067,28 +1083,34 @@ export default function TeethCleaningAmeerpetPage() {
 
       </div>
 
-      {/* CONTACT */}
+     {/* CONTACT */}
 
-      <div className="rounded-3xl border border-white/20 bg-white/10 p-7 text-center backdrop-blur">
+<div className="rounded-3xl border border-white/20 bg-white/10 p-7 text-center backdrop-blur">
 
-        <div className="text-4xl">📞</div>
+  <div className="text-4xl">📞</div>
 
-        <h3 className="mt-4 text-xl font-bold">
-          Contact Us
-        </h3>
+  <h3 className="mt-4 text-xl font-bold">
+    Contact Us
+  </h3>
 
-        <a
-          href="tel:+918074528763"
-          className="mt-3 block font-bold text-white hover:underline"
-        >
-          +91 80745 28763
-        </a>
+  <a
+    href="tel:+918074528763"
+    className="mt-3 block font-bold text-white hover:underline"
+  >
+    +91 80745 28763
+  </a>
 
-        <p className="mt-2 text-sm text-orange-50">
-          One-to-One Dental Care
-        </p>
+  <p className="mt-2 text-sm text-orange-50">
+    One-to-One Dental Care
+  </p>
 
-      </div>
+  <WhatsAppButton
+    className="mt-3 inline-block font-semibold text-white hover:underline"
+  >
+    💬 WhatsApp Us
+  </WhatsAppButton>
+
+</div>
 
     </div>
 
