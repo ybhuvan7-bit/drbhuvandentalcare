@@ -373,58 +373,63 @@ Restore healthy gums with advanced periodontal care for bleeding gums, gum reces
              
             </div>
 
-            <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
+           <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
 
-              <div className="text-5xl mb-5">
-                🪥
-              </div>
+  <div className="mb-5 text-5xl">
+    🪥
+  </div>
 
-              <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                Teeth Cleaning
-              </h3>
+  <h3 className="mt-6 text-2xl font-bold text-gray-900">
+    Teeth Cleaning
+  </h3>
 
-              <p className="mt-4 leading-7 text-gray-600">
+  <p className="mt-4 leading-7 text-gray-600">
+    Maintain a healthy smile with professional teeth cleaning, scaling,
+    polishing, and preventive dental care to remove plaque, tartar, stains,
+    and reduce the risk of cavities and gum disease.
+  </p>
 
-Maintain a healthy smile with professional teeth cleaning, scaling, polishing, and preventive dental care to remove plaque, tartar, stains, and reduce the risk of cavities and gum disease.
+  <div className="mt-8">
 
-</p>
-              <div className="mt-8">
+    <Link
+      href="/teeth-cleaning-ameerpet"
+      className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2"
+    >
+      Learn More →
+    </Link>
 
-  <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
-
-    Learn More →
-
-  </span>
+  </div>
 
 </div>
 
-            </div>
+           <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
 
-            <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
+  <div className="mb-5 text-5xl">
+    🛡️
+  </div>
 
-              <div className="text-5xl mb-5">
-                🛡️
-              </div>
+  <h3 className="mt-6 text-2xl font-bold text-gray-900">
+    Root Canal Treatment
+  </h3>
 
-              <h3 className="mt-6 text-2xl font-bold text-gray-900">
-                Root Canal Treatment
-              </h3>
+  <p className="mt-4 leading-7 text-gray-600">
+    Treat infected or damaged teeth with modern root canal treatment
+    designed to relieve dental pain, address infection, and preserve
+    your natural tooth whenever possible.
+  </p>
 
-             <p className="mt-4 leading-7 text-gray-600">
+  <div className="mt-8">
 
-Save infected or damaged teeth with painless root canal treatment using modern techniques that relieve pain, eliminate infection, and preserve your natural tooth whenever possible.
+    <Link
+      href="/root-canal-treatment-yousufguda"
+      className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2"
+    >
+      Learn More →
+    </Link>
 
-</p>
-<Link
-  href="/root-canal-treatment-ameerpet"
-  className="mt-6 inline-flex items-center gap-2 font-semibold text-orange-600 hover:text-orange-700 transition"
->
-  Learn More
-  <ArrowRight className="h-4 w-4" />
-</Link>
-              
+  </div>
 
-            </div>
+</div>
 
             <div className="group rounded-3xl border border-orange-100 bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:border-orange-300 hover:shadow-2xl">
 
