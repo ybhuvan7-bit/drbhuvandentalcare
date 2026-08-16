@@ -18,10 +18,13 @@ export default function sitemap() {
     "/dental-implants-sr-nagar",
     "/dental-implants-madhura-nagar",
     "/dental-implants-punjagutta",
-    "/dental-implants-srinagar-colony", 
+    "/dental-implants-srinagar-colony",
 
     // Teeth Cleaning Pages
     "/teeth-cleaning-ameerpet",
+
+    // Root Canal Pages
+    "/root-canal-treatment-yousufguda",
   ];
 
   return pages.map((page) => ({
