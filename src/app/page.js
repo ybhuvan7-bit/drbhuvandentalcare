@@ -1103,7 +1103,7 @@ Yes. We provide emergency dental care for tooth pain, swelling, trauma and other
             </p>
 
             <p className="text-gray-300 mt-3">
-              📍Ganapathi Complex, Navodaya Colony Rd, Sri Krishna Nagar, Ameerpet, Yousufguda, Hyderabad, Telangana 500073nmp
+              📍Ganapathi Complex, Navodaya Colony Rd, Sri Krishna Nagar, Ameerpet, Yousufguda, Hyderabad, Telangana 500073
             </p>
 
           </div>
