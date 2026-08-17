@@ -136,9 +136,9 @@ export default function RootCanalTreatmentYousufgudaPage() {
         Know The Warning Signs
       </span>
 
-      <h2 className="mt-6 text-4xl font-black leading-tight tracking-tight text-gray-900 md:text-5xl">s
-        Do You Need Root Canal Treatment?
-      </h2>
+      <h2 className="mx-auto mt-6 max-w-4xl text-4xl font-black leading-tight text-gray-900 md:text-5xl">
+  When Do You Need Root Canal Treatment?
+</h2>
 
       <p className="mx-auto mt-6 max-w-3xl text-base leading-7 text-gray-600 sm:text-lg sm:leading-8">
   Persistent tooth pain or sensitivity should not be ignored. These
