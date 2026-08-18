@@ -67,7 +67,7 @@ export default function Home() {
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 min-h-screen flex items-center">
 
-          <div className="max-w-2xl space-y-6">
+          <div className="max-w-4xl space-y-6 pb-10 sm:pb-14 lg:pb-16">
 
             <span className="inline-flex items-center bg-orange-600 text-white px-4 py-2 rounded-full font-semibold text-sm md:text-base whitespace-nowrap">
               ⭐ 4.9 Google Rating • 130+ Reviews
@@ -145,6 +145,40 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 <div className="bg-black/45 backdrop-blur-xl border border-white/20 rounded-3xl p-6 text-center shadow-2xl hover:-translate-y-2 hover:bg-white/20 transition-all duration-300">
 <h2 className="text-3xl font-bold text-orange-300">Laser</h2>
 <p className="text-white">Modern Dentistry</p>
+</div>
+
+{/* LANGUAGES SPOKEN */}
+
+<div className="mt-7 w-full max-w-xl">
+
+  <div className="flex items-center gap-3">
+    <span className="h-px w-8 bg-white/30"></span>
+
+    <span className="whitespace-nowrap text-[10px] font-bold uppercase tracking-[0.2em] text-white/70 sm:text-xs">
+      We Speak Your Language
+    </span>
+
+    <span className="h-px flex-1 bg-white/20"></span>
+  </div>
+
+  <div className="mt-3 flex flex-wrap items-center gap-x-3 gap-y-1 pl-4 text-sm font-semibold text-white sm:flex-nowrap sm:whitespace-nowrap sm:pl-0 sm:text-base">
+
+    <span>తెలుగు</span>
+    <span className="text-orange-300">•</span>
+
+    <span>हिन्दी</span>
+    <span className="text-orange-300">•</span>
+
+    <span>English</span>
+    <span className="text-orange-300">•</span>
+
+    <span>தமிழ்</span>
+    <span className="text-orange-300">•</span>
+
+    <span>मराठी</span>
+
+  </div>
+
 </div>
 
 </div>
