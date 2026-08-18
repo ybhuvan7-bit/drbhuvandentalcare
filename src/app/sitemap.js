@@ -11,6 +11,7 @@ export default function sitemap() {
     "/dentist-in-ameerpet",
     "/dentist-in-navodaya-colony",
     "/dentist-in-sri-krishna-nagar",
+    "/tamil-speaking-dentist-hyderabad",
 
     // Dental Implant Pages
     "/dental-implants-ameerpet",
