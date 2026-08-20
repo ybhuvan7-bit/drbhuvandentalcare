@@ -4,6 +4,9 @@ export default function sitemap() {
   const pages = [
     "",
 
+    // Main Treatment Hub
+    "/dental-treatments-yousufguda",
+
     // Articles
     "/articles",
 
@@ -23,9 +26,20 @@ export default function sitemap() {
 
     // Teeth Cleaning Pages
     "/teeth-cleaning-ameerpet",
+    "/teeth-cleaning-yousufguda",
 
-    // Root Canal Pages
+    // Root Canal
     "/root-canal-treatment-yousufguda",
+
+    // Gum Treatment
+    "/gum-treatment-yousufguda",
+
+    // Search Intent Pages
+    "/tooth-pain-treatment-yousufguda",
+    "/wisdom-tooth-treatment-yousufguda",
+    "/bad-breath-treatment-yousufguda",
+    "/sensitive-teeth-treatment-yousufguda",
+    "/gum-bleeding-treatment-yousufguda",
   ];
 
   return pages.map((page) => ({
