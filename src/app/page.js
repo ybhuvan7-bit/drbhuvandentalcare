@@ -374,7 +374,13 @@ Experience minimally invasive laser dentistry for gum treatments, frenectomy, cr
 
   <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
 
-    Learn More →
+   <Link
+  href="/laser-dentistry-yousufguda"
+  className="inline-flex items-center gap-2 font-semibold text-orange-600 transition-all duration-300 hover:translate-x-1"
+>
+  Learn More
+  <ArrowRight className="h-4 w-4" />
+</Link>
 
   </span>
 
@@ -398,8 +404,8 @@ Restore healthy gums with advanced periodontal care for bleeding gums, gum reces
 
 </p>
 <Link
-  href="/gum-disease-treatment-ameerpet"
-  className="mt-6 inline-flex items-center gap-2 font-semibold text-orange-600 hover:text-orange-700 transition"
+  href="/gum-treatment-yousufguda"
+  className="inline-flex items-center gap-2 font-semibold text-orange-600 transition-all duration-300 hover:translate-x-1"
 >
   Learn More
   <ArrowRight className="h-4 w-4" />
@@ -484,19 +490,35 @@ Transform your smile with personalized cosmetic dentistry, including teeth white
 
   <span className="inline-flex items-center font-semibold text-orange-600 transition-all duration-300 group-hover:translate-x-2">
 
-    Learn More →
+    <Link
+  href="/cosmetic-dentistry-yousufguda"
+  className="inline-flex items-center gap-2 font-semibold text-orange-600 transition-all duration-300 hover:translate-x-1"
+>
+  Learn More
+  <ArrowRight className="h-4 w-4" />
+</Link>
 
   </span>
 
 </div>
 
             </div>
+            <div className="mt-12 flex justify-center">
+  <Link
+    href="/dental-treatments-yousufguda"
+    className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-8 py-4 font-bold text-white shadow-lg transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600 hover:shadow-xl"
+  >
+    Explore All Dental Treatments
+    <ArrowRight className="h-5 w-5" />
+  </Link>
+</div>
 
           </div>
 
         </div>
 
       </section>
+
      {/* ================= AREAS WE SERVE ================= */}
 
 <section className="bg-white py-20">
@@ -541,6 +563,7 @@ Transform your smile with personalized cosmetic dentistry, including teeth white
           Learn More →
         </span>
       </Link>
+
 
       {/* Card 2 */}
       <Link

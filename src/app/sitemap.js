@@ -40,6 +40,8 @@ export default function sitemap() {
     "/bad-breath-treatment-yousufguda",
     "/sensitive-teeth-treatment-yousufguda",
     "/gum-bleeding-treatment-yousufguda",
+    "/laser-dentistry-yousufguda",
+    "/cosmetic-dentistry-yousufguda",
   ];
 
   return pages.map((page) => ({
