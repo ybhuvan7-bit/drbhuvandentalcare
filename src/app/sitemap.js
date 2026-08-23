@@ -49,6 +49,7 @@ export default function sitemap() {
     // ================= OTHER TREATMENTS =================
     "/bad-breath-treatment-yousufguda",
     "/sensitive-teeth-treatment-yousufguda",
+    "/invisalign-treatment-yousufguda",
 
     // ================= COSMETIC DENTISTRY =================
     "/cosmetic-dentistry-yousufguda",
