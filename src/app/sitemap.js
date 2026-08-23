@@ -7,6 +7,7 @@ export default function sitemap() {
 
     // ================= ARTICLES =================
     "/articles",
+    "/blog/invisalign-treatment-hyderabad",
 
     // ================= DENTIST / LOCATION PAGES =================
     "/dentist-in-ameerpet",
