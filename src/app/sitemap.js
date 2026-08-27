@@ -15,6 +15,7 @@ export default function sitemap() {
     "/dentist-in-navodaya-colony",
     "/dentist-in-sri-krishna-nagar",
     "/dentist-in-yousufguda",
+    "/dental-clinic-in-ganapati-complex",
     "/tamil-speaking-dentist-hyderabad",
 
     // ================= DENTAL IMPLANT PAGES =================
@@ -52,6 +53,7 @@ export default function sitemap() {
     "/bad-breath-treatment-yousufguda",
     "/sensitive-teeth-treatment-yousufguda",
     "/invisalign-treatment-yousufguda",
+    
 
     // ================= COSMETIC DENTISTRY =================
     "/cosmetic-dentistry-yousufguda",
