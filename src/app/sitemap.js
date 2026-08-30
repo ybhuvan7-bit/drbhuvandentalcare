@@ -17,6 +17,7 @@ export default function sitemap() {
     "/dentist-in-yousufguda",
     "/dental-clinic-in-ganapati-complex",
     "/tamil-speaking-dentist-hyderabad",
+    "/dental-clinic-near-yellareddyguda",
 
     // ================= DENTAL IMPLANT PAGES =================
     "/dental-implants-ameerpet",
