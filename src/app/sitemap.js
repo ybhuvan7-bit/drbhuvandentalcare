@@ -16,6 +16,7 @@ export default function sitemap() {
     "/dentist-in-sri-krishna-nagar",
     "/dentist-in-yousufguda",
     "/dental-clinic-in-ganapati-complex",
+    "/dental-clinic-ameerpet",
     "/tamil-speaking-dentist-hyderabad",
 "/dental-clinic-near-yellareddyguda",
 "/dental-clinic-near-sri-krishna-devaraya-nagar",
