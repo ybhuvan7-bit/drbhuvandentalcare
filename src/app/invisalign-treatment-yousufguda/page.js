@@ -20,24 +20,23 @@ import {
 
 export const metadata = {
   title:
-    "Invisalign Treatment in Yousufguda, Ameerpet | Clear Aligners Hyderabad",
+    "Clear Aligners in Yousufguda, Hyderabad | Invisible Braces | Dr. Bhuvan",
 
   description:
-    "Looking for Invisalign treatment in Yousufguda or Ameerpet? Dr. Bhuvan's Dental Laser & Implant Centre provides modern clear aligner treatment for straighter, healthier and more confident smiles.",
+    "Looking for clear aligners in Yousufguda, Hyderabad? Dr. Bhuvan's Dental Laser & Implant Centre offers personalised clear aligner treatment for crowded teeth, gaps and selected bite problems.",
 
   keywords: [
-    "Invisalign treatment Yousufguda",
-    "Invisalign Yousufguda",
     "clear aligners Yousufguda",
-    "Invisalign treatment Ameerpet",
-    "clear aligners Ameerpet",
-    "Invisalign Hyderabad",
-    "clear aligner treatment Hyderabad",
+    "clear aligners in Yousufguda",
+    "clear aligners Yousufguda Hyderabad",
     "invisible braces Yousufguda",
-    "invisible braces Ameerpet",
+    "aligners treatment Yousufguda",
     "teeth straightening Yousufguda",
-    "clear aligners near Yousufguda",
-    "Invisalign near Ameerpet",
+    "clear aligners Ameerpet",
+    "invisible braces Ameerpet",
+    "clear aligner treatment Hyderabad",
+    "Invisalign Yousufguda",
+    "Invisalign Hyderabad",
   ],
 
   alternates: {
@@ -47,10 +46,10 @@ export const metadata = {
 
   openGraph: {
     title:
-      "Invisalign Treatment in Yousufguda, Ameerpet | Dr. Bhuvan's Dental Laser & Implant Centre",
+      "Clear Aligners in Yousufguda, Hyderabad | Dr. Bhuvan's Dental Laser & Implant Centre",
 
     description:
-      "Modern Invisalign and clear aligner treatment in Yousufguda and Ameerpet for a straighter, more confident smile.",
+      "Personalised clear aligner treatment in Yousufguda, Hyderabad for straighter teeth, improved alignment and a confident smile.",
 
     url:
       "https://www.drbhuvandentalcare.com/invisalign-treatment-yousufguda",
@@ -68,7 +67,7 @@ export const metadata = {
         width: 1200,
         height: 630,
         alt:
-          "Dr. Bhuvanesh Yanamala - Invisalign and Clear Aligner Treatment in Yousufguda",
+          "Dr. Bhuvanesh Yanamala - Clear Aligners in Yousufguda, Hyderabad",
       },
     ],
   },
@@ -77,10 +76,10 @@ export const metadata = {
     card: "summary_large_image",
 
     title:
-      "Invisalign Treatment in Yousufguda, Ameerpet | Clear Aligners Hyderabad",
+      "Clear Aligners in Yousufguda, Hyderabad | Dr. Bhuvan",
 
     description:
-      "Explore modern clear aligner treatment at Dr. Bhuvan's Dental Laser & Implant Centre in Yousufguda, Hyderabad.",
+      "Explore personalised clear aligner treatment at Dr. Bhuvan's Dental Laser & Implant Centre in Yousufguda, Hyderabad.",
 
     images: [
       "https://www.drbhuvandentalcare.com/doctor.webp",
@@ -333,22 +332,18 @@ export default function InvisalignTreatmentYousufgudaPage() {
 
                 <h1 className="max-w-4xl text-5xl font-black leading-[0.95] tracking-tight sm:text-6xl lg:text-7xl">
 
-                  Invisalign Treatment
-                  <span className="block text-orange-500">
-                    in Yousufguda
-                  </span>
-
-                  <span className="block text-white">
-                    & Ameerpet
-                  </span>
+                 Clear Aligners
+<span>in Yousufguda</span>
+<span>& Ameerpet, Hyderabad</span>
 
                 </h1>
 
                 <p className="mt-7 max-w-2xl text-base leading-8 text-slate-300 sm:text-lg">
-                  A discreet, personalised approach to straighter teeth and
-                  a more confident smile with modern clear aligner treatment
-                  at Dr. Bhuvan&apos;s Dental Laser & Implant Centre.
-                </p>
+  Looking for clear aligners in Yousufguda or Ameerpet?
+  Get personalised clear aligner treatment for straighter teeth,
+  improved alignment and a confident smile at Dr. Bhuvan&apos;s
+  Dental Laser & Implant Centre.
+</p>
 
                 <div className="mt-8 flex flex-wrap gap-3">
 
