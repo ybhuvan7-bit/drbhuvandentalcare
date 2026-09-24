@@ -12,6 +12,7 @@ export default function sitemap() {
 
     // ================= DENTIST / LOCATION PAGES =================
     "/dentist-in-ameerpet",
+    "/periodontist-in-ameerpet",
     "/dentist-in-navodaya-colony",
     "/dentist-in-sri-krishna-nagar",
     "/dentist-in-yousufguda",
