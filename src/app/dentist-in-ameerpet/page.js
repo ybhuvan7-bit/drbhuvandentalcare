@@ -366,7 +366,7 @@ Hyderabad
       {/* Root Canal */}
 
       <Link
-        href="/root-canal-treatment"
+        href="/root-canal-treatment-ameerpet"
         className="group rounded-3xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl"
       >
         <div className="text-5xl">🩺</div>
@@ -410,7 +410,7 @@ Hyderabad
       {/* Laser Dentistry */}
 
       <Link
-        href="/laser-dentistry"
+        href="/laser-dentistry-yousufguda"
         className="group rounded-3xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl"
       >
         <div className="text-5xl">⚡</div>
@@ -432,7 +432,7 @@ Hyderabad
       {/* Teeth Cleaning */}
 
       <Link
-        href="/teeth-cleaning"
+       href="/teeth-cleaning-ameerpet"
         className="group rounded-3xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl"
       >
         <div className="text-5xl">✨</div>
@@ -454,7 +454,7 @@ Hyderabad
       {/* Smile Makeover */}
 
       <Link
-        href="/smile-makeover"
+        href="/smile-makeover-ameerpet"
         className="group rounded-3xl bg-white p-8 shadow-lg transition-all duration-300 group-hover:translate-x-2 hover:-translate-y-3 hover:shadow-2xl"
       >
         <div className="text-5xl">😁</div>

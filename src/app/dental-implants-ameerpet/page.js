@@ -1042,7 +1042,7 @@ Save infected teeth using advanced painless techniques.
 </Link>
 
 <Link
-href="/laser-dentistry-ameerpet"
+href="/laser-dentistry-yousufguda"
 className="rounded-3xl border bg-white p-8 shadow-lg transition hover:-translate-y-2 hover:shadow-2xl"
 >
 
