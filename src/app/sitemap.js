@@ -39,6 +39,8 @@ export default function sitemap() {
 
     // ================= LASER DENTISTRY =================
     "/laser-dentistry-yousufguda",
+    "/laser-gum-treatment-hyderabad",
+    "/post-operative-instructions",
 
     // ================= ROOT CANAL =================
     "/root-canal-treatment-ameerpet",
