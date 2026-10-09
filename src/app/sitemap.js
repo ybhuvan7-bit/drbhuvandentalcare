@@ -50,6 +50,7 @@ export default function sitemap() {
     "/teeth-cleaning-ameerpet",
     "/teeth-cleaning-yousufguda",
     "/teeth-cavities-treatment-hyderabad",
+     "/telugu-teeth-cavity-treatment-hyderabad",
 
     // ================= TOOTH / WISDOM TOOTH =================
     "/tooth-pain-treatment-yousufguda",
