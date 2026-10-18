@@ -60,6 +60,7 @@ export default function sitemap() {
     "/bad-breath-treatment-yousufguda",
     "/sensitive-teeth-treatment-yousufguda",
     "/invisalign-treatment-yousufguda",
+    "/braces-treatment-srinagar-colony",
     
 
     // ================= COSMETIC DENTISTRY =================
