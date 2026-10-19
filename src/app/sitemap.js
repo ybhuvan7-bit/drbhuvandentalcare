@@ -21,6 +21,7 @@ export default function sitemap() {
     "/tamil-speaking-dentist-hyderabad",
 "/dental-clinic-near-yellareddyguda",
 "/dental-clinic-near-sri-krishna-devaraya-nagar",
+"/dental-clinic-yousufguda",
     // ================= DENTAL IMPLANT PAGES =================
     "/dental-implants-ameerpet",
     "/dental-implants-madhura-nagar",
