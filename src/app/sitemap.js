@@ -61,6 +61,7 @@ export default function sitemap() {
     "/sensitive-teeth-treatment-yousufguda",
     "/invisalign-treatment-yousufguda",
     "/braces-treatment-srinagar-colony",
+    "/teeth-gaps-treatment-hyderabad",
     
 
     // ================= COSMETIC DENTISTRY =================
