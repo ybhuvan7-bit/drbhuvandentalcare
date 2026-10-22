@@ -480,6 +480,36 @@ export default function FluorosisStainsTreatmentPage() {
         </div>
       </section>
 
+      
+import Image from "next/image";
+
+<section className="mx-auto max-w-6xl px-5 py-12">
+  <h2 className="text-3xl font-bold text-slate-900 text-center">
+    Fluorosis Stains: Before and After
+  </h2>
+
+  <p className="mt-3 text-center leading-7 text-slate-600">
+    Cosmetic treatment may improve the appearance of selected
+    fluorosis stains. Results vary depending on enamel condition
+    and the treatment performed.
+  </p>
+
+  <figure className="mt-8 overflow-hidden rounded-2xl border border-orange-100 shadow-lg">
+    <Image
+  src="/images/Fluorosis%20Stains_%20Before%20and%20After.webp"
+  alt="Illustrative comparison of fluorosis stains before and after cosmetic dental treatment"
+  width={1536}
+  height={1024}
+  className="h-auto w-full"
+  sizes="(max-width: 768px) 100vw, 1152px"
+/>
+    <figcaption className="bg-orange-50 px-4 py-3 text-center text-sm text-slate-600">
+      Illustrative image only. Actual treatment results vary.
+    </figcaption>
+  </figure>
+</section>
+
+
       {/* TREATMENTS */}
       <section
         id="treatments"
