@@ -63,6 +63,7 @@ export default function sitemap() {
     "/invisalign-treatment-yousufguda",
     "/braces-treatment-srinagar-colony",
     "/teeth-gaps-treatment-hyderabad",
+    "/fluorosis-stains-treatment-ameerpet",
     
 
     // ================= COSMETIC DENTISTRY =================
