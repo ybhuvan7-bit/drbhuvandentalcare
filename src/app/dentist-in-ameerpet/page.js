@@ -17,7 +17,7 @@ import {
 
 export const metadata = {
   title:
-    "Best Dentist in Ameerpet, Hyderabad | Dr. Bhuvan's Dental Laser & Implant Centre",
+    "Best Dentist near me in Ameerpet, Hyderabad | Dr. Bhuvan's Dental Laser & Implant Centre",
 
   description:
     "Looking for the best dentist in Ameerpet, Hyderabad? Dr. Bhuvan's Dental Laser & Implant Centre offers dental implants, laser dentistry, root canal treatment, teeth cleaning, gum disease treatment, smile makeovers and complete family dental care.",

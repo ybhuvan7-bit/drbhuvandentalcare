@@ -977,7 +977,7 @@ const schema = {
                         : "text-slate-600"
                     }`}
                   >
-                    {service.text}
+                    {service.description}
                   </p>
 
                   <div
