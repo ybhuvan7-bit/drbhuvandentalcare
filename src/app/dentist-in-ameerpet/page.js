@@ -24,6 +24,12 @@ export const metadata = {
 
   keywords: [
     "Best Dentist in Ameerpet",
+    "Best Dentist near me in Ameerpet",
+     "Best Dentist near me in srinagrcolony",
+      "Best Dentist near me in madhuranagar",
+       "Best Dentist near me in yousufguda",
+        "Best Dentist near me in kamalapuricolony",
+         "Best Dentist near me in Navodaya colony",
     "Dental Clinic in Ameerpet",
     "Dentist in Hyderabad",
     "Dental Implants Ameerpet",
