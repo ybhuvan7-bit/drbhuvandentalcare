@@ -260,8 +260,7 @@ export default function CompositeGapClosurePage() {
       />
 
       <figcaption className="px-3 py-4 text-center text-sm leading-6 text-slate-500">
-        Illustrative examples only — not actual patient photographs
-        or a guarantee of treatment outcomes.
+        Illustrative examples only.
       </figcaption>
     </figure>
   </div>
