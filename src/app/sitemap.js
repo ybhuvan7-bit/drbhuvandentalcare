@@ -65,6 +65,7 @@ export default function sitemap() {
     "/teeth-gaps-treatment-hyderabad",
     "/fluorosis-stains-treatment-ameerpet",
     "/composite-gap-closure-hyderabad",
+    "/dental-crown-treatment-hyderabad",
 
     // ================= COSMETIC DENTISTRY =================
     "/cosmetic-dentistry-yousufguda",
