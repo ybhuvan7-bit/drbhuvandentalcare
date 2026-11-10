@@ -1941,25 +1941,6 @@ export default function DentalCrownPage() {
       
 {/* FLOATING BUTTONS */}
 
-{/* WHATSAPP */}
-<a
-  href="https://wa.me/918074528763"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="fixed bottom-6 right-4 md:right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50 transition-all duration-300 hover:scale-110"
-  aria-label="Chat with us on WhatsApp"
->
-  💬
-</a>
-
-{/* CALL */}
-<a
-  href="tel:+918074528763"
-  className="fixed bottom-24 right-4 md:right-6 bg-orange-600 hover:bg-orange-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50 transition-all duration-300 hover:scale-110"
-  aria-label="Call our clinic"
->
-  📞
-</a>
 
 
 {/* FLOATING DIRECTIONS BUTTON */}
