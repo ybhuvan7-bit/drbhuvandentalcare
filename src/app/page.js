@@ -73,7 +73,7 @@ export default function Home() {
           <div className="max-w-4xl space-y-6 pb-10 sm:pb-14 lg:pb-16">
 
             <span className="inline-flex items-center bg-orange-600 text-white px-4 py-2 rounded-full font-semibold text-sm md:text-base whitespace-nowrap">
-              ⭐ 4.9 Google Rating • 130+ Reviews
+              ⭐ 4.9 Google Rating • 139+ Reviews
             </span>
 
             <h1 className="text-[54px] sm:text-5xl lg:text-7xl font-extrabold leading-[1.05] text-white mt-1">
@@ -1153,40 +1153,55 @@ safety and advanced dental care.
 
       </section>
 
-    {/* FLOATING BUTTONS */}
+ 
+{/* FLOATING ACTION BUTTONS */}
+
+<div className="fixed bottom-6 right-4 md:right-6 z-[9999] flex flex-col items-center gap-3 pointer-events-none">
+
+  {/* WhatsApp */}
+  <a
+    href="https://wa.me/918074528763"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Chat with us on WhatsApp"
+    onClick={() => {
+      if (typeof window !== "undefined" && window.gtag) {
+        window.gtag("event", "conversion", {
+          send_to: "AW-18310496002/-QlPCKz71OEcEIL-j5tE",
+        });
+      }
+    }}
+    className="pointer-events-auto bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl transition-all duration-300 hover:scale-110"
+  >
+    💬
+  </a>
+
+  {/* Phone */}
+  <a
+    href="tel:+918074528763"
+    aria-label="Call our dental clinic"
+    className="pointer-events-auto bg-orange-600 hover:bg-orange-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl transition-all duration-300 hover:scale-110"
+  >
+    📞
+  </a>
+
+ 
+
+{/* Google Maps Directions */}
 
 <a
-  href="https://wa.me/918074528763"
+  href="https://www.google.com/maps/search/?api=1&query=Dr%20Bhuvans%20Dental%20Laser%20%26%20Implant%20Centre%2C%20Ganapathi%20Complex%2C%20Navodaya%20Colony%20Road%2C%20Sri%20Krishna%20Nagar%2C%20Ameerpet%2C%20Hyderabad%20500073"
   target="_blank"
   rel="noopener noreferrer"
-  onClick={() => {
-    if (typeof window !== "undefined" && window.gtag) {
-      window.gtag('event', 'conversion', {
-        send_to: 'AW-18310496002/-QlPCKz71OEcEIL-j5tE'
-      });
-    }
-  }}
-  className="fixed bottom-6 md:bottom-6 right-4 md:right-6 bg-green-500 hover:bg-green-600 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50"
->
-  💬
-</a>
-
-      <a
-        href="tel:+918074528763"
-        className="fixed bottom-24 md:bottom-28 right-4 md:right-6 bg-orange-600 hover:bg-orange-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center text-2xl md:text-3xl shadow-2xl z-50"
-      >
-        📞
-      </a>
-
-     <a
-  href="https://maps.app.goo.gl/4LSXY9Cd5TcRjFMP6"
-  target="_blank"
-  rel="noopener noreferrer"
-  className="fixed bottom-44 md:bottom-50 right-4 md:right-6 bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-110 z-50"
-  aria-label="Get Directions"
+  aria-label="Get directions to Dr. Bhuvan's Dental Clinic"
+  className="pointer-events-auto bg-blue-600 hover:bg-blue-700 text-white w-14 h-14 md:w-16 md:h-16 rounded-full flex items-center justify-center shadow-2xl transition-all duration-300 hover:scale-110"
 >
   <Navigation size={26} strokeWidth={2.5} />
 </a>
+
+
+</div>
+
 <section className="max-w-7xl mx-auto px-6 py-20">
 
 <h2 className="text-4xl font-bold text-center mb-12">
