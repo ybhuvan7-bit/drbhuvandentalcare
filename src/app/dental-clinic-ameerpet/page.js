@@ -5,14 +5,14 @@ import AppointmentForm from "./AppointmentForm";
 export const metadata = {
   title: "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
   description:
-    "Looking for a dentist in Ameerpet, Hyderabad? Visit Dr. Bhuvan's Dental Laser & Implant Centre for dental implants, gum care, laser dentistry, teeth cleaning and more. Call or request an appointment.",
+    "Looking for a dental clinic in Ameerpet, Hyderabad? Dr. Bhuvan's Dental Laser & Implant Centre offers dental implants, periodontal and gum care, laser dentistry, teeth cleaning, root canal treatment and smile care. Patients from Yousufguda and nearby areas are welcome.",
   alternates: {
     canonical: "https://www.drbhuvandentalcare.com/dental-clinic-ameerpet",
   },
   openGraph: {
     title: "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     description:
-      "Personalised dental care in Ameerpet, Hyderabad. Explore dental implants, gum treatment, laser dentistry and comprehensive dental care.",
+      "Explore dental implants, gum and periodontal care, laser dentistry, teeth cleaning and comprehensive dental treatment at Dr. Bhuvan's Dental Laser & Implant Centre in Ameerpet, Hyderabad.",
     url: "https://www.drbhuvandentalcare.com/dental-clinic-ameerpet",
     siteName: "Dr. Bhuvan's Dental Laser & Implant Centre",
     type: "website",
@@ -40,7 +40,7 @@ const services = [
 ];
 
 const faqs = [
-  ["Where is the clinic located?", "Dr. Bhuvan's Dental Laser & Implant Centre is at Ganapati Complex, Navodaya Colony Road, Sri Krishna Nagar, Ameerpet, Hyderabad, Telangana 500073."],
+  ["Where is the clinic located?", "Dr. Bhuvan's Dental Laser & Implant Centre is at Ganapati Complex, Navodaya Colony Road, Sri Krishna Nagar, Yousufguda–Ameerpet, Hyderabad, Telangana 500073."],
   ["What dental treatments are available?", "Treatment options include dental implants, gum and periodontal care, teeth cleaning, root canal treatment, cosmetic dentistry and selected laser-assisted procedures. Suitability is decided after a clinical evaluation."],
   ["Do you provide dental implant treatment?", "Dental implant treatment is available for suitable patients. The dentist will assess oral health, bone support and individual treatment requirements before recommending a plan."],
   ["Can I visit for bleeding gums or bad breath?", "Yes. Bleeding gums, gum swelling, persistent bad breath and other periodontal concerns can be assessed during a dental consultation."],
@@ -58,7 +58,7 @@ const dentistSchema = {
   image: "https://www.drbhuvandentalcare.com/clinic/clinic3.webp",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Ganapati Complex, Navodaya Colony Road, Sri Krishna Nagar, Ameerpet",
+    streetAddress: "Ganapati Complex, Navodaya Colony Road, Sri Krishna Nagar, Yousufguda–Ameerpet",
     addressLocality: "Hyderabad",
     addressRegion: "Telangana",
     postalCode: "500073",
@@ -124,7 +124,7 @@ export default function DentalClinicAmeerpetPage() {
                 Thoughtful dental care.<span className="mt-2 block text-orange-700">Confident, healthy smiles.</span>
               </h1>
               <p className="mt-7 max-w-xl text-[15px] leading-8 text-slate-600 sm:text-lg sm:leading-9">
-                Looking for a dental clinic in Ameerpet, Hyderabad? At Dr. Bhuvan&apos;s Dental Laser &amp; Implant Centre, we take time to understand your concerns and discuss care options suited to your dental needs.
+                Looking for a dental clinic in Ameerpet, Hyderabad? Dr. Bhuvan&apos;s Dental Laser &amp; Implant Centre welcomes patients from Ameerpet, Yousufguda and nearby areas. We take time to understand your concerns and discuss care options suited to your dental needs.
               </p>
               <div className="mt-9 flex flex-col gap-3 sm:flex-row">
                 <a href="#appointment" className="inline-flex min-h-14 items-center justify-center rounded-full bg-[#e85b16] px-8 py-4 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(232,91,22,.24)] transition duration-300 hover:-translate-y-1 hover:bg-[#cf4d10] hover:shadow-[0_16px_34px_rgba(232,91,22,.3)]">Request an Appointment →</a>
@@ -133,7 +133,7 @@ export default function DentalClinicAmeerpetPage() {
               <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-slate-600">
                 <span><b className="text-amber-500">★★★★★</b> <strong className="text-slate-900">4.9 Google rating</strong></span>
                 <span><strong className="text-slate-900">139</strong> Google reviews</span>
-                <span>BDS · MDS (Periodontics) · Implantology</span>
+                <span>BDS · MDS (Periodontics) · Implantologist · Laser Dentistry</span>
               </div>
               <p className="mt-2 text-xs text-slate-500">Rating and review count should be kept in sync with the live Google Business Profile.</p>
             </div>
@@ -233,7 +233,7 @@ export default function DentalClinicAmeerpetPage() {
             <p className="mt-5 leading-8 text-slate-600">Conveniently located for patients from Ameerpet, Yousufguda, Navodaya Colony, Sri Krishna Nagar, Yellareddyguda and nearby Hyderabad neighbourhoods.</p>
             <div className="mt-7 rounded-[1.65rem] border border-[#e8ddd0] bg-[#fffefa] p-7 shadow-[0_18px_44px_rgba(50,36,23,.075)]">
               <p className="font-semibold text-slate-950">Dr. Bhuvan&apos;s Dental Laser &amp; Implant Centre</p>
-              <address className="mt-3 not-italic text-sm leading-7 text-slate-600">Ganapati Complex, Navodaya Colony Road,<br />Sri Krishna Nagar, Ameerpet,<br />Hyderabad, Telangana 500073, India</address>
+              <address className="mt-3 not-italic text-sm leading-7 text-slate-600">Ganapati Complex, Navodaya Colony Road,<br />Sri Krishna Nagar, Yousufguda–Ameerpet,<br />Hyderabad, Telangana 500073, India</address>
               <p className="mt-4 text-sm"><strong>Phone:</strong> <a className="text-orange-700" href={`tel:${phone}`}>80745 28763</a></p>
               <p className="mt-2 text-sm leading-6 text-slate-600"><strong>Hours:</strong> Mon–Sat, 10 AM–2 PM and 4 PM–9 PM; Sunday, 10 AM–2 PM.</p>
               <a href="https://www.google.com/maps/search/?api=1&query=Dr+Bhuvan%27s+Dental+Laser+%26+Implant+Centre+Ameerpet+Hyderabad" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-lg bg-orange-600 px-5 py-3 text-sm font-semibold text-white hover:bg-orange-700">Get directions</a>
@@ -257,7 +257,7 @@ export default function DentalClinicAmeerpetPage() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[.22em] text-[#e8bd91]">Take the next step</p>
             <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Let&apos;s talk about your dental health.</h2>
-            <p className="mt-5 max-w-xl leading-8 text-slate-300">Tell us how we can help. Send an appointment request and our clinic team will coordinate with you. Submitting this form is a request, not a confirmed appointment.</p>
+            <p className="mt-5 max-w-xl leading-8 text-slate-300">Tell us how we can help. Send an appointment request and our clinic team will contact you to coordinate a suitable visit. We will confirm the appointment timing with you. Submitting this form is a request, not a confirmed appointment.</p>
             <div className="mt-8 flex flex-wrap gap-3"><a href={`tel:${phone}`} className="rounded-xl border border-white/20 px-5 py-3 text-sm font-semibold hover:bg-white/10">Call 80745 28763</a><a href={waLink} target="_blank" rel="noopener noreferrer" className="rounded-xl bg-green-600 px-5 py-3 text-sm font-semibold text-white hover:bg-green-700">WhatsApp the clinic</a></div>
           </div>
           <AppointmentForm />
