@@ -1,1291 +1,273 @@
 import Image from "next/image";
 import Link from "next/link";
+import AppointmentForm from "./AppointmentForm";
 
 export const metadata = {
-  title: "Dental Clinic in Ameerpet, Hyderabad | Dr Bhuvan's Dental",
+  title: "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
   description:
-    "Dr Bhuvan's Dental Laser & Implant Centre is a dental clinic in Ameerpet, Hyderabad offering dental implants, root canal treatment, teeth cleaning, gum treatment and personalized dental care.",
+    "Looking for a dentist in Ameerpet, Hyderabad? Visit Dr. Bhuvan's Dental Laser & Implant Centre for dental implants, gum care, laser dentistry, teeth cleaning and more. Call or request an appointment.",
   alternates: {
     canonical: "https://www.drbhuvandentalcare.com/dental-clinic-ameerpet",
   },
   openGraph: {
-    title: "Dental Clinic in Ameerpet, Hyderabad | Dr Bhuvan's Dental",
+    title: "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     description:
-      "Personalized dental care in Ameerpet, Hyderabad by Dr. Bhuvanesh Yanamala.",
+      "Personalised dental care in Ameerpet, Hyderabad. Explore dental implants, gum treatment, laser dentistry and comprehensive dental care.",
     url: "https://www.drbhuvandentalcare.com/dental-clinic-ameerpet",
+    siteName: "Dr. Bhuvan's Dental Laser & Implant Centre",
     type: "website",
-    images: [
-      {
-        url: "https://www.drbhuvandentalcare.com/clinic/clinic3.webp",
-        width: 1200,
-        height: 900,
-        alt: "Dr Bhuvan's Dental Laser & Implant Centre in Ameerpet",
-      },
-    ],
+    images: [{
+      url: "https://www.drbhuvandentalcare.com/clinic/clinic3.webp",
+      width: 1200,
+      height: 900,
+      alt: "Dr. Bhuvan's Dental Laser & Implant Centre in Ameerpet",
+    }],
   },
 };
 
-export default function DentalClinicAmeerpetPage() {
-    const faqSchema = {
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  mainEntity: [
-    {
-      "@type": "Question",
-      name: "What dental treatments are available in Ameerpet?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Treatment options may include teeth cleaning, gum treatment, root canal treatment, dental implants, restorative dentistry, smile makeover and selected laser-assisted procedures.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you provide dental implants?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Dental implant treatment can be considered for suitable patients with missing teeth after a clinical evaluation and treatment planning.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can I visit for bleeding gums or gum problems?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes. Bleeding gums, gum swelling, bad breath and other periodontal concerns can be evaluated during a dental consultation.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Do you provide teeth cleaning in Ameerpet?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Professional teeth cleaning is available for patients who need plaque, calculus and surface-stain removal as part of their oral hygiene care.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "How can I book a dental appointment?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "You can contact the clinic directly by phone or send a message through WhatsApp to request an appointment.",
-      },
-    },
-  ],
-};
-const localBusinessSchema = {
+const phone = "+918074528763";
+const waLink = "https://wa.me/918074528763?text=" + encodeURIComponent(
+  "Hello Dr. Bhuvan's Dental, I would like to request a dental appointment."
+);
+
+const services = [
+  ["🦷", "Dental Implants", "Tooth-replacement options for suitable patients after clinical assessment.", "/dental-implants-ameerpet"],
+  ["🌿", "Gum & Periodontal Care", "Assessment and care for bleeding gums, gum swelling and periodontal concerns.", "/gum-disease-treatment-ameerpet"],
+  ["✨", "Teeth Cleaning", "Professional removal of plaque and calculus with personalised oral hygiene advice.", "/teeth-cleaning-ameerpet"],
+  ["💎", "Laser Dentistry", "Laser-assisted procedures may be considered for selected gum and soft-tissue treatments.", "/laser-dentistry-yousufguda"],
+  ["🩺", "Root Canal Treatment", "Care options for teeth affected by deep decay, infection or injury.", "/root-canal-treatment-ameerpet"],
+  ["😊", "Smile & Cosmetic Care", "Discuss options to improve the appearance of your teeth and smile.", "/smile-makeover-ameerpet"],
+];
+
+const faqs = [
+  ["Where is the clinic located?", "Dr. Bhuvan's Dental Laser & Implant Centre is at Ganapati Complex, Navodaya Colony Road, Sri Krishna Nagar, Ameerpet, Hyderabad, Telangana 500073."],
+  ["What dental treatments are available?", "Treatment options include dental implants, gum and periodontal care, teeth cleaning, root canal treatment, cosmetic dentistry and selected laser-assisted procedures. Suitability is decided after a clinical evaluation."],
+  ["Do you provide dental implant treatment?", "Dental implant treatment is available for suitable patients. The dentist will assess oral health, bone support and individual treatment requirements before recommending a plan."],
+  ["Can I visit for bleeding gums or bad breath?", "Yes. Bleeding gums, gum swelling, persistent bad breath and other periodontal concerns can be assessed during a dental consultation."],
+  ["How do I request an appointment?", "Call 80745 28763 or use the appointment request form on this page. The clinic team will contact you to coordinate your visit."],
+  ["What are the clinic timings?", "Monday to Saturday: 10 AM–2 PM and 4 PM–9 PM. Sunday: 10 AM–2 PM. Please call to confirm availability before visiting."],
+];
+
+const dentistSchema = {
   "@context": "https://schema.org",
   "@type": "Dentist",
-  "@id":
-    "https://www.drbhuvandentalcare.com/#dentist",
-  name: "Dr Bhuvan's Dental Laser & Implant Centre",
-  url: "https://www.drbhuvandentalcare.com/dental-clinic-ameerpet",
-  telephone: "+918074528763",
-  image:
-    "https://www.drbhuvandentalcare.com/clinic/clinic3.webp",
+  "@id": "https://www.drbhuvandentalcare.com/#dentist",
+  name: "Dr. Bhuvan's Dental Laser & Implant Centre",
+  url: "https://www.drbhuvandentalcare.com/",
+  telephone: phone,
+  image: "https://www.drbhuvandentalcare.com/clinic/clinic3.webp",
   address: {
     "@type": "PostalAddress",
-    streetAddress:
-      "Ganapati Complex, Navodaya Colony Road, Sri Krishna Nagar, Ameerpet",
+    streetAddress: "Ganapati Complex, Navodaya Colony Road, Sri Krishna Nagar, Ameerpet",
     addressLocality: "Hyderabad",
     addressRegion: "Telangana",
     postalCode: "500073",
     addressCountry: "IN",
   },
+  geo: {
+    "@type": "GeoCoordinates",
+    latitude: 17.434462985123986,
+    longitude: 78.433557202177,
+  },
+  openingHoursSpecification: [
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "10:00", closes: "14:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"], opens: "16:00", closes: "21:00" },
+    { "@type": "OpeningHoursSpecification", dayOfWeek: "Sunday", opens: "10:00", closes: "14:00" },
+  ],
 };
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(([question, answer]) => ({
+    "@type": "Question",
+    name: question,
+    acceptedAnswer: { "@type": "Answer", text: answer },
+  })),
+};
+
 const breadcrumbSchema = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    {
-      "@type": "ListItem",
-      position: 1,
-      name: "Home",
-      item: "https://www.drbhuvandentalcare.com/",
-    },
-    {
-      "@type": "ListItem",
-      position: 2,
-      name: "Dental Clinic in Ameerpet",
-      item:
-        "https://www.drbhuvandentalcare.com/dental-clinic-ameerpet",
-    },
+    { "@type": "ListItem", position: 1, name: "Home", item: "https://www.drbhuvandentalcare.com/" },
+    { "@type": "ListItem", position: 2, name: "Dental Clinic in Ameerpet", item: "https://www.drbhuvandentalcare.com/dental-clinic-ameerpet" },
   ],
 };
+
+function Heading({ eyebrow, title, text }) {
   return (
-    <main className="min-h-screen bg-white text-slate-800">
-
-    <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(faqSchema),
-  }}
-/>
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(localBusinessSchema),
-  }}
-/>
-<script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify(breadcrumbSchema),
-  }}
-/>
-
-      {/* =========================================================
-          HERO
-      ========================================================= */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-orange-50 via-white to-orange-100">
-        <div className="mx-auto max-w-7xl px-6 pt-6 lg:px-8">
-  <nav
-    aria-label="Breadcrumb"
-    className="text-sm text-slate-500"
-  >
-    <Link
-      href="/"
-      className="transition hover:text-orange-600"
-    >
-      Home
-    </Link>
-
-    <span className="mx-2 text-slate-300">/</span>
-
-    <span className="font-medium text-slate-700">
-      Dental Clinic in Ameerpet
-    </span>
-  </nav>
-</div>
-        <div className="absolute -right-24 -top-24 h-80 w-80 rounded-full bg-orange-200/40 blur-3xl" />
-        <div className="absolute -bottom-32 -left-24 h-80 w-80 rounded-full bg-orange-100/60 blur-3xl" />
-
-        <div className="relative mx-auto max-w-7xl px-6 py-20 lg:px-8 lg:py-28">
-
-         <div className="grid items-center gap-10 lg:grid-cols-[1.15fr_.85fr]">
-
-            {/* Location badge */}
-            <div className="mb-6 inline-flex items-center rounded-full border border-orange-200 bg-white px-4 py-2 text-sm font-medium text-orange-700 shadow-sm">
-              📍 Ameerpet, Hyderabad
-            </div>
-
-            {/* H1 */}
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-              Dental Clinic in Ameerpet,
-              <span className="block text-orange-600">
-                Hyderabad
-              </span>
-            </h1>
-
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-slate-600 sm:text-xl">
-              Comprehensive dental care focused on healthy gums, strong teeth
-              and confident smiles — with modern treatment options and
-              personalized care by Dr. Bhuvanesh Yanamala.
-            </p>
-
-            {/* Buttons */}
-            <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-
-              <a
-                href="https://wa.me/918074528763?text=Hello%20Dr%20Bhuvan%27s%20Dental%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center rounded-xl bg-orange-600 px-7 py-4 text-base font-semibold text-white shadow-lg shadow-orange-600/20 transition hover:-translate-y-0.5 hover:bg-orange-700 hover:shadow-xl"
-              >
-                Book an Appointment
-              </a>
-
-              <a
-                href="tel:+918074528763"
-                className="inline-flex items-center justify-center rounded-xl border border-orange-200 bg-white px-7 py-4 text-base font-semibold text-orange-700 shadow-sm transition hover:border-orange-300 hover:bg-orange-50"
-              >
-                Call 80745 28763
-              </a>
-
-            </div>
-
-            {/* Trust cards */}
-            <div className="mt-10 grid max-w-3xl grid-cols-1 gap-4 sm:grid-cols-3">
-
-              <div className="rounded-2xl border border-orange-100 bg-white p-5 shadow-sm">
-                <div className="text-2xl">🦷</div>
-
-                <p className="mt-2 font-semibold text-slate-900">
-                  Comprehensive Care
-                </p>
-
-                <p className="mt-1 text-sm leading-5 text-slate-500">
-                  From preventive care to advanced treatments
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-orange-100 bg-white p-5 shadow-sm">
-                <div className="text-2xl">✨</div>
-
-                <p className="mt-2 font-semibold text-slate-900">
-                  Modern Dentistry
-                </p>
-
-                <p className="mt-1 text-sm leading-5 text-slate-500">
-                  Laser-assisted and contemporary treatment options
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-orange-100 bg-white p-5 shadow-sm">
-                <div className="text-2xl">👨‍⚕️</div>
-
-                <p className="mt-2 font-semibold text-slate-900">
-                  Personalized Care
-                </p>
-
-                <p className="mt-1 text-sm leading-5 text-slate-500">
-                  Treatment planned around your dental needs
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-         <div className="relative overflow-hidden rounded-3xl border border-orange-200 bg-white p-2 shadow-2xl shadow-orange-900/10">
-  <div className="relative aspect-[4/3] overflow-hidden rounded-2xl">
-    <Image
-  src="/clinic/clinic1.webp"
-  alt="Comfortable reception area at Dr Bhuvan's Dental Laser & Implant Centre"
-  fill
-  className="object-cover"
-  sizes="(max-width: 1024px) 100vw, 55vw"
-/>
-  </div>
-</div>
-        </div>
-      </section>
-
-
-      {/* =========================================================
-          INTRODUCTION
-      ========================================================= */}
-      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
-
-        <div className="grid gap-12 lg:grid-cols-[1.15fr_.85fr] lg:items-center">
-
-          <div>
-
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">
-              Dental Care in Ameerpet
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Your dental health deserves more than just temporary relief
-            </h2>
-
-            <p className="mt-6 text-lg leading-8 text-slate-600">
-              Dental problems can start small — sensitivity, bleeding gums,
-              plaque buildup, a chipped tooth or occasional pain — and become
-              more complicated when ignored.
-            </p>
-
-            <p className="mt-4 leading-7 text-slate-600">
-              At Dr Bhuvan&apos;s Dental Laser &amp; Implant Centre, we focus on
-              understanding the underlying dental problem and planning care
-              accordingly. Whether you need routine teeth cleaning, gum
-              treatment, restorative dentistry, dental implants or cosmetic
-              dental care, our approach is centered around long-term oral
-              health.
-            </p>
-
-            <div className="mt-8">
-              <a
-                href="https://wa.me/918074528763?text=Hello%20Dr%20Bhuvan%27s%20Dental%2C%20I%20would%20like%20to%20know%20more%20about%20dental%20treatment."
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center rounded-xl bg-orange-600 px-6 py-3.5 font-semibold text-white transition hover:bg-orange-700"
-              >
-                Talk to Our Dental Team →
-              </a>
-            </div>
-
-          </div>
-
-
-          {/* Why choose us */}
-          <div className="rounded-3xl border border-orange-100 bg-orange-50/50 p-7 shadow-sm sm:p-9">
-
-            <p className="text-sm font-semibold uppercase tracking-wider text-orange-600">
-              Why Patients Choose Us
-            </p>
-
-            <div className="mt-6 space-y-5">
-
-              <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-100 font-bold text-orange-600">
-                  ✓
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-slate-900">
-                    Diagnosis before treatment
-                  </h3>
-
-                  <p className="mt-1 text-sm leading-6 text-slate-600">
-                    Your treatment plan is based on your dental condition and
-                    individual needs.
-                  </p>
-                </div>
-              </div>
-
-
-              <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-100 font-bold text-orange-600">
-                  ✓
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-slate-900">
-                    Focus on gum and tooth health
-                  </h3>
-
-                  <p className="mt-1 text-sm leading-6 text-slate-600">
-                    Healthy gums and supporting tissues are an important part
-                    of long-term dental health.
-                  </p>
-                </div>
-              </div>
-
-
-              <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-100 font-bold text-orange-600">
-                  ✓
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-slate-900">
-                    Modern treatment options
-                  </h3>
-
-                  <p className="mt-1 text-sm leading-6 text-slate-600">
-                    Treatment options may include laser-assisted procedures,
-                    implants and restorative or cosmetic dentistry.
-                  </p>
-                </div>
-              </div>
-
-
-              <div className="flex gap-4">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-100 font-bold text-orange-600">
-                  ✓
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-slate-900">
-                    Personalized dental care
-                  </h3>
-
-                  <p className="mt-1 text-sm leading-6 text-slate-600">
-                    Every patient&apos;s dental concerns are different, so care
-                    is planned accordingly.
-                  </p>
-                </div>
-              </div>
-
-            </div>
-          </div>
-
-        </div>
-      </section>
-
-
-      {/* =========================================================
-          SERVICES
-      ========================================================= */}
-      <section className="bg-slate-50">
-
-        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
-
-          <div className="mx-auto max-w-3xl text-center">
-
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">
-              Our Dental Services
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Complete dental care in Ameerpet
-            </h2>
-
-            <p className="mt-5 leading-7 text-slate-600">
-              Explore treatment options available for common dental concerns,
-              gum problems, missing teeth and smile-related needs.
-            </p>
-
-          </div>
-
-
-          <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-
-            {/* Dental Implants */}
-            <Link
-              href="/dental-implants-ameerpet"
-              className="group rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
-            >
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-2xl">
-                🦷
-              </div>
-
-              <h3 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-orange-600">
-                Dental Implants
-              </h3>
-
-              <p className="mt-3 leading-7 text-slate-600">
-                Implant-based tooth replacement options for patients with
-                missing teeth.
+    <div className="mx-auto max-w-3xl text-center">
+      <p className="text-[10px] font-semibold uppercase tracking-[.32em] text-[#a85a2a]">{eyebrow}</p>
+      <h2 className="mt-4 font-serif text-3xl font-medium tracking-[-.025em] text-[#241d18] sm:text-[2.8rem]">{title}</h2>
+      {text && <p className="mt-5 text-[15px] leading-8 text-slate-600 sm:text-lg">{text}</p>}
+    </div>
+  );
+}
+
+export default function DentalClinicAmeerpetPage() {
+  return (
+    <main className="overflow-hidden bg-[#fbf8f3] text-[#27221e] selection:bg-orange-100 selection:text-orange-950">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(dentistSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+
+      <section className="relative isolate overflow-hidden bg-[radial-gradient(ellipse_at_78%_18%,rgba(247,156,91,.23),transparent_34%),radial-gradient(ellipse_at_8%_88%,rgba(255,224,199,.45),transparent_32%),linear-gradient(135deg,#fffaf5_0%,#fff_52%,#fff3e9_100%)]">
+        <div className="mx-auto max-w-[1320px] px-5 pb-20 pt-7 sm:px-8 lg:pb-28 lg:pt-8">
+          <nav aria-label="Breadcrumb" className="text-sm text-slate-500">
+            <Link href="/" className="hover:text-orange-700">Home</Link><span className="mx-2">/</span><span aria-current="page">Dental Clinic in Ameerpet</span>
+          </nav>
+          <div className="grid items-center gap-14 pt-12 lg:grid-cols-[1.02fr_.98fr] lg:gap-16 lg:pt-20">
+            <div>
+              <span className="inline-flex items-center gap-2 rounded-full border border-orange-200/80 bg-white/80 px-4 py-2.5 text-[11px] font-bold tracking-[.18em] text-orange-800 shadow-sm backdrop-blur">AMEERPET · YOUSUFGUDA · HYDERABAD</span>
+              <h1 className="mt-7 max-w-2xl text-[2.65rem] font-serif font-medium leading-[1.02] tracking-[-.04em] text-[#211a16] sm:text-6xl lg:text-[4.45rem]">
+                Thoughtful dental care.<span className="mt-2 block text-orange-700">Confident, healthy smiles.</span>
+              </h1>
+              <p className="mt-7 max-w-xl text-[15px] leading-8 text-slate-600 sm:text-lg sm:leading-9">
+                Looking for a dental clinic in Ameerpet, Hyderabad? At Dr. Bhuvan&apos;s Dental Laser &amp; Implant Centre, we take time to understand your concerns and discuss care options suited to your dental needs.
               </p>
-
-              <span className="mt-5 inline-block text-sm font-semibold text-orange-600">
-                Explore Dental Implants →
-              </span>
-            </Link>
-
-
-            {/* Root Canal */}
-            <Link
-              href="/root-canal-treatment-yousufguda"
-              className="group rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
-            >
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-2xl">
-                🩺
+              <div className="mt-9 flex flex-col gap-3 sm:flex-row">
+                <a href="#appointment" className="inline-flex min-h-14 items-center justify-center rounded-full bg-[#e85b16] px-8 py-4 text-sm font-semibold text-white shadow-[0_12px_30px_rgba(232,91,22,.24)] transition duration-300 hover:-translate-y-1 hover:bg-[#cf4d10] hover:shadow-[0_16px_34px_rgba(232,91,22,.3)]">Request an Appointment →</a>
+                <a href={`tel:${phone}`} className="inline-flex min-h-14 items-center justify-center rounded-full border border-[#ded8d1] bg-white/80 px-8 py-4 text-sm font-semibold text-slate-800 shadow-sm transition hover:border-orange-300 hover:bg-white hover:text-orange-700">Call 80745 28763</a>
               </div>
-
-              <h3 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-orange-600">
-                Root Canal Treatment
-              </h3>
-
-              <p className="mt-3 leading-7 text-slate-600">
-                Treatment for infected or damaged tooth pulp with the goal of
-                preserving the natural tooth whenever possible.
-              </p>
-
-              <span className="mt-5 inline-block text-sm font-semibold text-orange-600">
-                Learn About Root Canal Treatment →
-              </span>
-            </Link>
-
-
-            {/* Teeth Cleaning */}
-            <Link
-              href="/teeth-cleaning-ameerpet"
-              className="group rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
-            >
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-2xl">
-                ✨
+              <div className="mt-9 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-slate-600">
+                <span><b className="text-amber-500">★★★★★</b> <strong className="text-slate-900">4.9 Google rating</strong></span>
+                <span><strong className="text-slate-900">139</strong> Google reviews</span>
+                <span>BDS · MDS (Periodontics) · Implantology</span>
               </div>
-
-              <h3 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-orange-600">
-                Teeth Cleaning
-              </h3>
-
-              <p className="mt-3 leading-7 text-slate-600">
-                Professional cleaning to help manage plaque, calculus,
-                surface stains and gum-related concerns.
-              </p>
-
-              <span className="mt-5 inline-block text-sm font-semibold text-orange-600">
-                Explore Teeth Cleaning →
-              </span>
-            </Link>
-
-
-            {/* Gum Treatment */}
-            <div className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl">
-
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-2xl">
-                🌿
-              </div>
-
-              <h3 className="mt-5 text-xl font-bold text-slate-900">
-                Gum Treatment
-              </h3>
-
-              <p className="mt-3 leading-7 text-slate-600">
-                Evaluation and treatment for bleeding gums, gum infection,
-                periodontal problems and supporting tissue concerns.
-              </p>
-
+              <p className="mt-2 text-xs text-slate-500">Rating and review count should be kept in sync with the live Google Business Profile.</p>
             </div>
-
-
-            {/* Smile Makeover */}
-            <Link
-              href="/smile-makeover-ameerpet"
-              className="group rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl"
-            >
-
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-2xl">
-                😊
+            <div className="relative mx-auto w-full max-w-[570px] lg:translate-y-2">
+              <div className="absolute -inset-6 rounded-[3rem] bg-[linear-gradient(135deg,rgba(240,138,72,.30),rgba(255,226,205,.10))] blur-2xl" />
+              <div className="relative overflow-hidden rounded-[2.25rem] border border-[#eadfd2] bg-[#fffdf9] p-3 shadow-[0_34px_90px_rgba(69,47,29,.18)]">
+                <div className="relative aspect-[4/4.35] overflow-hidden rounded-[1.7rem] bg-[#f4eadf]">
+                  <Image src="/doctor.webp" alt="Dr. Bhuvanesh Yanamala, Periodontist and Implantologist in Ameerpet, Hyderabad" fill priority className="object-cover object-top" sizes="(max-width: 1024px) 100vw, 48vw" />
+                </div>
+                <div className="absolute bottom-5 left-5 right-5 rounded-2xl border border-white/80 bg-white/95 p-5 shadow-[0_12px_35px_rgba(31,24,18,.16)] backdrop-blur-xl">
+                  <p className="text-xs font-bold uppercase tracking-widest text-orange-700">Your dentist</p>
+                  <p className="mt-1 text-lg font-semibold text-slate-950">Dr. Bhuvanesh Yanamala</p>
+                  <p className="text-sm text-slate-600">Periodontist &amp; Implantologist</p>
+                </div>
               </div>
-
-              <h3 className="mt-5 text-xl font-bold text-slate-900 group-hover:text-orange-600">
-                Smile Makeover
-              </h3>
-
-              <p className="mt-3 leading-7 text-slate-600">
-                Personalized cosmetic dental planning to improve the appearance
-                of your smile.
-              </p>
-
-              <span className="mt-5 inline-block text-sm font-semibold text-orange-600">
-                Explore Smile Makeover →
-              </span>
-
-            </Link>
-
-
-            {/* Laser Dentistry */}
-            <div className="rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition hover:-translate-y-1 hover:border-orange-200 hover:shadow-xl">
-
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-2xl">
-                💎
-              </div>
-
-              <h3 className="mt-5 text-xl font-bold text-slate-900">
-                Laser Dentistry
-              </h3>
-
-              <p className="mt-3 leading-7 text-slate-600">
-                Laser-assisted dental procedures may be considered for selected
-                gum and soft-tissue treatments.
-              </p>
-
             </div>
-
           </div>
         </div>
       </section>
 
-        {/* =========================================================
-          MEET DR BHUVANESH
-      ========================================================= */}
-      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
-
-        <div className="grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-
-          {/* Image */}
-          <div className="relative overflow-hidden rounded-3xl border border-orange-100 bg-orange-50 shadow-lg">
-            <div className="relative aspect-[4/3]">
-              <Image
-  src="/doctor.webp"
-  alt="Dr. Bhuvanesh Yanamala, Periodontist and Implantologist in Ameerpet, Hyderabad"
-  fill
-  className="object-cover object-top"
-  sizes="(max-width: 1024px) 100vw, 45vw"
-/>
-            </div>
-          </div>
-
-          {/* Content */}
-          <div>
-
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">
-              Meet Your Dentist
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Personalized dental care by Dr. Bhuvanesh Yanamala
-            </h2>
-
-            <p className="mt-5 leading-7 text-slate-600">
-              Dr. Bhuvanesh Yanamala, BDS, MDS (Periodontics), is a
-              Periodontist and Implantologist providing comprehensive dental
-              care with a focus on gum health, tooth preservation and
-              long-term oral health.
-            </p>
-
-            <p className="mt-4 leading-7 text-slate-600">
-              At Dr Bhuvan&apos;s Dental Laser &amp; Implant Centre, treatment
-              is planned after understanding the patient&apos;s concerns,
-              clinical condition and individual dental needs.
-            </p>
-
-            <div className="mt-7 grid gap-4 sm:grid-cols-2">
-
-              <div className="rounded-2xl border border-orange-100 bg-orange-50 p-5">
-                <p className="font-semibold text-slate-900">
-                  BDS, MDS (Periodontics)
-                </p>
-                <p className="mt-1 text-sm text-slate-600">
-                  Periodontist &amp; Implantologist
-                </p>
-              </div>
-
-              <div className="rounded-2xl border border-orange-100 bg-orange-50 p-5">
-                <p className="font-semibold text-slate-900">
-                  Comprehensive Care
-                </p>
-                <p className="mt-1 text-sm text-slate-600">
-                  Preventive, restorative, gum and implant care
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-
+      <section className="relative z-10 border-y border-[#eee6dd] bg-white/90 shadow-[0_10px_35px_rgba(50,36,23,.035)]">
+        <div className="mx-auto grid max-w-[1320px] grid-cols-2 gap-x-6 gap-y-5 px-5 py-7 sm:px-8 md:grid-cols-4 md:py-8">
+          {["Personalised treatment discussions", "Comprehensive dental care", "Modern clinical technology", "Convenient Ameerpet location"].map((t, i) => (
+            <div key={t} className="flex gap-3"><span className="text-xs font-bold text-orange-600">0{i + 1}</span><p className="text-sm font-semibold text-slate-800">{t}</p></div>
+          ))}
         </div>
       </section>
 
-
-
-      {/* =========================================================
-          OUR CLINIC
-      ========================================================= */}
-      <section className="bg-orange-50/40">
-
-        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
-
-          <div className="mx-auto max-w-3xl text-center">
-
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">
-              Our Clinic
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              A comfortable and modern dental clinic in Ameerpet
-            </h2>
-
-            <p className="mt-5 leading-7 text-slate-600">
-              Our clinic environment is designed to provide a clean,
-              comfortable and professional setting for dental consultations
-              and treatments.
-            </p>
-
-          </div>
-
-
-          {/* Clinic photos */}
-          <div className="mt-12 grid gap-6 lg:grid-cols-3">
-
-            {/* Reception */}
-            <div className="group overflow-hidden rounded-3xl bg-white shadow-sm">
-
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/clinic/clinic1.webp"
-                  alt="Reception area at Dr Bhuvan's Dental Laser & Implant Centre"
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                />
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-slate-900">
-                  Welcoming Reception
-                </h3>
-
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  A welcoming reception and waiting area for patients visiting
-                  our dental clinic in Ameerpet.
-                </p>
-              </div>
-
-            </div>
-
-
-            {/* Treatment room */}
-            <div className="group overflow-hidden rounded-3xl bg-white shadow-sm">
-
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/clinic/clinic2.webp"
-                  alt="Dental treatment room at Dr Bhuvan's Dental Laser & Implant Centre"
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                />
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-slate-900">
-                  Modern Treatment Environment
-                </h3>
-
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  A dedicated clinical environment equipped for routine and
-                  advanced dental procedures.
-                </p>
-              </div>
-
-            </div>
-
-
-            {/* Consultation */}
-            <div className="group overflow-hidden rounded-3xl bg-white shadow-sm">
-
-              <div className="relative aspect-[4/3] overflow-hidden">
-                <Image
-                  src="/clinic/clinic4.webp"
-                  alt="Consultation area at Dr Bhuvan's Dental Laser & Implant Centre"
-                  fill
-                  className="object-cover transition duration-500 group-hover:scale-105"
-                  sizes="(max-width: 1024px) 100vw, 33vw"
-                />
-              </div>
-
-              <div className="p-6">
-                <h3 className="text-lg font-bold text-slate-900">
-                  Private Consultation Space
-                </h3>
-
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  A dedicated space for discussing dental concerns and
-                  planning personalized treatment.
-                </p>
-              </div>
-
-            </div>
-
-          </div>
-
+      <section className="mx-auto grid max-w-[1320px] items-center gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[.92fr_1.08fr] lg:gap-20 lg:py-28">
+        <div className="relative overflow-hidden rounded-[2.15rem] border-[7px] border-[#fffdf9] bg-[#f4eadf] shadow-[0_28px_70px_rgba(55,39,25,.15)]"><div className="relative aspect-[5/4]"><Image src="/clinic/clinic1.webp" alt="Reception at Dr. Bhuvan's Dental Laser & Implant Centre" fill className="object-cover" sizes="(max-width: 1024px) 100vw, 45vw" /></div></div>
+        <div>
+          <p className="text-xs font-bold uppercase tracking-[.22em] text-orange-700">A considered approach to dental care</p>
+          <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight text-slate-950 sm:text-4xl">Understand the problem. Explore the options. Plan your care.</h2>
+          <p className="mt-6 leading-8 text-slate-600">Tooth pain, sensitivity, bleeding gums, missing teeth or changes in your smile can affect everyday comfort. A proper dental assessment helps identify what may be happening and which treatment options are appropriate.</p>
+          <p className="mt-4 leading-8 text-slate-600">Our approach begins with listening to your concerns, examining your oral health and explaining the next steps in clear language. Recommended treatment depends on your clinical findings and individual needs.</p>
+          <a href={waLink} target="_blank" rel="noopener noreferrer" className="mt-7 inline-flex font-semibold text-orange-700">Ask our team a question →</a>
         </div>
       </section>
 
-
-      {/* =========================================================
-          STERILIZATION & SAFETY
-      ========================================================= */}
-      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
-
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-
-          {/* Image */}
-          <div className="relative overflow-hidden rounded-3xl border border-orange-100 shadow-lg">
-            <div className="relative aspect-[4/3]">
-              <Image
-                src="/clinic/clinic7.webp"
-                alt="Sterilization equipment at Dr Bhuvan's Dental Laser & Implant Centre"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
+      <section className="bg-[#f3eee7] py-24 lg:py-28">
+        <div className="mx-auto max-w-[1320px] px-5 sm:px-8">
+          <Heading eyebrow="Dental services" title="Care options for different dental needs" text="Explore our treatment areas and learn what may be relevant to your dental concern. A consultation helps determine the right approach." />
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {services.map(([icon, title, description, href], i) => (
+              <Link href={href} key={title} className="group rounded-[1.65rem] border border-[#e8ddd0] bg-[#fffefa] p-7 shadow-[0_12px_32px_rgba(55,39,25,.055)] transition duration-300 hover:-translate-y-1.5 hover:border-orange-200 hover:shadow-[0_22px_45px_rgba(56,38,23,.10)]">
+                <div className="flex items-center justify-between"><span className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-2xl">{icon}</span><span className="text-xs font-semibold tracking-widest text-slate-300">0{i + 1}</span></div>
+                <h3 className="mt-6 text-xl font-semibold text-slate-950 group-hover:text-orange-700">{title}</h3>
+                <p className="mt-3 min-h-20 text-sm leading-7 text-slate-600">{description}</p>
+                <span className="mt-5 inline-flex text-sm font-semibold text-orange-700">Explore treatment →</span>
+              </Link>
+            ))}
           </div>
-
-
-          {/* Content */}
-          <div>
-
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">
-              Cleanliness &amp; Safety
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Attention to sterilization and clinical hygiene
-            </h2>
-
-            <p className="mt-5 leading-7 text-slate-600">
-              Maintaining proper infection-control practices is an essential
-              part of responsible dental care. Our clinic includes dedicated
-              sterilization equipment as part of our clinical setup.
-            </p>
-
-            <div className="mt-7 space-y-4">
-
-              <div className="flex gap-4 rounded-2xl border border-orange-100 bg-orange-50 p-5">
-
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white font-bold text-orange-600 shadow-sm">
-                  ✓
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-slate-900">
-                    Dedicated sterilization setup
-                  </h3>
-
-                  <p className="mt-1 text-sm leading-6 text-slate-600">
-                    Sterilization equipment is maintained as part of our
-                    clinical workflow.
-                  </p>
-                </div>
-
-              </div>
-
-
-              <div className="flex gap-4 rounded-2xl border border-orange-100 bg-orange-50 p-5">
-
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white font-bold text-orange-600 shadow-sm">
-                  ✓
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-slate-900">
-                    Clean clinical environment
-                  </h3>
-
-                  <p className="mt-1 text-sm leading-6 text-slate-600">
-                    A clean and organized treatment environment helps create a
-                    comfortable experience for patients.
-                  </p>
-                </div>
-
-              </div>
-
-
-              <div className="flex gap-4 rounded-2xl border border-orange-100 bg-orange-50 p-5">
-
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white font-bold text-orange-600 shadow-sm">
-                  ✓
-                </div>
-
-                <div>
-                  <h3 className="font-semibold text-slate-900">
-                    Patient-focused care
-                  </h3>
-
-                  <p className="mt-1 text-sm leading-6 text-slate-600">
-                    We aim to make every dental visit professional,
-                    comfortable and focused on your individual needs.
-                  </p>
-                </div>
-
-              </div>
-
-            </div>
-
-          </div>
-
         </div>
       </section>
-            {/* =========================================================
-          DENTAL PROBLEMS
-      ========================================================= */}
-      <section className="bg-slate-50">
 
-        <div className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
+      <section className="mx-auto grid max-w-[1320px] items-center gap-14 px-5 py-24 sm:px-8 lg:grid-cols-[.78fr_1.22fr] lg:gap-20 lg:py-28">
+        <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-[2.15rem] border-[7px] border-[#fffdf9] bg-[#f4eadf] shadow-[0_30px_75px_rgba(55,39,25,.17)]"><div className="relative aspect-[4/4.5]"><Image src="/doctor.webp" alt="Dr. Bhuvanesh Yanamala" fill className="object-cover object-top" sizes="(max-width: 1024px) 100vw, 38vw" /></div></div>
+        <div>
+          <p className="text-xs font-bold uppercase tracking-[.22em] text-orange-700">Meet your dentist</p>
+          <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Dr. Bhuvanesh Yanamala</h2>
+          <p className="mt-2 font-medium text-orange-700">BDS, MDS (Periodontics) · Periodontist &amp; Implantologist</p>
+          <p className="mt-6 leading-8 text-slate-600">Dr. Bhuvanesh focuses on periodontal health, dental implants and comprehensive dental care. His clinical approach emphasises understanding the patient&apos;s concern, evaluating the condition and discussing suitable treatment options.</p>
+          <p className="mt-4 leading-8 text-slate-600">A consultation is an opportunity to understand your condition, ask questions and make an informed decision about your dental care.</p>
+          <div className="mt-7 flex flex-wrap gap-3">{["Periodontics", "Dental implants", "Laser dentistry"].map((x) => <span key={x} className="rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-sm font-medium">{x}</span>)}</div>
+        </div>
+      </section>
 
-          <div className="mx-auto max-w-3xl text-center">
-
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">
-              Dental Problems We Help With
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Care for common dental concerns
-            </h2>
-
-            <p className="mt-5 leading-7 text-slate-600">
-              Whether you are dealing with tooth pain, bleeding gums, missing
-              teeth or concerns about your smile, a dental evaluation can help
-              identify the right treatment approach.
-            </p>
-
-          </div>
-
-
-          <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-
-            {[
-              {
-                icon: "🦷",
-                title: "Tooth Pain",
-                text: "Pain, sensitivity or discomfort that may need professional evaluation.",
-              },
-              {
-                icon: "🌿",
-                title: "Bleeding Gums",
-                text: "Bleeding, swollen or tender gums can be signs of gum problems.",
-              },
-              {
-                icon: "✨",
-                title: "Plaque & Calculus",
-                text: "Professional cleaning can help manage hardened deposits and stains.",
-              },
-              {
-                icon: "😁",
-                title: "Smile Concerns",
-                text: "Discuss options for improving the appearance of your smile.",
-              },
-              {
-                icon: "🩺",
-                title: "Damaged Teeth",
-                text: "Broken, weakened or infected teeth may require restorative care.",
-              },
-              {
-                icon: "🦷",
-                title: "Missing Teeth",
-                text: "Explore tooth replacement options including dental implants.",
-              },
-              {
-                icon: "🌱",
-                title: "Gum Disease",
-                text: "Periodontal evaluation and treatment for gum and supporting tissues.",
-              },
-              {
-                icon: "💎",
-                title: "Cosmetic Concerns",
-                text: "Personalized options for improving dental appearance and confidence.",
-              },
-            ].map((item) => (
-              <div
-                key={item.title}
-                className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:border-orange-200 hover:shadow-md"
-              >
-                <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-orange-50 text-xl">
-                  {item.icon}
-                </div>
-
-                <h3 className="mt-4 font-bold text-slate-900">
-                  {item.title}
-                </h3>
-
-                <p className="mt-2 text-sm leading-6 text-slate-600">
-                  {item.text}
-                </p>
+      <section className="bg-[linear-gradient(135deg,#f8eee4,#fffaf5_52%,#f5e7d9)] py-24 lg:py-28">
+        <div className="mx-auto max-w-[1320px] px-5 sm:px-8">
+          <Heading eyebrow="Inside our clinic" title="A welcoming space for your dental visit" text="Take a look at the clinic environment and facilities at Dr. Bhuvan's Dental Laser & Implant Centre." />
+          <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+            {[["/clinic/clinic1.webp", "Clinic reception"], ["/clinic/clinic2.webp", "Dental treatment room"], ["/clinic/clinic4.webp", "Consultation space"], ["/clinic/clinic7.webp", "Sterilisation equipment"]].map(([src, alt]) => (
+              <div key={src} className="overflow-hidden rounded-[1.55rem] border border-[#eadfd2] bg-[#fffdf9] p-2.5 shadow-[0_18px_42px_rgba(61,42,26,.10)] transition duration-300 hover:-translate-y-1 hover:shadow-[0_22px_45px_rgba(61,42,26,.14)]">
+                <div className="relative aspect-[4/3] overflow-hidden rounded-xl bg-orange-50"><Image src={src} alt={`${alt} at Dr. Bhuvan's Dental Laser & Implant Centre`} fill className="object-cover" sizes="(max-width: 768px) 50vw, 25vw" /></div>
+                <p className="px-2 py-3 text-sm font-medium text-slate-700">{alt}</p>
               </div>
             ))}
-
           </div>
-
+          <div className="mx-auto mt-8 max-w-3xl rounded-2xl border border-orange-100 bg-white/80 p-5 text-center"><p className="font-semibold text-slate-900">Clinical hygiene matters.</p><p className="mt-2 text-sm leading-7 text-slate-600">Sterilisation equipment and an organised clinical workflow form part of our approach to responsible dental care.</p></div>
         </div>
       </section>
 
-{/* =========================================================
-    COMFORTABLE EXPERIENCE
-========================================================= */}
-<section className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
-
-  <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-
-    {/* TEXT */}
-    <div>
-
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">
-        Patient Experience
-      </p>
-
-      <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-        A comfortable dental experience from consultation to care
-      </h2>
-
-      <p className="mt-5 leading-7 text-slate-600">
-        Visiting a dentist can feel stressful, especially when you are
-        experiencing pain or have been postponing treatment. We aim to
-        make the process clear and comfortable, starting with a
-        consultation and dental evaluation.
-      </p>
-
-      <div className="mt-7 space-y-4">
-
-        <div className="flex gap-4">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-100 font-bold text-orange-600">
-            01
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-slate-900">
-              Understand your concern
-            </h3>
-
-            <p className="mt-1 text-sm leading-6 text-slate-600">
-              Discuss your symptoms, concerns and dental history.
-            </p>
-          </div>
+      <section className="mx-auto max-w-[1320px] px-5 py-24 sm:px-8 lg:py-28">
+        <Heading eyebrow="Your visit" title="What to expect at your first consultation" text="We aim to make the process clear, with time to discuss your concerns and understand the available options." />
+        <div className="mt-12 grid gap-5 md:grid-cols-3">
+          {[["01", "Tell us what concerns you", "Share your symptoms, dental history and what you would like help with."], ["02", "Clinical assessment", "Your teeth and gums are examined. Additional investigations may be advised when needed."], ["03", "Discuss your options", "We explain the findings and discuss suitable next steps, including benefits, limitations and costs where applicable."]].map(([n, title, body]) => (
+            <div key={n} className="rounded-[1.5rem] border border-[#e9dfd4] bg-[#fffefa] p-7 shadow-[0_12px_30px_rgba(55,39,25,.045)]"><p className="text-sm font-bold tracking-widest text-orange-600">{n}</p><h3 className="mt-5 text-xl font-semibold text-slate-950">{title}</h3><p className="mt-3 text-sm leading-7 text-slate-600">{body}</p></div>
+          ))}
         </div>
+      </section>
 
-
-        <div className="flex gap-4">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-100 font-bold text-orange-600">
-            02
-          </div>
-
+      <section className="bg-[#f3eee7] py-24 lg:py-28">
+        <div className="mx-auto grid max-w-[1320px] gap-12 px-5 sm:px-8 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
           <div>
-            <h3 className="font-semibold text-slate-900">
-              Evaluate your oral health
-            </h3>
-
-            <p className="mt-1 text-sm leading-6 text-slate-600">
-              Your teeth and gums are assessed to understand the problem.
-            </p>
-          </div>
-        </div>
-
-
-        <div className="flex gap-4">
-          <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-orange-100 font-bold text-orange-600">
-            03
-          </div>
-
-          <div>
-            <h3 className="font-semibold text-slate-900">
-              Discuss treatment options
-            </h3>
-
-            <p className="mt-1 text-sm leading-6 text-slate-600">
-              Treatment options are explained according to your dental
-              needs.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-
-    {/* IMAGE */}
-    <div className="relative overflow-hidden rounded-3xl border border-orange-100 bg-orange-50 shadow-lg">
-
-      <div className="relative aspect-[4/3] w-full">
-
-        <Image
-          src="/clinic/clinic5.webp"
-          alt="Comfortable waiting area at Dr Bhuvan's Dental Laser & Implant Centre"
-          fill
-          className="object-cover"
-          sizes="(max-width: 1024px) 100vw, 55vw"
-        />
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-       {/* =========================================================
-          LOCAL AMEERPET SECTION
-      ========================================================= */}
-      <section className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-20">
-
-        <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
-
-          <div>
-
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">
-              Conveniently Located
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Dental care for patients in and around Ameerpet
-            </h2>
-
-            <p className="mt-5 leading-7 text-slate-600">
-              Our clinic is located in the Ameerpet area of Hyderabad, making
-              it convenient for patients from nearby neighbourhoods to access
-              routine and advanced dental care.
-            </p>
-
-            <p className="mt-4 leading-7 text-slate-600">
-              Patients visiting from Yousufguda, Sri Krishna Nagar, Navodaya
-              Colony, Yellareddyguda and surrounding areas can reach the clinic
-              for consultations and dental treatments.
-            </p>
-
-          </div>
-
-
-          <div className="rounded-3xl border border-orange-100 bg-orange-50 p-8">
-
-            <div className="flex items-start gap-4">
-
-              <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-2xl bg-white text-2xl shadow-sm">
-                📍
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-slate-900">
-                  Dr Bhuvan&apos;s Dental Laser &amp; Implant Centre
-                </h3>
-
-                <p className="mt-3 leading-7 text-slate-600">
-                  Ganapati Complex, Navodaya Colony Road,
-                  Sri Krishna Nagar, Ameerpet,
-                  Hyderabad, Telangana 500073.
-                </p>
-
-                <a
-                  href="tel:+918074528763"
-                  className="mt-5 inline-block font-semibold text-orange-600 hover:text-orange-700"
-                >
-                  80745 28763 →
-                </a>
-
-                {/* Get Directions */}
-  <a
-    href="https://www.google.com/maps/search/?api=1&query=Dr+Bhuvan's+Dental+Laser+%26+Implant+Centre+Ameerpet+Hyderabad"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="mt-3 block font-semibold text-orange-600 hover:text-orange-700"
-  >
-    Get Directions →
-  </a>
-              </div>
-
+            <p className="text-xs font-bold uppercase tracking-[.22em] text-orange-700">Find our clinic</p>
+            <h2 className="mt-4 text-3xl font-semibold tracking-tight text-slate-950 sm:text-4xl">Dental clinic in Ameerpet, Hyderabad</h2>
+            <p className="mt-5 leading-8 text-slate-600">Conveniently located for patients from Ameerpet, Yousufguda, Navodaya Colony, Sri Krishna Nagar, Yellareddyguda and nearby Hyderabad neighbourhoods.</p>
+            <div className="mt-7 rounded-[1.65rem] border border-[#e8ddd0] bg-[#fffefa] p-7 shadow-[0_18px_44px_rgba(50,36,23,.075)]">
+              <p className="font-semibold text-slate-950">Dr. Bhuvan&apos;s Dental Laser &amp; Implant Centre</p>
+              <address className="mt-3 not-italic text-sm leading-7 text-slate-600">Ganapati Complex, Navodaya Colony Road,<br />Sri Krishna Nagar, Ameerpet,<br />Hyderabad, Telangana 500073, India</address>
+              <p className="mt-4 text-sm"><strong>Phone:</strong> <a className="text-orange-700" href={`tel:${phone}`}>80745 28763</a></p>
+              <p className="mt-2 text-sm leading-6 text-slate-600"><strong>Hours:</strong> Mon–Sat, 10 AM–2 PM and 4 PM–9 PM; Sunday, 10 AM–2 PM.</p>
+              <a href="https://www.google.com/maps/search/?api=1&query=Dr+Bhuvan%27s+Dental+Laser+%26+Implant+Centre+Ameerpet+Hyderabad" target="_blank" rel="noopener noreferrer" className="mt-5 inline-flex rounded-lg bg-orange-600 px-5 py-3 text-sm font-semibold text-white hover:bg-orange-700">Get directions</a>
             </div>
-
           </div>
-
+          <div className="overflow-hidden rounded-[2rem] border-[7px] border-[#fffdf9] bg-[#fffdf9] p-1.5 shadow-[0_30px_72px_rgba(50,36,23,.15)]">
+            <iframe title="Map showing Dr. Bhuvan's Dental Laser & Implant Centre in Ameerpet, Hyderabad" src="https://www.google.com/maps?q=Dr%20Bhuvan%27s%20Dental%20Laser%20%26%20Implant%20Centre%2C%20Ameerpet%2C%20Hyderabad&output=embed" width="100%" height="430" style={{ border: 0 }} loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+          </div>
         </div>
       </section>
 
-
-
-      {/* =========================================================
-          FAQ
-      ========================================================= */}
-      <section className="bg-orange-50/40">
-
-        <div className="mx-auto max-w-4xl px-6 py-16 lg:px-8 lg:py-20">
-
-          <div className="text-center">
-
-            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-600">
-              Frequently Asked Questions
-            </p>
-
-            <h2 className="mt-3 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl">
-              Dental clinic in Ameerpet — FAQs
-            </h2>
-
-            <p className="mt-5 leading-7 text-slate-600">
-              Here are some common questions patients ask before visiting our
-              dental clinic.
-            </p>
-
-          </div>
-
-
-          <div className="mt-10 space-y-4">
-
-            <details className="group rounded-2xl border border-orange-100 bg-white p-6 shadow-sm">
-              <summary className="cursor-pointer list-none font-semibold text-slate-900">
-                What dental treatments are available in Ameerpet?
-                <span className="float-right text-orange-600 transition group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-
-              <p className="mt-4 leading-7 text-slate-600">
-                Treatment options may include teeth cleaning, gum treatment,
-                root canal treatment, dental implants, restorative dentistry,
-                smile makeover and selected laser-assisted procedures.
-              </p>
-            </details>
-
-
-            <details className="group rounded-2xl border border-orange-100 bg-white p-6 shadow-sm">
-              <summary className="cursor-pointer list-none font-semibold text-slate-900">
-                Do you provide dental implants?
-                <span className="float-right text-orange-600 transition group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-
-              <p className="mt-4 leading-7 text-slate-600">
-                Yes. Dental implant treatment can be considered for suitable
-                patients with missing teeth after a clinical evaluation and
-                treatment planning.
-              </p>
-            </details>
-
-
-            <details className="group rounded-2xl border border-orange-100 bg-white p-6 shadow-sm">
-              <summary className="cursor-pointer list-none font-semibold text-slate-900">
-                Can I visit for bleeding gums or gum problems?
-                <span className="float-right text-orange-600 transition group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-
-              <p className="mt-4 leading-7 text-slate-600">
-                Yes. Bleeding gums, gum swelling, bad breath and other
-                periodontal concerns can be evaluated during a dental
-                consultation.
-              </p>
-            </details>
-
-
-            <details className="group rounded-2xl border border-orange-100 bg-white p-6 shadow-sm">
-              <summary className="cursor-pointer list-none font-semibold text-slate-900">
-                Do you provide teeth cleaning in Ameerpet?
-                <span className="float-right text-orange-600 transition group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-
-              <p className="mt-4 leading-7 text-slate-600">
-                Professional teeth cleaning is available for patients who need
-                plaque, calculus and surface-stain removal as part of their
-                oral hygiene care.
-              </p>
-            </details>
-
-
-            <details className="group rounded-2xl border border-orange-100 bg-white p-6 shadow-sm">
-              <summary className="cursor-pointer list-none font-semibold text-slate-900">
-                How can I book a dental appointment?
-                <span className="float-right text-orange-600 transition group-open:rotate-45">
-                  +
-                </span>
-              </summary>
-
-              <p className="mt-4 leading-7 text-slate-600">
-                You can contact the clinic directly by phone or send a message
-                through WhatsApp to request an appointment.
-              </p>
-            </details>
-
-          </div>
-
+      <section className="mx-auto max-w-4xl px-5 py-24 sm:px-8 lg:py-28">
+        <Heading eyebrow="Helpful information" title="Frequently asked questions" text="A few things patients commonly want to know before contacting the clinic." />
+        <div className="mt-12 space-y-4">
+          {faqs.map(([question, answer]) => <details key={question} className="group rounded-[1.35rem] border border-[#e8ddd0] bg-[#fffefa] p-5 shadow-[0_8px_24px_rgba(50,36,23,.045)] transition hover:border-orange-200 open:border-orange-200 open:bg-orange-50/40"><summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-slate-900">{question}<span className="text-xl font-normal text-orange-700 transition group-open:rotate-45">+</span></summary><p className="mt-4 pr-6 text-sm leading-7 text-slate-600">{answer}</p></details>)}
         </div>
       </section>
-      {/* =========================================================
-    FINAL CTA
-========================================================= */}
-<section className="mx-auto max-w-7xl px-6 pb-16 pt-10 lg:px-8 lg:pb-24">
 
-  <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-orange-600 to-orange-700 px-7 py-14 text-center shadow-xl shadow-orange-600/20 sm:px-12">
+      <section id="appointment" className="scroll-mt-8 bg-[radial-gradient(ellipse_at_88%_0%,rgba(190,126,76,.20),transparent_36%),linear-gradient(135deg,#211a17,#100d0c_72%)] px-5 py-24 text-white sm:px-8 lg:py-28">
+        <div className="mx-auto grid max-w-[1320px] gap-14 lg:grid-cols-[.9fr_1.1fr] lg:items-center">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[.22em] text-[#e8bd91]">Take the next step</p>
+            <h2 className="mt-4 text-3xl font-semibold leading-tight tracking-tight sm:text-4xl">Let&apos;s talk about your dental health.</h2>
+            <p className="mt-5 max-w-xl leading-8 text-slate-300">Tell us how we can help. Send an appointment request and our clinic team will coordinate with you. Submitting this form is a request, not a confirmed appointment.</p>
+            <div className="mt-8 flex flex-wrap gap-3"><a href={`tel:${phone}`} className="rounded-xl border border-white/20 px-5 py-3 text-sm font-semibold hover:bg-white/10">Call 80745 28763</a><a href={waLink} target="_blank" rel="noopener noreferrer" className="rounded-xl bg-green-600 px-5 py-3 text-sm font-semibold text-white hover:bg-green-700">WhatsApp the clinic</a></div>
+          </div>
+          <AppointmentForm />
+        </div>
+      </section>
 
-    <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
-    <div className="absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-white/10 blur-3xl" />
-
-    <div className="relative">
-
-      <p className="text-sm font-semibold uppercase tracking-[0.2em] text-orange-100">
-        Book Your Consultation
-      </p>
-
-      <h2 className="mt-3 text-3xl font-bold text-white sm:text-4xl">
-        Looking for a dental clinic in Ameerpet?
-      </h2>
-
-      <p className="mx-auto mt-4 max-w-2xl text-lg leading-8 text-orange-50">
-        Take the first step towards better oral health. Book a consultation
-        with Dr. Bhuvanesh Yanamala and discuss your dental concerns.
-      </p>
-
-      <div className="mt-8 flex flex-col justify-center gap-4 sm:flex-row">
-
-        <a
-          href="https://wa.me/918074528763?text=Hello%20Dr%20Bhuvan%27s%20Dental%2C%20I%20would%20like%20to%20book%20a%20dental%20appointment."
-          target="_blank"
-          rel="noopener noreferrer"
-          className="rounded-xl bg-white px-7 py-4 font-semibold text-orange-700 shadow-sm transition hover:bg-orange-50"
-        >
-          Book on WhatsApp
-        </a>
-
-        <a
-          href="tel:+918074528763"
-          className="rounded-xl border border-white/40 px-7 py-4 font-semibold text-white transition hover:bg-white/10"
-        >
-          Call 80745 28763
-        </a>
-
+      <div className="fixed bottom-4 left-4 right-4 z-40 flex gap-2 sm:hidden">
+        <a href={`tel:${phone}`} className="flex flex-1 items-center justify-center rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-semibold text-slate-900 shadow-lg">Call clinic</a>
+        <a href={waLink} target="_blank" rel="noopener noreferrer" className="flex flex-1 items-center justify-center rounded-xl bg-green-600 px-3 py-3 text-sm font-semibold text-white shadow-lg">WhatsApp</a>
       </div>
-
-    </div>
-
-  </div>
-
-</section>
-
     </main>
   );
 }
