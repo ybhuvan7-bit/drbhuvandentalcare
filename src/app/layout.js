@@ -12,32 +12,32 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
 export const metadata = {
   metadataBase: new URL("https://www.drbhuvandentalcare.com"),
 
   title: {
-    default: "Dr. Bhuvan's Dental Laser & Implant Centre",
+    default:
+      "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     template: "%s | Dr. Bhuvan's Dental",
   },
 
   description:
-    "Best Dental Clinic in Ameerpet, Hyderabad. Advanced Dental Implants, Laser Dentistry, Root Canal Treatment, Cosmetic Dentistry, Teeth Cleaning, Smile Makeover and Gum Care by Dr. Bhuvanesh Yanamala (MDS Periodontics).",
+    "Looking for a dentist in Ameerpet, Hyderabad? Dr. Bhuvan's Dental Laser & Implant Centre offers dental implants, laser dentistry, gum treatment, root canal treatment and cosmetic dentistry near Yousufguda.",
 
   keywords: [
-    "Dentist in Ameerpet",
-    "Best Dentist in Hyderabad",
-    "Dental Clinic Ameerpet",
+    "Dental Clinic in Ameerpet",
+    "Dentist in Ameerpet Hyderabad",
+    "Dental Clinic in Yousufguda",
+    "Best Dentist in Ameerpet",
     "Dental Implants Hyderabad",
     "Laser Dentistry Hyderabad",
-    "Root Canal Treatment",
-    "Cosmetic Dentistry",
-    "Teeth Cleaning",
-    "Smile Makeover",
-    "Periodontist Hyderabad",
+    "Periodontist in Hyderabad",
+    "Gum Treatment Hyderabad",
+    "Root Canal Treatment Ameerpet",
+    "Cosmetic Dentist Hyderabad",
+    "Teeth Cleaning Hyderabad",
     "Dr Bhuvan Dental",
-    "Dentist in Jubilee Hills",
-    "Dentist in Banjara Hills",
-    "Dentist in Madhapur",
   ],
 
   authors: [
@@ -55,30 +55,30 @@ export const metadata = {
   },
 
   openGraph: {
-    title: "Dr. Bhuvan's Dental Laser & Implant Centre",
+    title:
+      "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     description:
-      "Best Dental Clinic in Ameerpet, Hyderabad. Advanced Dental Implants, Laser Dentistry, Cosmetic Dentistry & Gum Care.",
+      "Dental implants, laser dentistry, gum care and cosmetic dentistry at Dr. Bhuvan's Dental Laser & Implant Centre, Ameerpet, Hyderabad.",
     url: "https://www.drbhuvandentalcare.com",
     siteName: "Dr. Bhuvan's Dental Laser & Implant Centre",
-
     images: [
       {
         url: "/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Dr. Bhuvan's Dental Laser & Implant Centre",
+        alt: "Dr. Bhuvan's Dental Laser & Implant Centre, Hyderabad",
       },
     ],
-
     locale: "en_IN",
     type: "website",
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Bhuvan's Dental Laser & Implant Centre",
+    title:
+      "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     description:
-      "Best Dental Clinic in Ameerpet, Hyderabad. Dental Implants, Laser Dentistry & Cosmetic Dentistry.",
+      "Dental implants, laser dentistry, gum treatment and cosmetic dentistry in Ameerpet, Hyderabad.",
     images: ["/og-image.jpg"],
   },
 
@@ -98,6 +98,7 @@ export const metadata = {
     google: "Ko0cMgfj1sO9bXk8DVzOzeeQv3M3ytRZOJfi6OENsec",
   },
 };
+
 
 export default function RootLayout({ children }) {
  return (
@@ -173,8 +174,8 @@ export default function RootLayout({ children }) {
 
               geo: {
   "@type": "GeoCoordinates",
-  latitude: "17.434462985123986",
-  longitude: "78.433557202177"
+  latitude: 17.434462985123986,
+  longitude: 78.433557202177,
 },
 
               areaServed: [
@@ -281,26 +282,6 @@ export default function RootLayout({ children }) {
           }}
         />
 
-        {/* Review Schema */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "MedicalBusiness",
-              name: "Dr. Bhuvan's Dental Laser & Implant Centre",
-              url: "https://www.drbhuvandentalcare.com",
-
-              aggregateRating: {
-                "@type": "AggregateRating",
-                ratingValue: "4.9",
-                reviewCount: "118",
-                bestRating: "5",
-                worstRating: "1"
-              }
-            }),
-          }}
-        />
 
         {/* Breadcrumb Schema */}
         <script
@@ -331,16 +312,16 @@ export default function RootLayout({ children }) {
       name: "Dr. Bhuvan's Dental Clinic Gallery",
       description:
         "Modern dental clinic interiors and facilities at Dr. Bhuvan's Dental Laser & Implant Centre, Ameerpet, Hyderabad.",
-      url: "https://drbhuvandentalcare.com/#clinic-gallery",
+      url: "https://www.drbhuvandentalcare.com/#clinic-gallery",
       image: [
-        "https://drbhuvandentalcare.com/clinic/clinic1.webp",
-        "https://drbhuvandentalcare.com/clinic/clinic2.webp",
-        "https://drbhuvandentalcare.com/clinic/clinic3.webp",
-        "https://drbhuvandentalcare.com/clinic/clinic4.webp",
-        "https://drbhuvandentalcare.com/clinic/clinic5.webp",
-        "https://drbhuvandentalcare.com/clinic/clinic6.webp",
-        "https://drbhuvandentalcare.com/clinic/clinic7.webp",
-        "https://drbhuvandentalcare.com/clinic/clinic8.webp"
+        "https://www.drbhuvandentalcare.com/clinic/clinic1.webp",
+        "https://www.drbhuvandentalcare.com/clinic/clinic2.webp",
+        "https://www.drbhuvandentalcare/clinic/clinic3.webp",
+        "https://www.drbhuvandentalcare.com/clinic/clinic4.webp",
+        "https://www.drbhuvandentalcare.com/clinic/clinic5.webp",
+        "https://www.drbhuvandentalcare.com/clinic/clinic6.webp",
+        "https://www.drbhuvandentalcare.com/clinic/clinic7.webp",
+        "https://www.drbhuvandentalcare.com/clinic/clinic8.webp"
       ]
     }),
   }}
