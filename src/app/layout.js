@@ -1,5 +1,7 @@
+
 import { Geist, Geist_Mono } from "next/font/google";
 import Script from "next/script";
+import Navbar from "./components/Navbar";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -12,13 +14,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-
 export const metadata = {
   metadataBase: new URL("https://www.drbhuvandentalcare.com"),
 
   title: {
-    default:
-      "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
+    default: "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     template: "%s | Dr. Bhuvan's Dental",
   },
 
@@ -55,8 +55,7 @@ export const metadata = {
   },
 
   openGraph: {
-    title:
-      "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
+    title: "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     description:
       "Dental implants, laser dentistry, gum care and cosmetic dentistry at Dr. Bhuvan's Dental Laser & Implant Centre, Ameerpet, Hyderabad.",
     url: "https://www.drbhuvandentalcare.com",
@@ -75,8 +74,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
+    title: "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     description:
       "Dental implants, laser dentistry, gum treatment and cosmetic dentistry in Ameerpet, Hyderabad.",
     images: ["/og-image.jpg"],
@@ -99,32 +97,32 @@ export const metadata = {
   },
 };
 
-
 export default function RootLayout({ children }) {
- return (
-  <html
-    lang="en"
-    className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-  >
+  return (
+    <html
+      lang="en"
+      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+    >
+      <head>
+        {/* Google Ads Tag */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18310496002"
+          strategy="beforeInteractive"
+        />
 
-    <head>
-      {/* Google Ads Tag */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=AW-18310496002"
-        strategy="beforeInteractive"
-      />
+        <Script id="google-ads-tag" strategy="beforeInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'AW-18310496002');
+          `}
+        </Script>
+      </head>
 
-      <Script id="google-ads-tag" strategy="beforeInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'AW-18310496002');
-        `}
-      </Script>
-    </head>
-
-    <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col">
+        {/* Global Navbar */}
+        <Navbar />
 
         {/* Dentist Schema */}
         <script
@@ -147,7 +145,6 @@ export default function RootLayout({ children }) {
               founder: "Dr. Bhuvanesh Yanamala",
 
               priceRange: "₹₹",
-
               currenciesAccepted: "INR",
 
               paymentAccepted: [
@@ -156,7 +153,7 @@ export default function RootLayout({ children }) {
                 "Debit Card",
                 "UPI",
                 "Google Pay",
-                "PhonePe"
+                "PhonePe",
               ],
 
               hasMap:
@@ -173,10 +170,10 @@ export default function RootLayout({ children }) {
               },
 
               geo: {
-  "@type": "GeoCoordinates",
-  latitude: 17.434462985123986,
-  longitude: 78.433557202177,
-},
+                "@type": "GeoCoordinates",
+                latitude: 17.434462985123986,
+                longitude: 78.433557202177,
+              },
 
               areaServed: [
                 "Ameerpet",
@@ -192,7 +189,7 @@ export default function RootLayout({ children }) {
                 "Hitech City",
                 "Kondapur",
                 "Gachibowli",
-                "Hyderabad"
+                "Hyderabad",
               ],
 
               openingHoursSpecification: [
@@ -204,10 +201,10 @@ export default function RootLayout({ children }) {
                     "Wednesday",
                     "Thursday",
                     "Friday",
-                    "Saturday"
+                    "Saturday",
                   ],
                   opens: "10:00",
-                  closes: "14:00"
+                  closes: "14:00",
                 },
                 {
                   "@type": "OpeningHoursSpecification",
@@ -217,22 +214,22 @@ export default function RootLayout({ children }) {
                     "Wednesday",
                     "Thursday",
                     "Friday",
-                    "Saturday"
+                    "Saturday",
                   ],
                   opens: "16:00",
-                  closes: "21:00"
+                  closes: "21:00",
                 },
                 {
                   "@type": "OpeningHoursSpecification",
                   dayOfWeek: "Sunday",
                   opens: "10:00",
-                  closes: "14:00"
-                }
+                  closes: "14:00",
+                },
               ],
 
               sameAs: [
-                "https://maps.app.goo.gl/MUrP8JPS9NwZpG2z9"
-              ]
+                "https://maps.app.goo.gl/MUrP8JPS9NwZpG2z9",
+              ],
             }),
           }}
         />
@@ -250,38 +247,37 @@ export default function RootLayout({ children }) {
                   name: "How much do dental implants cost in Hyderabad?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "The cost depends on the implant system used and the patient's clinical condition. Visit Dr. Bhuvan's Dental Laser & Implant Centre for a personalized consultation."
-                  }
+                    text: "The cost depends on the implant system used and the patient's clinical condition. Visit Dr. Bhuvan's Dental Laser & Implant Centre for a personalized consultation.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "Is laser dentistry painful?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Laser dentistry is minimally invasive and generally causes less pain, less bleeding and faster healing."
-                  }
+                    text: "Laser dentistry is minimally invasive and generally causes less pain, less bleeding and faster healing.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "How often should I get my teeth cleaned?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Most patients should undergo professional teeth cleaning every six months."
-                  }
+                    text: "Most patients should undergo professional teeth cleaning every six months.",
+                  },
                 },
                 {
                   "@type": "Question",
                   name: "Do you provide emergency dental treatment?",
                   acceptedAnswer: {
                     "@type": "Answer",
-                    text: "Yes. We provide emergency dental treatment for tooth pain, swelling, trauma and other urgent dental problems."
-                  }
-                }
-              ]
+                    text: "Yes. We provide emergency dental treatment for tooth pain, swelling, trauma and other urgent dental problems.",
+                  },
+                },
+              ],
             }),
           }}
         />
-
 
         {/* Breadcrumb Schema */}
         <script
@@ -295,37 +291,42 @@ export default function RootLayout({ children }) {
                   "@type": "ListItem",
                   position: 1,
                   name: "Home",
-                  item: "https://www.drbhuvandentalcare.com"
-                }
-              ]
+                  item: "https://www.drbhuvandentalcare.com",
+                },
+              ],
             }),
           }}
         />
 
-        {children}
+        {/* Page Content */}
+        <main className="flex-1">
+          {children}
+        </main>
+
+        {/* Image Gallery Schema */}
         <script
-  type="application/ld+json"
-  dangerouslySetInnerHTML={{
-    __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "ImageGallery",
-      name: "Dr. Bhuvan's Dental Clinic Gallery",
-      description:
-        "Modern dental clinic interiors and facilities at Dr. Bhuvan's Dental Laser & Implant Centre, Ameerpet, Hyderabad.",
-      url: "https://www.drbhuvandentalcare.com/#clinic-gallery",
-      image: [
-        "https://www.drbhuvandentalcare.com/clinic/clinic1.webp",
-        "https://www.drbhuvandentalcare.com/clinic/clinic2.webp",
-        "https://www.drbhuvandentalcare/clinic/clinic3.webp",
-        "https://www.drbhuvandentalcare.com/clinic/clinic4.webp",
-        "https://www.drbhuvandentalcare.com/clinic/clinic5.webp",
-        "https://www.drbhuvandentalcare.com/clinic/clinic6.webp",
-        "https://www.drbhuvandentalcare.com/clinic/clinic7.webp",
-        "https://www.drbhuvandentalcare.com/clinic/clinic8.webp"
-      ]
-    }),
-  }}
-/>
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ImageGallery",
+              name: "Dr. Bhuvan's Dental Clinic Gallery",
+              description:
+                "Modern dental clinic interiors and facilities at Dr. Bhuvan's Dental Laser & Implant Centre, Ameerpet, Hyderabad.",
+              url: "https://www.drbhuvandentalcare.com/#clinic-gallery",
+              image: [
+                "https://www.drbhuvandentalcare.com/clinic/clinic1.webp",
+                "https://www.drbhuvandentalcare.com/clinic/clinic2.webp",
+                "https://www.drbhuvandentalcare.com/clinic/clinic3.webp",
+                "https://www.drbhuvandentalcare.com/clinic/clinic4.webp",
+                "https://www.drbhuvandentalcare.com/clinic/clinic5.webp",
+                "https://www.drbhuvandentalcare.com/clinic/clinic6.webp",
+                "https://www.drbhuvandentalcare.com/clinic/clinic7.webp",
+                "https://www.drbhuvandentalcare.com/clinic/clinic8.webp",
+              ],
+            }),
+          }}
+        />
       </body>
     </html>
   );
