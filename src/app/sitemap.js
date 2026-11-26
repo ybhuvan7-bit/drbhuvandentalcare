@@ -1,9 +1,13 @@
+
 const BASE_URL = "https://www.drbhuvandentalcare.com";
 
 export default function sitemap() {
   const pages = [
     // ================= HOME =================
     "",
+
+    // ================= CONTACT =================
+    "/contact-us",
 
     // ================= ARTICLES =================
     "/articles",
@@ -12,6 +16,7 @@ export default function sitemap() {
 
     // ================= DENTIST / LOCATION PAGES =================
     "/dentist-in-ameerpet",
+    "/dentist-near-me-ameerpet",
     "/periodontist-in-ameerpet",
     "/dentist-in-navodaya-colony",
     "/dentist-in-sri-krishna-nagar",
@@ -19,10 +24,12 @@ export default function sitemap() {
     "/dental-clinic-in-ganapati-complex",
     "/dental-clinic-ameerpet",
     "/tamil-speaking-dentist-hyderabad",
-"/dental-clinic-near-yellareddyguda",
-"/dental-clinic-near-sri-krishna-devaraya-nagar",
-"/dental-clinic-yousufguda",
+    "/dental-clinic-near-yellareddyguda",
+    "/dental-clinic-near-sri-krishna-devaraya-nagar",
+    "/dental-clinic-yousufguda",
+
     // ================= DENTAL IMPLANT PAGES =================
+    "/dental-implant-specialist-hyderabad",
     "/dental-implants-ameerpet",
     "/dental-implants-madhura-nagar",
     "/dental-implants-punjagutta",
@@ -30,7 +37,7 @@ export default function sitemap() {
     "/dental-implants-srinagar-colony",
     "/dental-implants-yousufguda",
 
-    // ================= DENTAL TREATMENTS - YOUSUFGUDA =================
+    // ================= DENTAL TREATMENTS =================
     "/dental-treatments-yousufguda",
 
     // ================= GUM / PERIODONTAL =================
@@ -51,7 +58,7 @@ export default function sitemap() {
     "/teeth-cleaning-ameerpet",
     "/teeth-cleaning-yousufguda",
     "/teeth-cavities-treatment-hyderabad",
-     "/telugu-teeth-cavity-treatment-hyderabad",
+    "/telugu-teeth-cavity-treatment-hyderabad",
 
     // ================= TOOTH / WISDOM TOOTH =================
     "/tooth-pain-treatment-yousufguda",
@@ -76,6 +83,6 @@ export default function sitemap() {
     url: `${BASE_URL}${page}`,
     lastModified: new Date(),
     changeFrequency: page === "" ? "daily" : "weekly",
-    priority: page === "" ? 1.0 : 0.9,
+    priority: page === "" ? 1.0 : page === "/contact-us" ? 0.8 : 0.9,
   }));
 }
