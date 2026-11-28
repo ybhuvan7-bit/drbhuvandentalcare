@@ -9,6 +9,8 @@ import {
 import GoogleReviews from "./components/GoogleReviews";
 import Image from "next/image";
 import Navbar from "./components/Navbar";
+import AppointmentForm from "./components/AppointmentForm";
+
 
 const SCRIPT_URL =
   "https://script.google.com/macros/s/AKfycbyuMzwnNl6BnHrJYunkDCN3w0_3d_ji4iIh2DxY8d4rshGUwbsTpf2vdD2OBz0a0Nb6jQ/exec";
@@ -1044,78 +1046,102 @@ safety and advanced dental care.
 </section>
       
 
-      {/* APPOINTMENT */}
+     
 
-      <section
-        id="appointment"
-        className="py-24 bg-gray-100"
-      >
+{/* PREMIUM HOMEPAGE APPOINTMENT SECTION */}
 
-        <div className="max-w-7xl mx-auto px-6">
+<section
+  id="appointment"
+  className="relative overflow-hidden bg-[#FFFAF5] px-5 py-20 sm:px-8 lg:py-24"
+>
+  {/* Soft background accents */}
+  <div className="pointer-events-none absolute -left-32 top-10 h-80 w-80 rounded-full bg-orange-100/60 blur-3xl" />
+  <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-3xl" />
 
-          <div className="text-center mb-16">
+  <div className="relative mx-auto grid max-w-7xl items-stretch gap-8 lg:grid-cols-[.85fr_1.15fr]">
 
-            <h2 className="text-5xl font-bold">
-              Book Appointment
-            </h2>
+    {/* LEFT ORANGE PANEL */}
+    <div className="relative flex flex-col justify-center overflow-hidden rounded-[2rem] bg-gradient-to-br from-[#FF7900] via-[#F76500] to-[#E94F00] p-8 text-white shadow-[0_24px_60px_rgba(220,85,15,.20)] sm:p-10 lg:p-12">
 
-            <p className="text-gray-600 mt-5 text-xl">
-              Fill the form below and we'll contact you shortly.
-            </p>
+      {/* Decorative circles */}
+      <div className="pointer-events-none absolute -right-20 -top-20 h-64 w-64 rounded-full border border-white/15" />
+      <div className="pointer-events-none absolute -right-10 -top-10 h-44 w-44 rounded-full border border-white/15" />
 
+      <div className="relative z-10">
+
+        <span className="inline-flex rounded-full border border-white/30 bg-white/15 px-4 py-2 text-[10px] font-bold uppercase tracking-[.25em] text-white">
+          BOOK YOUR VISIT
+        </span>
+
+        <h2 className="mt-7 font-serif text-4xl font-medium leading-tight tracking-tight sm:text-5xl">
+          Let's take care of your
+          <span className="block text-orange-100">
+            smile.
+          </span>
+        </h2>
+
+        <p className="mt-6 max-w-md text-[15px] leading-8 text-white/90">
+          Your dental health deserves personal attention.
+          Tell us how we can help, and our clinic team
+          will coordinate a convenient time for your visit.
+        </p>
+
+        <div className="mt-10 space-y-5">
+
+          <div className="flex items-center gap-4">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/25 bg-white/15 text-xl">
+              🦷
+            </div>
+            <div>
+              <p className="font-semibold text-white">
+                Personalised Dental Care
+              </p>
+              <p className="mt-1 text-xs text-white/80">
+                Individual attention for every patient
+              </p>
+            </div>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-2xl p-10">
-
-            <form
-              onSubmit={handleAppointment}
-              className="space-y-6"
-            >
-
-              <input
-                type="text"
-                name="name"
-                placeholder="Full Name"
-                required
-                className="w-full border rounded-xl p-4"
-              />
-
-              <input
-                type="tel"
-                name="phone"
-                placeholder="Phone Number"
-                required
-                className="w-full border rounded-xl p-4"
-              />
-
-              <input
-                type="date"
-                name="date"
-                required
-                className="w-full border rounded-xl p-4"
-              />
-
-              <textarea
-                name="message"
-                rows={5}
-                placeholder="Describe your dental concern"
-                className="w-full border rounded-xl p-4"
-              />
-
-              <button
-                type="submit"
-                className="w-full bg-orange-600 hover:bg-orange-700 text-white py-4 rounded-xl text-lg font-bold"
-              >
-                Book Appointment
-              </button>
-
-            </form>
-
+          <div className="flex items-center gap-4">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-white/25 bg-white/15 text-xl">
+              ✨
+            </div>
+            <div>
+              <p className="font-semibold text-white">
+                Advanced Dental Treatments
+              </p>
+              <p className="mt-1 text-xs text-white/80">
+                Implants, laser dentistry and gum care
+              </p>
+            </div>
           </div>
 
         </div>
 
-      </section>
+        <div className="mt-10 border-t border-white/25 pt-7">
+          <p className="text-xs font-medium uppercase tracking-wider text-white/80">
+            Prefer speaking to our team?
+          </p>
+
+          <a
+            href="tel:+918074528763"
+            className="mt-3 inline-flex items-center gap-2 text-lg font-bold text-white transition hover:gap-3"
+          >
+            ☎ 80745 28763 →
+          </a>
+        </div>
+
+      </div>
+    </div>
+
+    {/* RIGHT APPOINTMENT FORM */}
+    <div className="flex items-center">
+      <AppointmentForm compact />
+    </div>
+
+  </div>
+</section>
+
             {/* GOOGLE MAP */}
 
       <section
@@ -1251,6 +1277,9 @@ Yes. We provide emergency dental care for tooth pain, swelling, trauma and other
 </div>
 
 </section>
+
+
+
       {/* FOOTER */}
 
       <footer className="bg-gray-900 text-white py-16">
@@ -1331,6 +1360,8 @@ Yes. We provide emergency dental care for tooth pain, swelling, trauma and other
         </div>
 
       </footer>
+
+      
 
     </main>
 

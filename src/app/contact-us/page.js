@@ -1,6 +1,6 @@
 
 import Link from "next/link";
-import AppointmentForm from "./AppointmentForm";
+import AppointmentForm from "../components/AppointmentForm";
 
 export const metadata = {
   title: "Contact Dr. Bhuvan's Dental Clinic | Ganapathi Complex, Hyderabad",
