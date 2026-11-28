@@ -23,12 +23,15 @@ export const metadata = {
   },
 
   description:
-    "Looking for a dentist in Ameerpet, Hyderabad? Dr. Bhuvan's Dental Laser & Implant Centre offers dental implants, laser dentistry, gum treatment, root canal treatment and cosmetic dentistry near Yousufguda.",
+    "Looking for a dentist near Ameerpet or Yousufguda, Hyderabad? Dr. Bhuvan's Dental Laser & Implant Centre offers dental implants, laser dentistry, gum treatment, root canal treatment and cosmetic dentistry near Ganapathi Complex, Navodaya Colony.",
 
   keywords: [
     "Dental Clinic in Ameerpet",
     "Dentist in Ameerpet Hyderabad",
     "Dental Clinic in Yousufguda",
+    "Dentist in Navodaya Colony",
+    "Dental Clinic near Ganapathi Complex",
+    "Dentist in Sri Krishna Nagar",
     "Best Dentist in Ameerpet",
     "Dental Implants Hyderabad",
     "Laser Dentistry Hyderabad",
@@ -57,7 +60,7 @@ export const metadata = {
   openGraph: {
     title: "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     description:
-      "Dental implants, laser dentistry, gum care and cosmetic dentistry at Dr. Bhuvan's Dental Laser & Implant Centre, Ameerpet, Hyderabad.",
+      "Dental implants, laser dentistry, gum care and cosmetic dentistry at Dr. Bhuvan's Dental Laser & Implant Centre near Ganapathi Complex, Navodaya Colony, Hyderabad.",
     url: "https://www.drbhuvandentalcare.com",
     siteName: "Dr. Bhuvan's Dental Laser & Implant Centre",
     images: [
@@ -76,7 +79,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Dental Clinic in Ameerpet, Hyderabad | Dr. Bhuvan's Dental",
     description:
-      "Dental implants, laser dentistry, gum treatment and cosmetic dentistry in Ameerpet, Hyderabad.",
+      "Dental implants, laser dentistry, gum treatment and cosmetic dentistry near Ganapathi Complex, Navodaya Colony, Hyderabad.",
     images: ["/og-image.jpg"],
   },
 
@@ -124,7 +127,7 @@ export default function RootLayout({ children }) {
         {/* Global Navbar */}
         <Navbar />
 
-        {/* Dentist Schema */}
+        {/* Dentist / Local Business Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -162,7 +165,7 @@ export default function RootLayout({ children }) {
               address: {
                 "@type": "PostalAddress",
                 streetAddress:
-                  "Ganapathi Complex, Navodaya Colony Road, Sri Krishna Nagar, Ameerpet, Yousufguda",
+                  "Ganapathi Complex, Navodaya Colony Road, Sri Krishna Nagar",
                 addressLocality: "Hyderabad",
                 addressRegion: "Telangana",
                 postalCode: "500073",
@@ -175,22 +178,29 @@ export default function RootLayout({ children }) {
                 longitude: 78.433557202177,
               },
 
-              areaServed: [
-                "Ameerpet",
-                "Yousufguda",
-                "SR Nagar",
-                "Punjagutta",
-                "Begumpet",
-                "Jubilee Hills",
-                "Banjara Hills",
-                "Madhapur",
-                "Somajiguda",
-                "Kukatpally",
-                "Hitech City",
-                "Kondapur",
-                "Gachibowli",
-                "Hyderabad",
-              ],
+             
+areaServed: [
+  "Navodaya Colony",
+  "Sri Krishna Nagar",
+  "Yella Reddy Guda",
+  "Yousufguda",
+  "Srinagar Colony",
+  "Kamalapuri Colony",
+  "Ameerpet",
+  "Madhura Nagar",
+  "SR Nagar",
+  "Jawahar Nagar",
+  "Balkampet",
+  "Punjagutta",
+  "Banjara Hills",
+  "Moti Nagar",
+  "Rahmath Nagar",
+  "Borabanda",
+  "Sanath Nagar",
+  "Erragadda",
+  "Hyderabad",
+],
+
 
               openingHoursSpecification: [
                 {
@@ -312,7 +322,7 @@ export default function RootLayout({ children }) {
               "@type": "ImageGallery",
               name: "Dr. Bhuvan's Dental Clinic Gallery",
               description:
-                "Modern dental clinic interiors and facilities at Dr. Bhuvan's Dental Laser & Implant Centre, Ameerpet, Hyderabad.",
+                "Modern dental clinic interiors and facilities at Dr. Bhuvan's Dental Laser & Implant Centre near Ganapathi Complex, Navodaya Colony, Hyderabad.",
               url: "https://www.drbhuvandentalcare.com/#clinic-gallery",
               image: [
                 "https://www.drbhuvandentalcare.com/clinic/clinic1.webp",

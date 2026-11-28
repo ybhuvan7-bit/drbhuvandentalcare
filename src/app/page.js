@@ -76,7 +76,7 @@ export default function Home() {
               ⭐ 4.9 Google Rating • 139+ Reviews
             </span>
 
-            <h1 className="text-[54px] sm:text-5xl lg:text-7xl font-extrabold leading-[1.05] text-white mt-1">
+           <h1 className="text-4xl sm:text-5xl lg:text-7xl font-extrabold leading-[1.08] text-white mt-1">
   Best Dental Clinic
   <br />
 
@@ -152,7 +152,7 @@ className="w-full sm:w-auto bg-orange-600 hover:bg-orange-700 text-white px-8 py
 
 {/* LANGUAGES SPOKEN */}
 
-<div className="mt-7 w-full max-w-xl">
+<div className="col-span-2 md:col-span-4 mt-7 w-full max-w-xl">
 
   <div className="flex items-center gap-3">
     <span className="h-px w-8 bg-white/30"></span>
@@ -531,191 +531,193 @@ Transform your smile with personalized cosmetic dentistry, including teeth white
 
   <div className="relative mx-auto max-w-7xl px-6">
 
-    {/* ================= SECTION HEADING ================= */}
+   
+{/* ================= SECTION HEADING ================= */}
 
-    <div className="mx-auto mb-14 max-w-4xl text-center">
+<div className="mx-auto mb-14 max-w-4xl text-center">
 
-      <span className="inline-flex items-center rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-orange-600">
-        Local Dental Care
-      </span>
+  <span className="inline-flex items-center rounded-full border border-orange-200 bg-orange-50 px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-orange-600">
+    Local Dental Care in Hyderabad
+  </span>
 
-      <h2 className="mt-5 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
-        Expert Dental Care
-        <span className="block text-orange-600">
-          Near You
-        </span>
-      </h2>
+  <h2 className="mt-5 text-4xl font-black tracking-tight text-slate-950 sm:text-5xl lg:text-6xl">
+    Dental Clinic in
+    <span className="block text-orange-600">
+      Ganapathi Complex, Hyderabad
+    </span>
+  </h2>
 
-      <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
-        Dr. Bhuvan's Dental Laser & Implant Centre provides
-        comprehensive dental care for patients across Yousufguda,
-        Ameerpet, Navodaya Colony and surrounding areas of Hyderabad.
-      </p>
+  <p className="mx-auto mt-6 max-w-3xl text-base leading-8 text-slate-600 sm:text-lg">
+    Dr. Bhuvan's Dental Laser & Implant Centre is located
+    inside Ganapathi Complex, Navodaya Colony Road,
+    Sri Krishna Nagar, Hyderabad. We welcome patients from
+    Yousufguda, Ameerpet, Yella Reddy Guda, Srinagar Colony,
+    Madhura Nagar, SR Nagar, Banjara Hills, Moti Nagar,
+    Rahmath Nagar, Borabanda, Punjagutta, Balkampet,
+    Sanath Nagar and surrounding areas.
+  </p>
 
-    </div>
+</div>
 
 
     {/* ================= LOCATION CARDS ================= */}
 
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
 
-      {/* ================= YOUSUFGUDA ================= */}
+    
+{/* ================= GANAPATHI COMPLEX ================= */}
 
-      <Link
-        href="/dentist-in-yousufguda"
-        className="group relative overflow-hidden rounded-[2rem] border border-orange-200 bg-slate-950 p-7 shadow-xl shadow-slate-900/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-      >
+<Link
+  href="/dental-clinic-in-ganapati-complex"
+  className="group relative overflow-hidden rounded-[2rem] border border-orange-300 bg-slate-950 p-7 shadow-xl shadow-slate-900/10 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
+>
+  {/* Glow */}
+  <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-orange-500/20 blur-3xl transition-all duration-500 group-hover:bg-orange-500/30" />
 
-        {/* Glow */}
-        <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-orange-500/20 blur-3xl transition-all duration-500 group-hover:bg-orange-500/30" />
-
-        <div className="relative">
-
-          <div className="flex items-center justify-between">
-
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-500 text-white shadow-lg shadow-orange-500/20">
-              <MapPin size={21} />
-            </div>
-
-            <span className="rounded-full border border-orange-400/20 bg-orange-500/10 px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-orange-400">
-              Featured Location
-            </span>
-
-          </div>
-
-          <h3 className="mt-7 text-2xl font-black leading-tight text-white">
-            Dentist in
-            <span className="block text-orange-400">
-              Yousufguda
-            </span>
-          </h3>
-
-          <p className="mt-4 text-sm leading-7 text-slate-400">
-            Comprehensive dental care including dental implants,
-            gum treatment, laser dentistry, root canal treatment,
-            teeth cleaning and preventive dentistry near Yousufguda.
-          </p>
-
-          <div className="mt-6 inline-flex items-center gap-2 text-sm font-black text-orange-400 transition-all group-hover:gap-3">
-            Explore Yousufguda Dental Care
-            <ArrowRight size={16} />
-          </div>
-
-        </div>
-
-      </Link>
-
-
-      {/* ================= AMEERPET ================= */}
-
-      <Link
-        href="/dentist-in-ameerpet"
-        className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-7 shadow-lg shadow-slate-900/5 transition-all duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-2xl"
-      >
-
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-orange-600 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white">
-          <MapPin size={21} />
-        </div>
-
-        <h3 className="mt-7 text-2xl font-black leading-tight text-slate-950">
-          Dentist in
-          <span className="block text-orange-600">
-            Ameerpet
-          </span>
-        </h3>
-
-        <p className="mt-4 text-sm leading-7 text-slate-600">
-          Modern dental care in Ameerpet with dental implants,
-          laser dentistry, cosmetic dentistry, gum treatment and
-          restorative dental procedures.
-        </p>
-
-        <div className="mt-6 inline-flex items-center gap-2 text-sm font-black text-orange-600 transition-all group-hover:gap-3">
-          Explore Ameerpet Dental Care
-          <ArrowRight size={16} />
-        </div>
-
-      </Link>
-
-
-      {/* ================= NAVODAYA COLONY ================= */}
-
-      <Link
-        href="/dentist-in-navodaya-colony"
-        className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-7 shadow-lg shadow-slate-900/5 transition-all duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-2xl"
-      >
-
-        <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-orange-600 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white">
-          <MapPin size={21} />
-        </div>
-
-        <h3 className="mt-7 text-2xl font-black leading-tight text-slate-950">
-          Dentist in
-          <span className="block text-orange-600">
-            Navodaya Colony
-          </span>
-        </h3>
-
-        <p className="mt-4 text-sm leading-7 text-slate-600">
-          Trusted dental care near Navodaya Colony for dental
-          implants, laser dentistry, root canal treatment,
-          gum care and complete family dentistry.
-        </p>
-
-        <div className="mt-6 inline-flex items-center gap-2 text-sm font-black text-orange-600 transition-all group-hover:gap-3">
-          Explore Navodaya Colony
-          <ArrowRight size={16} />
-        </div>
-
-      </Link>
-
-    </div>
-
-
-    {/* ================= SECONDARY LOCAL SIGNAL ================= */}
-
-    <div className="mx-auto mt-10 max-w-5xl rounded-[2rem] border border-orange-100 bg-orange-50/60 p-6 text-center sm:p-8">
-
-      <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-sm font-semibold text-slate-600">
-
-        <span>Serving patients from</span>
-
-        <span className="font-black text-slate-900">
-          Yousufguda
-        </span>
-
-        <span className="text-orange-400">•</span>
-
-        <span className="font-black text-slate-900">
-          Ameerpet
-        </span>
-
-        <span className="text-orange-400">•</span>
-
-        <span className="font-black text-slate-900">
-          Navodaya Colony
-        </span>
-
-        <span className="text-orange-400">•</span>
-
-        <span className="font-black text-slate-900">
-          Yellareddy Guda
-        </span>
-
-        <span className="text-orange-400">•</span>
-
-        <span className="font-black text-slate-900">
-          Srinagar Colony
-        </span>
-
+  <div className="relative">
+    <div className="flex items-center justify-between">
+      <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-500 text-white shadow-lg shadow-orange-500/20">
+        <MapPin size={21} />
       </div>
 
-      <p className="mx-auto mt-4 max-w-2xl text-xs leading-6 text-slate-500">
-        Conveniently located at Ganapati Complex, Navodaya Colony,
-        Yousufguda, Hyderabad.
-      </p>
+      <span className="rounded-full border border-orange-400/20 bg-orange-500/10 px-3 py-1.5 text-[10px] font-black uppercase tracking-wider text-orange-400">
+        Our Clinic Location
+      </span>
+    </div>
+
+    <h3 className="mt-7 text-2xl font-black leading-tight text-white">
+      Dental Clinic in
+      <span className="block text-orange-400">
+        Ganapathi Complex
+      </span>
+    </h3>
+
+    <p className="mt-4 text-sm leading-7 text-slate-400">
+      Visit Dr. Bhuvan's Dental Laser & Implant Centre inside
+      Ganapathi Complex, Navodaya Colony Road, Sri Krishna Nagar,
+      Hyderabad. Comprehensive dental care including dental
+      implants, laser dentistry and gum treatment.
+    </p>
+
+    <div className="mt-6 inline-flex items-center gap-2 text-sm font-black text-orange-400 transition-all group-hover:gap-3">
+      Explore Our Clinic
+      <ArrowRight size={16} />
+    </div>
+  </div>
+</Link>
+
+
+
+     
+{/* ================= AMEERPET ================= */}
+
+<Link
+  href="/dentist-in-ameerpet"
+  className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-7 shadow-lg shadow-slate-900/5 transition-all duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-2xl"
+>
+  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-orange-600 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white">
+    <MapPin size={21} />
+  </div>
+
+  <h3 className="mt-7 text-2xl font-black leading-tight text-slate-950">
+    Dental Care for
+    <span className="block text-orange-600">
+      Ameerpet
+    </span>
+  </h3>
+
+  <p className="mt-4 text-sm leading-7 text-slate-600">
+    Comprehensive dental care for patients from Ameerpet,
+    including dental implants, laser dentistry, gum treatment,
+    cosmetic dentistry and restorative dental procedures.
+  </p>
+
+  <div className="mt-6 inline-flex items-center gap-2 text-sm font-black text-orange-600 transition-all group-hover:gap-3">
+    Explore Ameerpet Dental Care
+    <ArrowRight size={16} />
+  </div>
+</Link>
+
+
+{/* ================= NAVODAYA COLONY ================= */}
+
+<Link
+  href="/dentist-in-navodaya-colony"
+  className="group relative overflow-hidden rounded-[2rem] border border-slate-200 bg-white p-7 shadow-lg shadow-slate-900/5 transition-all duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-2xl"
+>
+  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-orange-50 text-orange-600 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white">
+    <MapPin size={21} />
+  </div>
+
+  <h3 className="mt-7 text-2xl font-black leading-tight text-slate-950">
+    Dental Clinic in
+    <span className="block text-orange-600">
+      Navodaya Colony
+    </span>
+  </h3>
+
+  <p className="mt-4 text-sm leading-7 text-slate-600">
+    Visit our clinic inside Ganapathi Complex, Navodaya Colony
+    Road, Sri Krishna Nagar, Hyderabad for dental implants,
+    laser dentistry, root canal treatment and gum care.
+  </p>
+
+  <div className="mt-6 inline-flex items-center gap-2 text-sm font-black text-orange-600 transition-all group-hover:gap-3">
+    Explore Navodaya Colony
+    <ArrowRight size={16} />
+  </div>
+</Link>
+
 
     </div>
+
+
+{/* ================= SECONDARY LOCAL SIGNAL ================= */}
+
+<div className="mx-auto mt-10 max-w-5xl rounded-[2rem] border border-orange-100 bg-orange-50/60 p-6 text-center sm:p-8">
+
+  <p className="text-xs font-black uppercase tracking-[.2em] text-orange-700">
+    Areas We Welcome Patients From
+  </p>
+
+  <div className="mt-5 flex flex-wrap items-center justify-center gap-2">
+
+    {[
+      "Sri Krishna Nagar",
+      "Yella Reddy Guda",
+      "Yousufguda",
+      "Srinagar Colony",
+      "Madhura Nagar",
+      "SR Nagar",
+      "Banjara Hills",
+      "Moti Nagar",
+      "Rahmath Nagar",
+      "Borabanda",
+      "Punjagutta",
+      "Balkampet",
+      "Sanath Nagar",
+      "Erragadda",
+      "Kamalapuri Colony",
+      "Jawahar Nagar",
+    ].map((area) => (
+      <span
+        key={area}
+        className="rounded-full border border-orange-200 bg-white px-4 py-2 text-xs font-bold text-slate-700 shadow-sm"
+      >
+        {area}
+      </span>
+    ))}
+
+  </div>
+
+  <p className="mx-auto mt-6 max-w-2xl text-xs leading-6 text-slate-500">
+    Our dental clinic is located inside Ganapathi Complex,
+    Navodaya Colony Road, Sri Krishna Nagar, Hyderabad.
+    Patients from nearby neighbourhoods are welcome.
+  </p>
+
+</div>
+
 
   </div>
 </section>
@@ -1139,7 +1141,7 @@ safety and advanced dental care.
           <div className="rounded-3xl overflow-hidden shadow-2xl">
 
             <iframe
-              src="https://www.google.com/maps?q=Dr+Bhuvan's+Dental+Laser+%26+Implant+Centre+Hyderabad&output=embed"
+             src="https://www.google.com/maps?q=Dr+Bhuvan%27s+Dental+Laser+%26+Implant+Centre%2C+Ganapathi+Complex%2C+Navodaya+Colony+Road%2C+Sri+Krishna+Nagar%2C+Hyderabad%2C+Telangana+500073&output=embed"
               width="100%"
               height="500"
               style={{ border: 0 }}
